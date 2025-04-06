@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+        .testimonial-container {
+            display: flex;
+            overflow: hidden;
+            width: 70%;
+            margin: auto;
+            position: relative;
+        }
+        .testimonial {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .stars {
+            color: gold;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .btn {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container" id="testimonialSlider">
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="User" class="profile-img">
+            <h3>Michael M. Griffin</h3>
+            <p>"Great service and support! Highly recommended."</p>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="User" class="profile-img">
+            <h3>Robin T. Peckham</h3>
+            <p>"A fantastic experience, will use again!"</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/80" alt="User" class="profile-img">
+            <h3>John Doe</h3>
+            <p>"Professional and efficient, exceeded expectations!"</p>
+            <div class="stars">★★★★★</div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn" onclick="prevSlide()">◀ Prev</button>
+        <button class="btn" onclick="nextSlide()">Next ▶</button>
+    </div>
+
+    <script>
+        let index = 0;
+        function showSlide() {
+            const slider = document.getElementById("testimonialSlider");
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+        function prevSlide() {
+            index = index > 0 ? index - 1 : 2;
+            showSlide();
+        }
+        function nextSlide() {
+            index = index < 2 ? index + 1 : 0;
+            showSlide();
+        }
+    </script>
+</body>
+</html>
