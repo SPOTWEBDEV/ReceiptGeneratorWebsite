@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    background-color: #f8fafc;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #1f12fd;
+}
+
+nav h1 {
+    color: white;
+}
+
+.content {
+    display: flex;
+}
+
+.button-groups {
+    display: flex;
+    gap: 10px;
+}
+
+.button-groups button {
+    padding: 5px 20px;
+    text-transform: capitalize;
+    border-radius: 7px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 400px;
+    background-color: #e6f0fa;
+    padding: 20px 10px;
+    border-right: 1px solid #d1d5db;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #1d4ed8;
+    font-size: 14px;
+}
+
+/* Main content area */
+.main {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* .form-editor{
+    width: 400px;
+} */
+
+
+
+.editor {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 16px;
+    overflow: auto;
+    height: calc(100vh - 40px);
+    white-space: pre-wrap;
+}
+
+.editor h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+code {
+    color: #111;
+    font-family: 'Fira Code', monospace;
+}
+
+.accordion-item p {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.accordion-item p:hover {
+    color: #2563eb;
+}
+
+.accordion-item ul {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.accordion-item ul li {
+    margin: 5px 0;
+}
+
+.accordion-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.accordion-item{
+    width: 100%;
+    background-color: red;
+}

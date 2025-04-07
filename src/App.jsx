@@ -5,6 +5,7 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Example from "./pages/Example";
 import Error404 from "./pages/ErrorPage/404";
+import Editor from "./pages/Editor";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/example" element={<Example />} />
         <Route path="*" element={<Error404 />} />
+        <Route path="/editor" element={<Editor />} />
       </Routes>
     </BrowserRouter>
   );
