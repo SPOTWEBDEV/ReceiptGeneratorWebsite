@@ -7,570 +7,488 @@ const Home = () => {
   return (
     <div>
             <>
-  {/* Header */}
-  <header className="header header-bg-lg header-bg-shape border-bottom-1">
-    <div className="container-fluid p-lg-0">
-      <div className="row m-lg-0">
-        <div className="col-lg-6 p-lg-0">
-          <div className="max-585 ms-auto">
-            <div className="header-contents">
-              <h1>Best Machine Learning Product Creator</h1>
+        {/* Header */}
+        <header className="header header-bg-lg header-bg-shape border-bottom-1">
+          <div className="container-fluid p-lg-0">
+            <div className="row m-lg-0">
+              <div className="col-lg-6 p-lg-0">
+                <div className="max-585 ms-auto">
+                  <div className="header-contents">
+                    <h1>Create & Customize Receipts and Invoices Effortlessly</h1>
+                    <p>
+                      Generate professional receipts and invoices in minutes. Our platform is designed to help businesses and individuals easily build, edit, and manage their financial documents with accuracy and ease.
+                    </p>
+                    <div className="button-group ">
+                      <a href="contact.html" className="btn main-btn">
+                        Get Started
+                      </a>
+                      <a href="contact.html" className="btn main-btn main-btn-white">
+                        Try It Free
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="header-image-shape">
+            <img src="/images/homepage-one/header-shape.png" alt="shape" />
+          </div>
+        </header>
+
+        {/* Header */}
+        {/* Feature-section */}
+        <section className="feature-section pt-min-100 pb-70">
+          <div className="container">
+            <div className="section-title section-title-lg">
+              <h2>
+                Smart. Simple. Seamless. <br /> Everything You Need for Receipts & Invoices
+              </h2>
+            </div>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6 col-lg-3 pb-30">
+                  <div className="feature-card">
+                    <div className="feature-card-header">
+                      <div className="feature-card-thumb feature-card-thumb-green">
+                        <i className="bi bi-receipt-cutoff" />
+                      </div>
+                      <span>Quick Receipt Builder</span>
+                    </div>
+                    <div className="feature-card-body">
+                      <p>
+                        Create professional receipts in just a few clicks using our intuitive interface.
+                      </p>
+                      <a href="service-robotic-animation.html" className="redirect-link">
+                        Discover More <i className="bi bi-arrow-right-circle" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-3 pb-30">
+                  <div className="feature-card">
+                    <div className="feature-card-header">
+                      <div className="feature-card-thumb feature-card-thumb-yellow">
+                        <i className="bi bi-pencil-square" />
+                      </div>
+                      <span>Invoice Customization</span>
+                    </div>
+                    <div className="feature-card-body">
+                      <p>
+                        Personalize invoices with your branding, business info, and itemized details.
+                      </p>
+                      <a href="service-robotic-animation.html" className="redirect-link">
+                        Discover More <i className="bi bi-arrow-right-circle" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-3 pb-30">
+                  <div className="feature-card">
+                    <div className="feature-card-header">
+                      <div className="feature-card-thumb feature-card-thumb-blue">
+                        <i className="bi bi-download" />
+                      </div>
+                      <span>Download & Share</span>
+                    </div>
+                    <div className="feature-card-body">
+                      <p>
+                        Export receipts and invoices in PDF or share them instantly via email.
+                      </p>
+                      <a href="service-robotic-animation.html" className="redirect-link">
+                        Discover More <i className="bi bi-arrow-right-circle" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-3 pb-30">
+                  <div className="feature-card">
+                    <div className="feature-card-header">
+                      <div className="feature-card-thumb feature-card-thumb-violet">
+                        <i className="bi bi-cloud-arrow-up" />
+                      </div>
+                      <span>Cloud Storage</span>
+                    </div>
+                    <div className="feature-card-body">
+                      <p>
+                        Securely save and manage all your receipts and invoices in one place.
+                      </p>
+                      <a href="service-robotic-animation.html" className="redirect-link">
+                        Discover More <i className="bi bi-arrow-right-circle" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* Feature-section */}
+        {/* About-section */}
+        <section className="about-section bg-off-white pt-100 pb-70">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 pb-30">
+                <div className="about-section-item about-item-image text-center">
+                  <img src="/images/feature-shape/feature-shape-1.png" alt="shape" />
+                </div>
+              </div>
+              <div className="col-lg-6 pb-30">
+                <div className="about-section-item about-item-details">
+                  <div className="section-title section-title-left text-start">
+                    <small>About Us</small>
+                    <h2>Empowering Businesses with Simple, Smart Receipt & Invoice Solutions</h2>
+                  </div>
+                  <div className="about-content">
+                    <p>
+                      Our platform was built to eliminate the hassle of manual receipt writing and complex invoice tools.
+                      Whether you're a freelancer, entrepreneur, or small business owner, our goal is to simplify how you manage transactions and documentation.
+                    </p>
+                    <ul className="list-unstyled">
+                      <li><i className="bi bi-receipt-cutoff me-2 text-success"></i>Easy-to-use Receipt & Invoice Builder</li>
+                      <li><i className="bi bi-palette2 me-2 text-warning"></i>Customization with Business Branding</li>
+                      <li><i className="bi bi-cloud-check me-2 text-info"></i>Secure Cloud-Based Storage</li>
+                      <li><i className="bi bi-file-earmark-arrow-down me-2 text-primary"></i>Fast PDF Download & Sharing Options</li>
+                    </ul>
+                    <p>
+                      We believe that financial documentation should be quick, clean, and accessible to everyone — anytime, anywhere.
+                      That’s why we’re committed to building intuitive tools that save time and boost productivity for all types of users.
+                    </p>
+                    <a href="about-us.html" className="btn main-btn">
+                      About Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* About-section */}
+        {/* Service-section */}
+        <section className="service-section pt-100 pb-70">
+          <div className="container">
+            <div className="section-title section-title-lg">
+              <small>Services</small>
+              <h2>
+                Smart Tools to Create, Generate, <br /> and Manage Receipts & Invoices
+              </h2>
               <p>
-                Proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                ipsum, nec sagittis sem nibh
+                Whether you're a freelancer, business owner, or startup, our tools help you generate receipts, track invoices, and stay organized with ease.
               </p>
-              <div className="button-group ">
-                <a href="contact.html" className="btn main-btn">
-                  Get Started
-                </a>
-                <a href="contact.html" className="btn main-btn main-btn-white">
-                  Start A Free Trial
-                </a>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="header-image-shape">
-      <img src="/images/homepage-one/header-shape.png" alt="shape" />
-    </div>
-    
-  </header>
-  {/* Header */}
-  {/* Feature-section */}
-  <section className="feature-section pt-min-100 pb-70">
-    <div className="container">
-      <div className="section-title section-title-lg">
-        <h2>
-          Any Sufficiently Advanced <br /> Technology Is Indistinguishable From
-          Magic
-        </h2>
-      </div>
-      <div className="container">
-        <div className="row" >
-          <div className="col-md-6 col-lg-3 pb-30">
-            <div className="feature-card">
-              <div className="feature-card-header">
-                <div className="feature-card-thumb feature-card-thumb-green">
-                  <i className="flaticon-machine-learning-1" />
+            <div className="row">
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="service-card">
+                  <div className="service-card-thumb">
+                    <i className="bi bi-robot text-primary fs-1" />
+                  </div>
+                  <div className="service-card-body">
+                    <h3>Automated Receipt Generator</h3>
+                    <p>
+                      Let our robot-powered tool auto-fill and generate receipts for any transaction — fast, smart, and paperless.
+                    </p>
+                    <a href="service-auto-receipt.html" className="redirect-link">
+                      Discover More <i className="bi bi-arrow-right" />
+                    </a>
+                  </div>
                 </div>
-                <span>ML Technology</span>
               </div>
-              <div className="feature-card-body">
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet aenean
-                  sollicitudin.
-                </p>
-                <a
-                  href="service-robotic-animation.html"
-                  className="redirect-link"
-                >
-                  Discover More <i className="icofont-rounded-right" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3 pb-30">
-            <div className="feature-card">
-              <div className="feature-card-header">
-                <div className="feature-card-thumb feature-card-thumb-yellow">
-                  <i className="flaticon-voice-recognition" />
+
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="service-card">
+                  <div className="service-card-thumb">
+                    <i className="bi bi-graph-up-arrow text-success fs-1" />
+                  </div>
+                  <div className="service-card-body">
+                    <h3>Analytics & Reporting</h3>
+                    <p>
+                      Track invoice performance, analyze trends, and get insights to help grow your business revenue.
+                    </p>
+                    <a href="service-analytics.html" className="redirect-link">
+                      Discover More <i className="bi bi-arrow-right" />
+                    </a>
+                  </div>
                 </div>
-                <span>ADI Technology</span>
               </div>
-              <div className="feature-card-body">
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet aenean
-                  sollicitudin.
-                </p>
-                <a
-                  href="service-robotic-animation.html"
-                  className="redirect-link"
-                >
-                  Discover More <i className="icofont-rounded-right" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3 pb-30">
-            <div className="feature-card">
-              <div className="feature-card-header">
-                <div className="feature-card-thumb feature-card-thumb-blue">
-                  <i className="flaticon-machine-learning" />
+
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="service-card">
+                  <div className="service-card-thumb">
+                    <i className="bi bi-cpu text-danger fs-1" />
+                  </div>
+                  <div className="service-card-body">
+                    <h3>Smart Invoice Builder</h3>
+                    <p>
+                      Our intelligent builder processes your data and formats beautiful, professional invoices with zero hassle.
+                    </p>
+                    <a href="service-smart-invoice.html" className="redirect-link">
+                      Discover More <i className="bi bi-arrow-right" />
+                    </a>
+                  </div>
                 </div>
-                <span>Data Tech</span>
               </div>
-              <div className="feature-card-body">
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet aenean
-                  sollicitudin.
-                </p>
-                <a
-                  href="service-robotic-animation.html"
-                  className="redirect-link"
-                >
-                  Discover More <i className="icofont-rounded-right" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3 pb-30">
-            <div className="feature-card">
-              <div className="feature-card-header">
-                <div className="feature-card-thumb feature-card-thumb-violet">
-                  <i className="flaticon-processor" />
+
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="service-card">
+                  <div className="service-card-thumb">
+                    <i className="bi bi-search text-warning fs-1" />
+                  </div>
+                  <div className="service-card-body">
+                    <h3>Invoice Finder</h3>
+                    <p>
+                      Quickly locate any past invoice or receipt using smart search filters and keyword match.
+                    </p>
+                    <a href="service-invoice-finder.html" className="redirect-link">
+                      Discover More <i className="bi bi-arrow-right" />
+                    </a>
+                  </div>
                 </div>
-                <span>AI Technology</span>
               </div>
-              <div className="feature-card-body">
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet aenean
-                  sollicitudin.
-                </p>
-                <a
-                  href="service-robotic-animation.html"
-                  className="redirect-link"
-                >
-                  Discover More <i className="icofont-rounded-right" />
-                </a>
+
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="service-card">
+                  <div className="service-card-thumb">
+                    <i className="bi bi-bar-chart-line text-info fs-1" />
+                  </div>
+                  <div className="service-card-body">
+                    <h3>Revenue Charts</h3>
+                    <p>
+                      Visualize your invoice totals, revenue trends, and unpaid balances through dynamic bar charts.
+                    </p>
+                    <a href="service-revenue-charts.html" className="redirect-link">
+                      Discover More <i className="bi bi-arrow-right" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="service-card">
+                  <div className="service-card-thumb">
+                    <i className="bi bi-shield-lock text-secondary fs-1" />
+                  </div>
+                  <div className="service-card-body">
+                    <h3>Secure PDF Storage</h3>
+                    <p>
+                      All your receipts and invoices are locked and stored securely in encrypted PDF format with cloud access.
+                    </p>
+                    <a href="service-secure-pdf.html" className="redirect-link">
+                      Discover More <i className="bi bi-arrow-right" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* Feature-section */}
-  {/* About-section */}
-  <section className="about-section bg-off-white pt-100 pb-70">
-    <div className="container">
-      <div className="row align-items-center">
-        <div
-          className="col-lg-6 pb-30"
-          
-         
-        >
-          <div className="about-section-item about-item-image text-center">
-            <img
-              src="/images/feature-shape/feature-shape-1.png"
-              alt="shape"
-            />
-          </div>
-        </div>
-        <div
-          className="col-lg-6 pb-30"
-          
-         
-        >
-          <div className="about-section-item about-item-details">
-            <div className="section-title section-title-left text-start">
-              <small>About Us</small>
-              <h2>Mission Is To Bring The Power Of Ml To Every Business</h2>
-            </div>
-            <div className="about-content">
+        </section>
+
+
+        {/* Service-section */}
+        {/* Trial-section */}
+        <section className="trial-section pt-min-100 pb-100 bg-main page-bg page-bg-1">
+          <div className="container">
+            <div
+              className="section-title section-title-lg section-title-white mb-0"
+              data-duration={900}
+            >
+              <h2>Try 14 Days Free Access to Our Invoice Generator</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </p>
-              <ul>
-                <li>Advance Advisory Team</li>
-                <li>Advance Quality Experts</li>
-                <li>Many variations of passages</li>
-                <li>High-Quality Results</li>
-              </ul>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni.
-              </p>
-              <a href="about-us.html" className="btn main-btn">
-                About Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* About-section */}
-  {/* Service-section */}
-  <section className="service-section pt-100 pb-70">
-    <div className="container">
-      <div className="section-title section-title-lg">
-        <small>Services</small>
-        <h2>
-          Our Purpose Is To Deliver Excellence <br /> In Service And Execution
-        </h2>
-        <p>
-          Our purpose is to deliver excellence in service and execution Our
-          purpose is to deliver excellence in service and Our purpose is to
-          deliver excellence in service.
-        </p>
-      </div>
-      <div className="row" >
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="service-card">
-            <div className="service-card-thumb">
-              <i className="flaticon-automation" />
-            </div>
-            <div className="service-card-body">
-              <h3>Robotic Automation</h3>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
+                Start generating professional invoices and receipts in seconds.
+                Enjoy premium features including custom branding, auto-calculation,
+                PDF export, and more — completely free for 14 days!
               </p>
               <a
-                href="service-robotic-animation.html"
-                className="redirect-link"
+                href="contact.html"
+                className="btn main-btn main-btn-white main-btn-rounded-icon"
               >
-                Discover More <i className="icofont-rounded-right" />
+                Start Free Trial{" "}
+                <span>
+                  <i className="bi bi-arrow-right-circle-fill" />
+                </span>
               </a>
             </div>
           </div>
-        </div>
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="service-card">
-            <div className="service-card-thumb">
-              <i className="flaticon-predictive-chart" />
+        </section>
+
+        {/* Trial-section */}
+        {/* Process-section */}
+
+        <section className="process-section pt-100 pb-70 bg-off-white">
+          <div className="container">
+            <div className="section-title section-title-lg">
+              <small>Our Process</small>
+              <h2>How You Can Easily Generate Receipts and Invoices</h2>
             </div>
-            <div className="service-card-body">
-              <h3>Predictive Analytics</h3>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-              </p>
-              <a
-                href="service-predictive-analytics.html"
-                className="redirect-link"
-              >
-                Discover More <i className="icofont-rounded-right" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="service-card">
-            <div className="service-card-thumb">
-              <i className="flaticon-deep-learning" />
-            </div>
-            <div className="service-card-body">
-              <h3>Deep Learning</h3>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-              </p>
-              <a href="service-deep-learning.html" className="redirect-link">
-                Discover More <i className="icofont-rounded-right" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="service-card">
-            <div className="service-card-thumb">
-              <i className="flaticon-data-mining" />
-            </div>
-            <div className="service-card-body">
-              <h3>Data Mining</h3>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-              </p>
-              <a href="service-data-mining.html" className="redirect-link">
-                Discover More <i className="icofont-rounded-right" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="service-card">
-            <div className="service-card-thumb">
-              <i className="flaticon-diagram" />
-            </div>
-            <div className="service-card-body">
-              <h3>Statistical Modeling</h3>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-              </p>
-              <a
-                href="service-statistical-modeling.html"
-                className="redirect-link"
-              >
-                Discover More <i className="icofont-rounded-right" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="service-card">
-            <div className="service-card-thumb">
-              <i className="flaticon-machine-learning-2" />
-            </div>
-            <div className="service-card-body">
-              <h3>Security &amp; Surveillance</h3>
-              <p>
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-                Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.
-              </p>
-              <a
-                href="service-security-&-surveillance.html"
-                className="redirect-link"
-              >
-                Discover More <i className="icofont-rounded-right" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* Service-section */}
-  {/* Trial-section */}
-  <section className="trial-section pt-min-100 pb-100 bg-main page-bg page-bg-1">
-    <div className="container">
-      <div
-        className="section-title section-title-lg section-title-white mb-0"
-        
-        data-duration={900}
-      >
-        <h2>We Are Offering 14 Days Free Trial</h2>
-        <p>
-          Our purpose is to deliver excellence in service and execution Our
-          purpose is to deliver excellence in service and Our purpose is to
-          deliver excellence in service.
-        </p>
-        <a
-          href="contact.html"
-          className="btn main-btn main-btn-white main-btn-rounded-icon"
-        >
-          Try 14 Days Free Trial{" "}
-          <span>
-            <i className="icofont-rounded-right" />
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-  {/* Trial-section */}
-  {/* Process-section */}
-  <section className="process-section pt-100 pb-70 bg-off-white">
-    <div className="container">
-      <div className="section-title section-title-lg">
-        <small>Our Process</small>
-        <h2>Process How Machine Learning Will Help Your Business</h2>
-      </div>
-      <div className="process-content">
-        <div className="process-content-line" />
-        <div
-          className="row justify-content-center"
-          
-          data-duration={900}
-        >
-          <div className="col-sm-6 col-lg-4 pb-30">
-            <div className="process-item process-item-center border">
-              <div className="process-thumb">
-                <img src="/images/process/process-one.png" alt="shape" />
-              </div>
-              <div className="process-text">
-                <h3>Planning</h3>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet Aenean
-                  sollicitudin. Proin gravida.
-                </p>
+            <div className="process-content">
+              <div className="process-content-line" />
+              <div className="row justify-content-center" data-duration={900}>
+                <div className="col-sm-6 col-lg-4 pb-30">
+                  <div className="process-item process-item-center border">
+                    <div className="process-thumb">
+                      <i className="bi bi-pencil-square fs-1 text-primary" />
+                    </div>
+                    <div className="process-text">
+                      <h3>Customize Details</h3>
+                      <p>
+                        Enter your business name, client details, items, and prices using our smart editor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 pb-30">
+                  <div className="process-item process-item-center border">
+                    <div className="process-thumb">
+                      <i className="bi bi-layout-text-window fs-1 text-success" />
+                    </div>
+                    <div className="process-text">
+                      <h3>Design & Preview</h3>
+                      <p>
+                        Choose from modern templates and preview your receipt or invoice instantly before saving.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-sm-6 col-lg-4 pb-30">
+                  <div className="process-item process-item-center border">
+                    <div className="process-thumb">
+                      <i className="bi bi-file-earmark-arrow-down fs-1 text-danger" />
+                    </div>
+                    <div className="process-text">
+                      <h3>Download or Share</h3>
+                      <p>
+                        Export your document as PDF or share it via email or direct link with one click.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-sm-6 col-lg-4 pb-30">
-            <div className="process-item process-item-center border">
-              <div className="process-thumb">
-                <img src="/images/process/process-two.png" alt="shape" />
-              </div>
-              <div className="process-text">
-                <h3>Design &amp; Execution</h3>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet Aenean
-                  sollicitudin. Proin gravida.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-4 pb-30">
-            <div className="process-item process-item-center border">
-              <div className="process-thumb">
-                <img
-                  src="/images/process/process-three.png"
-                  alt="shape"
-                />
-              </div>
-              <div className="process-text">
-                <h3>Report &amp; Signout</h3>
-                <p>
-                  Proin gravida nibh vel velit auctor aliquet Aenean
-                  sollicitudin. Proin gravida.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* Process-section */}
- 
-  {/* News-section */}
-  <section className="news-section pt-100 pb-70 bg-off-white">
-    <div className="container">
-      <div className="section-title section-title-lg">
-        <small>News &amp; Blog</small>
-        <h2>
-          Company News &amp; Updates Read All <br /> Related Blog
-        </h2>
-      </div>
-      <div
-        className="row justify-content-center"
-        
+        </section>
+
        
-      >
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="blog-card">
-            <div className="blog-card-image">
-              <a href="single-blog.html">
-                <img src="/images/blogs/blog-1.jpg" alt="blog" />
-              </a>
-            </div>
-            <div className="blog-card-text">
-              <div className="blog-category">Technology</div>
-              <h3>
-                <a href="single-blog.html">
-                  Is Machine Learning Right Going On Good Way
-                </a>
-              </h3>
-              <div className="blog-card-entry">
-                <div className="blog-entry-thumb">
-                  <img
-                    src="/images/blogs/blog-author-1.jpg"
-                    alt="author"
-                  />
+
+        {/* Process-section */}
+
+                    {/* News-section */}
+                    <section className="news-section pt-100 pb-70 bg-off-white">
+                      <div className="container">
+                        <div className="section-title section-title-lg">
+                          <small>Tips & Guides</small>
+                          <h2>
+                            Latest Articles & Updates <br /> About Receipts & Invoices
+                          </h2>
+                        </div>
+                        <div className="row justify-content-center">
+                          <div className="col-md-6 col-lg-4 pb-30">
+                            <div className="blog-card">
+                              <div className="blog-card-image">
+                                <a href="single-blog.html">
+                                  <img src="/images/blogs/blog-1.jpg" alt="receipt tips" />
+                                </a>
+                              </div>
+                              <div className="blog-card-text">
+                                <div className="blog-category">
+                                  <i className="bi bi-file-earmark-text me-1" /> Receipt Design
+                                </div>
+                                <h3>
+                                  <a href="single-blog.html">
+                                    5 Expert Tips to Create a Professional Receipt That Builds Trust
+                                  </a>
+                                </h3>
+                                <div className="blog-card-entry">
+                                  <div className="blog-entry-thumb">
+                                    <img src="/images/blogs/blog-author-1.jpg" alt="author" />
+                                  </div>
+                                  <div className="blog-entry-text">
+                                    <h4>
+                                      By: <strong>Emily Stone</strong>
+                                    </h4>
+                                    <p>5 January 2024</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="col-md-6 col-lg-4 pb-30">
+                            <div className="blog-card">
+                              <div className="blog-card-image">
+                                <a href="single-blog.html">
+                                  <img src="/images/blogs/blog-2.jpg" alt="invoice automation" />
+                                </a>
+                              </div>
+                              <div className="blog-card-text">
+                                <div className="blog-category">
+                                  <i className="bi bi-gear me-1" /> Automation
+                                </div>
+                                <h3>
+                                  <a href="single-blog.html">
+                                    How Automated Invoices Can Save Time and Boost Efficiency
+                                  </a>
+                                </h3>
+                                <div className="blog-card-entry">
+                                  <div className="blog-entry-thumb">
+                                    <img src="/images/blogs/blog-author-2.jpg" alt="author" />
+                                  </div>
+                                  <div className="blog-entry-text">
+                                    <h4>
+                                      By: <strong>Michael Ray</strong>
+                                    </h4>
+                                    <p>4 January 2024</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-0 pb-30">
+                            <div className="blog-card">
+                              <div className="blog-card-image">
+                                <a href="single-blog.html">
+                                  <img src="/images/blogs/blog-3.jpg" alt="invoice security" />
+                                </a>
+                              </div>
+                              <div className="blog-card-text">
+                                <div className="blog-category">
+                                  <i className="bi bi-shield-lock me-1" /> Security
+                                </div>
+                                <h3>
+                                  <a href="single-blog.html">
+                                    Keeping Your Invoices Safe: Security Tips for Your Documents
+                                  </a>
+                                </h3>
+                                <div className="blog-card-entry">
+                                  <div className="blog-entry-thumb">
+                                    <img src="/images/blogs/blog-author-3.jpg" alt="author" />
+                                  </div>
+                                  <div className="blog-entry-text">
+                                    <h4>
+                                      By: <strong>Linda Mark</strong>
+                                    </h4>
+                                    <p>3 January 2024</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    {/* News-section */}
+                    {/* Newsletter-section */}
+
+                    {/* Newsletter-section */}
+                  </>
                 </div>
-                <div className="blog-entry-text">
-                  <h4>
-                    By: <strong>David Joe</strong>
-                  </h4>
-                  <p>5 January 2024</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4 pb-30">
-          <div className="blog-card">
-            <div className="blog-card-image">
-              <a href="single-blog.html">
-                <img src="/images/blogs/blog-2.jpg" alt="blog" />
-              </a>
-            </div>
-            <div className="blog-card-text">
-              <div className="blog-category">Robot</div>
-              <h3>
-                <a href="single-blog.html">
-                  The Current State Of Artificial Intelligence Infographic
-                </a>
-              </h3>
-              <div className="blog-card-entry">
-                <div className="blog-entry-thumb">
-                  <img
-                    src="/images/blogs/blog-author-2.jpg"
-                    alt="author"
-                  />
-                </div>
-                <div className="blog-entry-text">
-                  <h4>
-                    By: <strong>Lona Rabisa</strong>
-                  </h4>
-                  <p>4 January 2024</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-0 pb-30">
-          <div className="blog-card">
-            <div className="blog-card-image">
-              <a href="single-blog.html">
-                <img src="/images/blogs/blog-3.jpg" alt="blog" />
-              </a>
-            </div>
-            <div className="blog-card-text">
-              <div className="blog-category">Machine</div>
-              <h3>
-                <a href="single-blog.html">
-                  Our Company As A Global Leader In Big Data
-                </a>
-              </h3>
-              <div className="blog-card-entry">
-                <div className="blog-entry-thumb">
-                  <img
-                    src="/images/blogs/blog-author-3.jpg"
-                    alt="author"
-                  />
-                </div>
-                <div className="blog-entry-text">
-                  <h4>
-                    By: <strong>Richard Jac</strong>
-                  </h4>
-                  <p>3 January 2024</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* News-section */}
-  {/* Newsletter-section */}
-  <section className="newsletter-section pt-min-100 pb-100 page-bg page-bg-2 page-bg-overlay">
-    <div
-      className="container position-relative"
-      
-      data-duration={900}
-    >
-      <div className="section-title section-title-white">
-        <h2>Subscribe For Newsletter</h2>
-        <p>Subscribe To Our Newsletter &amp; Stay Updated</p>
-      </div>
-      <form className="newsletter-form">
-        <div className="form-group m-0 newsletter-form">
-          <input
-            type="text"
-            name="EMAIL"
-            id="emails"
-            className="form-control"
-            placeholder="Enter Address*"
-            required=""
-          />
-          <button className="btn main-btn" type="submit">
-            Subscribe
-          </button>
-        </div>
-        <div id="validator-newsletter" className="form-result" />
-      </form>
-    </div>
-  </section>
-  {/* Newsletter-section */}
-</>
-    </div>
-  )
+                )
 }
 
-export default Home
+                export default Home
