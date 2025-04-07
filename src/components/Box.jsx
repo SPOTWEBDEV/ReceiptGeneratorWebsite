@@ -25,6 +25,30 @@ export const Box_Testimonial = ({ name, text, star = 4 }) => {
          )
 }
 
+
+export const TeamCard = ({name, occupation,bio})=>{
+    return (
+        <>
+           <div className="col-12 col-md-6 col-lg-4 pb-30">
+                            <div className="team-card">
+                                <div className="team-card-thumb">
+                                    <img src="/images/team/team-2.jpg" alt="team" />
+                                </div>
+                                <div className="team-card-content">
+                                    <h3>{name}</h3>
+                                    <h4>{occupation}</h4>
+                                    <p>{bio}</p>
+                                </div>
+                            </div>
+                        </div>
+        </>
+    )
+}
+
+
+
+
+
 function createStar(starNumber) {
          let html = '';
          for (let i = 0; i < starNumber; i++) {
