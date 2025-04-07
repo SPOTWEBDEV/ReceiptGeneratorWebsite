@@ -2030,7 +2030,7 @@ select.form-control {
 
 .header-content {
     position: relative;
-    z-index: 11;
+    z-index: 99;
     padding-left: 25px;
 }
 
