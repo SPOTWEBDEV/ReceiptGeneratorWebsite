@@ -88,7 +88,7 @@ export const ClientNav = () => {
                                 </div>
                                 <div className="navbar-option">
                                     <div className="navbar-option-item">
-                                        <a href="/authentication" className="btn main-btn">Login Or Register</a>
+                                        <a href="/login" className="btn main-btn">Login Or Register</a>
                                     </div>
                                 </div>
                             </nav>

@@ -26,7 +26,7 @@ const Home = () => {
                       Generate Payment receipts and invoices in minutes. Our platform is designed to help businesses and individuals easily build, edit, and manage their financial documents with accuracy and ease.
                     </p>
                     <div className="button-group ">
-                      <a href="contact.html" className="btn main-btn">
+                      <a href="/pricing" className="btn main-btn">
                         Get Started
                       </a>
                       <a href="contact.html" className="btn main-btn main-btn-white">
@@ -45,115 +45,7 @@ const Home = () => {
 
         {/* Header */}
         {/* Feature-section */}
-        {/* <section className="feature-section pt-min-100 pb-70">
-          <div className="container">
-            <div className="section-title section-title-lg">
-              <h2>
-                Smart. Simple. Seamless. <br /> Everything You Need for Receipts & Invoices
-              </h2>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Sales Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Confirmation of payment for a product or service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Payment Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Acknowledges payments made toward a bill or service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Invoice Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Receipt for previously issued invoices, showing payment received.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Cash Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        A receipt for cash payments.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Electronic Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Digital version of a receipt, often sent via email.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Gift Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        A receipt for a gift, typically without the price.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Travel Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Receipt for travel expenses like accommodation or transportation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Service Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Proof of payment for services rendered.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
+
 
         <section className="feature-section pt-min-100 pb-70">
           <div className="container">
@@ -163,6 +55,30 @@ const Home = () => {
               </h2>
             </div>
             <div className="row g-4">
+               {/* Travel Receipt */}
+               <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Travel Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Receipt for travel expenses like accommodation or transportation.</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Service Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Service Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Proof of payment for services rendered.</p>
+                  </div>
+                </div>
+              </div>
+
               {/* Sales Receipt */}
               <div className="col-md-6 col-lg-3 d-flex">
                 <div className="feature-card flex-fill">
@@ -235,29 +151,8 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Travel Receipt */}
-              <div className="col-md-6 col-lg-3 d-flex">
-                <div className="feature-card flex-fill">
-                  <div className="feature-card-header">
-                    <span>Travel Receipt</span>
-                  </div>
-                  <div className="feature-card-body">
-                    <p>Receipt for travel expenses like accommodation or transportation.</p>
-                  </div>
-                </div>
-              </div>
+             
 
-              {/* Service Receipt */}
-              <div className="col-md-6 col-lg-3 d-flex">
-                <div className="feature-card flex-fill">
-                  <div className="feature-card-header">
-                    <span>Service Receipt</span>
-                  </div>
-                  <div className="feature-card-body">
-                    <p>Proof of payment for services rendered.</p>
-                  </div>
-                </div>
-              </div>
 
             </div>
           </div>
@@ -300,29 +195,12 @@ const Home = () => {
                     <p>
                       Let our robot-powered tool auto-fill and generate receipts for any transaction — fast, smart, and paperless.
                     </p>
-                    <a href="service-auto-receipt.html" className="redirect-link">
-                      Discover More <i className="bi bi-arrow-right" />
-                    </a>
+                  
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-6 col-lg-4 pb-30">
-                <div className="service-card">
-                  <div className="service-card-thumb">
-                    <i className="bi bi-graph-up-arrow text-success fs-1" />
-                  </div>
-                  <div className="service-card-body">
-                    <h3>Analytics & Reporting</h3>
-                    <p>
-                      Track invoice performance, analyze trends, and get insights to help grow your business revenue.
-                    </p>
-                    <a href="service-analytics.html" className="redirect-link">
-                      Discover More <i className="bi bi-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+            
 
               <div className="col-md-6 col-lg-4 pb-30">
                 <div className="service-card">
@@ -334,46 +212,14 @@ const Home = () => {
                     <p>
                       Our intelligent builder processes your data and formats beautiful, professional invoices with zero hassle.
                     </p>
-                    <a href="service-smart-invoice.html" className="redirect-link">
-                      Discover More <i className="bi bi-arrow-right" />
-                    </a>
+                  
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-6 col-lg-4 pb-30">
-                <div className="service-card">
-                  <div className="service-card-thumb">
-                    <i className="bi bi-search text-warning fs-1" />
-                  </div>
-                  <div className="service-card-body">
-                    <h3>Invoice Finder</h3>
-                    <p>
-                      Quickly locate any past invoice or receipt using smart search filters and keyword match.
-                    </p>
-                    <a href="service-invoice-finder.html" className="redirect-link">
-                      Discover More <i className="bi bi-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+            
 
-              <div className="col-md-6 col-lg-4 pb-30">
-                <div className="service-card">
-                  <div className="service-card-thumb">
-                    <i className="bi bi-bar-chart-line text-info fs-1" />
-                  </div>
-                  <div className="service-card-body">
-                    <h3>Revenue Charts</h3>
-                    <p>
-                      Visualize your invoice totals, revenue trends, and unpaid balances through dynamic bar charts.
-                    </p>
-                    <a href="service-revenue-charts.html" className="redirect-link">
-                      Discover More <i className="bi bi-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+        
 
               <div className="col-md-6 col-lg-4 pb-30">
                 <div className="service-card">
@@ -381,13 +227,11 @@ const Home = () => {
                     <i className="bi bi-shield-lock text-secondary fs-1" />
                   </div>
                   <div className="service-card-body">
-                    <h3>Secure PDF Storage</h3>
+                    <h3>Cloud Storage</h3>
                     <p>
                       All your receipts and invoices are locked and stored securely in encrypted PDF format with cloud access.
                     </p>
-                    <a href="service-secure-pdf.html" className="redirect-link">
-                      Discover More <i className="bi bi-arrow-right" />
-                    </a>
+                 
                   </div>
                 </div>
               </div>
@@ -404,14 +248,14 @@ const Home = () => {
               className="section-title section-title-lg section-title-white mb-0"
               data-duration={900}
             >
-              <h2>Try 14 Days Free Access to Our Invoice Generator</h2>
+              <h2>Try A Free Day Access to Our Invoice Generator</h2>
               <p>
                 Start generating professional invoices and receipts in seconds.
                 Enjoy premium features including custom branding, auto-calculation,
                 PDF export, and more — completely free for 14 days!
               </p>
               <a
-                href="contact.html"
+                href="/pricing"
                 className="btn main-btn main-btn-white main-btn-rounded-icon"
               >
                 Start Free Trial{" "}
