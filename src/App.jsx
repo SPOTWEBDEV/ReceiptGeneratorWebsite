@@ -11,6 +11,7 @@ import Login from "./pages/clients/Login";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ForgetPassword from "./pages/clients/ForgetPassword";
+import BlogDetails from "./pages/BlogDetails";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/forgot-password" element={<ForgetPassword />} />
+        <Route path="/blogs-list" element={<BlogDetails />} />
 
         {/* Not-Found routs */}
         <Route path="*" element={<Error404 />} />

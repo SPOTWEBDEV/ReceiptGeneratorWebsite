@@ -2,6 +2,8 @@ import React from 'react'
 import Landing from '../layout/Landing'
 import CompanyStats from '../includes/CompanyStats'
 import Testimonial from '../includes/Testimonial'
+import { ClientFooter } from '../includes/Footer'
+import { ClientNav } from '../includes/Navbar'
 
 import Feature from '../components/Feature'
 import { who_we_are } from '../data/siteInfo'
@@ -11,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <>
+        <ClientNav />
         {/* Header */}
         <header className="header header-bg-lg header-bg-shape border-bottom-1">
           <div className="container-fluid p-lg-0">
@@ -519,6 +522,8 @@ const Home = () => {
         {/* Newsletter-section */}
 
         {/* Newsletter-section */}
+
+        <ClientFooter/>
       </>
     </div>
   )
