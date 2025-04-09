@@ -22,9 +22,6 @@ const Home = () => {
                     <p>
                       Generate Payment receipts and invoices in minutes. Our platform is designed to help businesses and individuals easily build, edit, and manage their financial documents with accuracy and ease.
                     </p>
-
-
-
                     <div className="button-group ">
                       <a href="contact.html" className="btn main-btn">
                         Get Started
