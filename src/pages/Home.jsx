@@ -3,10 +3,14 @@ import Landing from '../layout/Landing'
 import CompanyStats from '../includes/CompanyStats'
 import Testimonial from '../includes/Testimonial'
 
+import Feature from '../components/Feature'
+import { who_we_are } from '../data/siteInfo'
+import {about} from '../data/siteInfo'
+
 const Home = () => {
   return (
     <div>
-            <>
+      <>
         {/* Header */}
         <header className="header header-bg-lg header-bg-shape border-bottom-1">
           <div className="container-fluid p-lg-0">
@@ -16,7 +20,7 @@ const Home = () => {
                   <div className="header-contents">
                     <h1>Create & Customize Payment Receipts and Invoices Effortlessly</h1>
                     <p>
-                      Generate Payment receipts and invoices in minutes. Our platform is designed to help businesses and individuals easily build, edit, and manage their financial documents with accuracy and ease. 
+                      Generate Payment receipts and invoices in minutes. Our platform is designed to help businesses and individuals easily build, edit, and manage their financial documents with accuracy and ease.
                     </p>
 
 
@@ -191,44 +195,12 @@ const Home = () => {
 
         {/* Feature-section */}
         {/* About-section */}
-        <section className="about-section bg-off-white pt-100 pb-70">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 pb-30">
-                <div className="about-section-item about-item-image text-center">
-                  <img src="/images/feature-shape/feature-shape-1.png" alt="shape" />
-                </div>
-              </div>
-              <div className="col-lg-6 pb-30">
-                <div className="about-section-item about-item-details">
-                  <div className="section-title section-title-left text-start">
-                    <small>About Us</small>
-                    <h2>Empowering Businesses with Simple, Smart Receipt & Invoice Solutions</h2>
-                  </div>
-                  <div className="about-content">
-                    <p>
-                      Our platform was built to eliminate the hassle of manual receipt writing and complex invoice tools.
-                      Whether you're a freelancer, entrepreneur, or small business owner, our goal is to simplify how you manage transactions and documentation.
-                    </p>
-                    <ul className="list-unstyled">
-                      <li><i className="bi bi-receipt-cutoff me-2 text-success"></i>Easy-to-use Receipt & Invoice Builder</li>
-                      <li><i className="bi bi-palette2 me-2 text-warning"></i>Customization with Business Branding</li>
-                      <li><i className="bi bi-cloud-check me-2 text-info"></i>Secure Cloud-Based Storage</li>
-                      <li><i className="bi bi-file-earmark-arrow-down me-2 text-primary"></i>Fast PDF Download & Sharing Options</li>
-                    </ul>
-                    <p>
-                      We believe that financial documentation should be quick, clean, and accessible to everyone — anytime, anywhere.
-                      That’s why we’re committed to building intuitive tools that save time and boost productivity for all types of users.
-                    </p>
-                    <a href="about-us.html" className="btn main-btn">
-                      About Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+        {who_we_are.map(item => <Feature key={item.id} {...item} /> )}
+
+        {about.map(item => <Feature key={item.id} {...item} />)}
+        
+        
 
 
         {/* About-section */}
@@ -436,123 +408,123 @@ const Home = () => {
           </div>
         </section>
 
-       
+
 
         {/* Process-section */}
 
-                    {/* News-section */}
-                    <section className="news-section pt-100 pb-70 bg-off-white">
-                      <div className="container">
-                        <div className="section-title section-title-lg">
-                          <small>Tips & Guides</small>
-                          <h2>
-                            Latest Articles & Updates <br /> About Receipts & Invoices
-                          </h2>
-                        </div>
-                        <div className="row justify-content-center">
-                          <div className="col-md-6 col-lg-4 pb-30">
-                            <div className="blog-card">
-                              <div className="blog-card-image">
-                                <a href="single-blog.html">
-                                  <img src="/images/blogs/blog-1.jpg" alt="receipt tips" />
-                                </a>
-                              </div>
-                              <div className="blog-card-text">
-                                <div className="blog-category">
-                                  <i className="bi bi-file-earmark-text me-1" /> Receipt Design
-                                </div>
-                                <h3>
-                                  <a href="single-blog.html">
-                                    5 Expert Tips to Create a Professional Receipt That Builds Trust
-                                  </a>
-                                </h3>
-                                <div className="blog-card-entry">
-                                  <div className="blog-entry-thumb">
-                                    <img src="/images/blogs/blog-author-1.jpg" alt="author" />
-                                  </div>
-                                  <div className="blog-entry-text">
-                                    <h4>
-                                      By: <strong>Emily Stone</strong>
-                                    </h4>
-                                    <p>5 January 2024</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-md-6 col-lg-4 pb-30">
-                            <div className="blog-card">
-                              <div className="blog-card-image">
-                                <a href="single-blog.html">
-                                  <img src="/images/blogs/blog-2.jpg" alt="invoice automation" />
-                                </a>
-                              </div>
-                              <div className="blog-card-text">
-                                <div className="blog-category">
-                                  <i className="bi bi-gear me-1" /> Automation
-                                </div>
-                                <h3>
-                                  <a href="single-blog.html">
-                                    How Automated Invoices Can Save Time and Boost Efficiency
-                                  </a>
-                                </h3>
-                                <div className="blog-card-entry">
-                                  <div className="blog-entry-thumb">
-                                    <img src="/images/blogs/blog-author-2.jpg" alt="author" />
-                                  </div>
-                                  <div className="blog-entry-text">
-                                    <h4>
-                                      By: <strong>Michael Ray</strong>
-                                    </h4>
-                                    <p>4 January 2024</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-0 pb-30">
-                            <div className="blog-card">
-                              <div className="blog-card-image">
-                                <a href="single-blog.html">
-                                  <img src="/images/blogs/blog-3.jpg" alt="invoice security" />
-                                </a>
-                              </div>
-                              <div className="blog-card-text">
-                                <div className="blog-category">
-                                  <i className="bi bi-shield-lock me-1" /> Security
-                                </div>
-                                <h3>
-                                  <a href="single-blog.html">
-                                    Keeping Your Invoices Safe: Security Tips for Your Documents
-                                  </a>
-                                </h3>
-                                <div className="blog-card-entry">
-                                  <div className="blog-entry-thumb">
-                                    <img src="/images/blogs/blog-author-3.jpg" alt="author" />
-                                  </div>
-                                  <div className="blog-entry-text">
-                                    <h4>
-                                      By: <strong>Linda Mark</strong>
-                                    </h4>
-                                    <p>3 January 2024</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+        {/* News-section */}
+        <section className="news-section pt-100 pb-70 bg-off-white">
+          <div className="container">
+            <div className="section-title section-title-lg">
+              <small>Tips & Guides</small>
+              <h2>
+                Latest Articles & Updates <br /> About Receipts & Invoices
+              </h2>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="blog-card">
+                  <div className="blog-card-image">
+                    <a href="single-blog.html">
+                      <img src="/images/blogs/blog-1.jpg" alt="receipt tips" />
+                    </a>
+                  </div>
+                  <div className="blog-card-text">
+                    <div className="blog-category">
+                      <i className="bi bi-file-earmark-text me-1" /> Receipt Design
+                    </div>
+                    <h3>
+                      <a href="single-blog.html">
+                        5 Expert Tips to Create a Professional Receipt That Builds Trust
+                      </a>
+                    </h3>
+                    <div className="blog-card-entry">
+                      <div className="blog-entry-thumb">
+                        <img src="/images/blogs/blog-author-1.jpg" alt="author" />
                       </div>
-                    </section>
-
-                    {/* News-section */}
-                    {/* Newsletter-section */}
-
-                    {/* Newsletter-section */}
-                  </>
+                      <div className="blog-entry-text">
+                        <h4>
+                          By: <strong>Emily Stone</strong>
+                        </h4>
+                        <p>5 January 2024</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                )
+              </div>
+
+              <div className="col-md-6 col-lg-4 pb-30">
+                <div className="blog-card">
+                  <div className="blog-card-image">
+                    <a href="single-blog.html">
+                      <img src="/images/blogs/blog-2.jpg" alt="invoice automation" />
+                    </a>
+                  </div>
+                  <div className="blog-card-text">
+                    <div className="blog-category">
+                      <i className="bi bi-gear me-1" /> Automation
+                    </div>
+                    <h3>
+                      <a href="single-blog.html">
+                        How Automated Invoices Can Save Time and Boost Efficiency
+                      </a>
+                    </h3>
+                    <div className="blog-card-entry">
+                      <div className="blog-entry-thumb">
+                        <img src="/images/blogs/blog-author-2.jpg" alt="author" />
+                      </div>
+                      <div className="blog-entry-text">
+                        <h4>
+                          By: <strong>Michael Ray</strong>
+                        </h4>
+                        <p>4 January 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-0 pb-30">
+                <div className="blog-card">
+                  <div className="blog-card-image">
+                    <a href="single-blog.html">
+                      <img src="/images/blogs/blog-3.jpg" alt="invoice security" />
+                    </a>
+                  </div>
+                  <div className="blog-card-text">
+                    <div className="blog-category">
+                      <i className="bi bi-shield-lock me-1" /> Security
+                    </div>
+                    <h3>
+                      <a href="single-blog.html">
+                        Keeping Your Invoices Safe: Security Tips for Your Documents
+                      </a>
+                    </h3>
+                    <div className="blog-card-entry">
+                      <div className="blog-entry-thumb">
+                        <img src="/images/blogs/blog-author-3.jpg" alt="author" />
+                      </div>
+                      <div className="blog-entry-text">
+                        <h4>
+                          By: <strong>Linda Mark</strong>
+                        </h4>
+                        <p>3 January 2024</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* News-section */}
+        {/* Newsletter-section */}
+
+        {/* Newsletter-section */}
+      </>
+    </div>
+  )
 }
 
-                export default Home
+export default Home
