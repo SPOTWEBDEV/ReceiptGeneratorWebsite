@@ -10,11 +10,11 @@ export const ClientNav = () => {
                                     <ul className="topbar-list">
                                         <li>
                                             <i className="icofont-headphone"></i>
-                                            <a href="tel:+234 08108833188">+234 08108833188</a>
+                                            <a href="tel:+234 08108833188">+234 810 8833 188</a>
                                         </li>
                                         <li>
                                             <i className="icofont-ui-message"></i>
-                                            <a href="/cdn-cgi/l/email-protection#99f0f7fff6d9fcebecfdfce1b7faf6f4"><span className="__cf_email__" data-cfemail="355c5b535a7550474051504d1b565a58">[email&#160;protected]</span></a>
+                                            <a href=""><span className="" >spotwebdev.com@gmail.com</span></a>
                                         </li>
                                     </ul>
                                 </div>
