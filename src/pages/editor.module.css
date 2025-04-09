@@ -1,17 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Fira Code', monospace;
-    font-size: 14px;
-    background-color: #f8fafc;
-    color: #333;
-}
-
-nav {
+.nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -28,12 +15,12 @@ nav h1 {
     display: flex;
 }
 
-.button-groups {
+.button_groups {
     display: flex;
     gap: 10px;
 }
 
-.button-groups button {
+.button {
     padding: 5px 20px;
     text-transform: capitalize;
     border-radius: 7px;
@@ -76,9 +63,7 @@ nav h1 {
     gap: 20px;
 }
 
-/* .form-editor{
-    width: 400px;
-} */
+
 
 
 
@@ -92,14 +77,14 @@ nav h1 {
     white-space: pre-wrap;
 }
 
-.editor h3 {
+.editor_h3{
     font-size: 16px;
     color: #555;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-code {
+.code {
     color: #111;
     font-family: 'Fira Code', monospace;
 }
