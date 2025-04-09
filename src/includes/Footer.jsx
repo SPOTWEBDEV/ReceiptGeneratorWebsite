@@ -4,7 +4,7 @@ export const ClientFooter = () => {
   return (
     <>
       <footer className="bg-off-white footer">
-       
+
         <div className="footer-upper pt-100 pb-80 position-relative">
           <div className="container">
             <div className="row">
@@ -14,8 +14,9 @@ export const ClientFooter = () => {
                     <a href="index.html"><img src="/images/logo.png" alt="logo" /></a>
                   </div> */}
                   <div className="footer-details">
-                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                    <p>Effortlessly create and manage your receipts and invoices with our easy-to-use online generator. Stay organized, save time, and enjoy seamless transactions. Your receipts, your way, anytime, anywhere.</p>
                   </div>
+
                 </div>
               </div>
               <div className="col-sm-6 col-md-6 col-lg-3">
@@ -24,12 +25,17 @@ export const ClientFooter = () => {
                     <h3>Useful Links</h3>
                   </div>
                   <ul className="footer-details footer-list">
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="blogs-without-right-sidebar.html">News & Blogs</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="pricing.html">Our Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/teams">Teams</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/example">Example</a></li>
+                    <li><a href="/terms">Terms & Services </a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/register">Register </a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/forget-password">Forget Password </a></li>
+
                   </ul>
                 </div>
               </div>
@@ -69,7 +75,7 @@ export const ClientFooter = () => {
                     <div className="footer-address-item">
                       <div className="footer-address-text">
                         <h4>Address:</h4>
-                        <p>214, Queens 4th cross, NY</p>
+                        <p></p>
                       </div>
                     </div>
                   </div>
@@ -81,7 +87,7 @@ export const ClientFooter = () => {
         <div className="footer-lower bg-blue position-relative">
           <div className="container">
             <div className="footer-copyright-text footer-copyright-text-white">
-              <p>© SPOTWEBDEV is Proudly Owned by <a href="https://mywebsite-firstclass.vercel.app/" target="_blank">SPOTWEBDEV</a></p>
+              <p>© SmartInvoiceX is Proudly Owned by <a href="https://mywebsite-firstclass.vercel.app/" target="_blank">SPOTWEBDEV</a></p>
             </div>
           </div>
         </div>
