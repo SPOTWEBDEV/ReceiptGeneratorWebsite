@@ -1,46 +1,46 @@
 import React from 'react'
 
 export const Box_Stats = ({ title, count, highlighted }) => {
-         return (
-                  <>
-                           <div className={`stat-box ${highlighted && 'highlighted'}`}>
-                                    <div className="stat-number">{count}</div>
-                                    <div className="stat-text stat-text">{title}</div>
-                           </div>
-                  </>
-         )
+    return (
+        <>
+            <div className={`stat-box ${highlighted && 'highlighted'}`}>
+                <div className="stat-number">{count}</div>
+                <div className="stat-text stat-text">{title}</div>
+            </div>
+        </>
+    )
 }
 
 export const Box_Testimonial = ({ name, text, star = 4 }) => {
-         return (
-                  <>
+    return (
+        <>
 
-                           <div className="testimonial">
-                                    <h3>{name}</h3>
-                                    <p>"{text}"</p>
-                                    <div className="stars">{createStar(star)}</div>
-                           </div>
+            <div className="testimonial">
+                <h3>{name}</h3>
+                <p>"{text}"</p>
+                <div className="stars">{createStar(star)}</div>
+            </div>
 
-                  </>
-         )
+        </>
+    )
 }
 
 
-export const TeamCard = ({name, occupation,bio})=>{
+export const TeamCard = ({ name, occupation, bio, image, positionStyle }) => {
     return (
         <>
-           <div className="col-12 col-md-6 col-lg-4 pb-30">
-                            <div className="team-card">
-                                <div className="team-card-thumb">
-                                    <img src="/images/team/team-2.jpg" alt="team" />
-                                </div>
-                                <div className="team-card-content">
-                                    <h3>{name}</h3>
-                                    <h4>{occupation}</h4>
-                                    <p>{bio}</p>
-                                </div>
-                            </div>
-                        </div>
+            <div className="col-12 col-md-6 col-lg-4 pb-30">
+                <div className="team-card">
+                    <div className="team-card-thumb">
+                        <img style={{ height: '300px', width: '100%', objectFit: 'cover', objectPosition: positionStyle }} src={image} alt="team" />
+                    </div>
+                    <div className="team-card-content">
+                        <h3>{name}</h3>
+                        <h4>{occupation}</h4>
+                        <p>{bio}</p>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
@@ -50,16 +50,16 @@ export const TeamCard = ({name, occupation,bio})=>{
 
 
 function createStar(starNumber) {
-         let html = '';
-         for (let i = 0; i < starNumber; i++) {
-                  html += '★'
-         }
-         if(html.length != 5){
-                  let remain = 5 - html.length;
-                  for (let i = 0; i < remain; i++) {
-                           html += '☆'
-                  }  
-         }
-         return html
+    let html = '';
+    for (let i = 0; i < starNumber; i++) {
+        html += '★'
+    }
+    if (html.length != 5) {
+        let remain = 5 - html.length;
+        for (let i = 0; i < remain; i++) {
+            html += '☆'
+        }
+    }
+    return html
 }
 

@@ -348,7 +348,7 @@ const Home = () => {
               <div className="col-md-6 col-lg-4 pb-30">
                 <div className="blog-card">
                   <div className="blog-card-image">
-                    <a href="single-blog.html">
+                    <a href="#">
                       <img src="/images/blogs/blog-1.jpg" alt="receipt tips" />
                     </a>
                   </div>
@@ -357,7 +357,7 @@ const Home = () => {
                       <i className="bi bi-file-earmark-text me-1" /> Receipt Design
                     </div>
                     <h3>
-                      <a href="single-blog.html">
+                      <a href="#">
                         5 Expert Tips to Create a Professional Receipt That Builds Trust
                       </a>
                     </h3>
@@ -379,7 +379,7 @@ const Home = () => {
               <div className="col-md-6 col-lg-4 pb-30">
                 <div className="blog-card">
                   <div className="blog-card-image">
-                    <a href="single-blog.html">
+                    <a href="#">
                       <img src="/images/blogs/blog-2.jpg" alt="invoice automation" />
                     </a>
                   </div>
@@ -388,7 +388,7 @@ const Home = () => {
                       <i className="bi bi-gear me-1" /> Automation
                     </div>
                     <h3>
-                      <a href="single-blog.html">
+                      <a href="#">
                         How Automated Invoices Can Save Time and Boost Efficiency
                       </a>
                     </h3>
@@ -410,7 +410,7 @@ const Home = () => {
               <div className="col-md-6 col-lg-4 offset-md-3 offset-lg-0 pb-30">
                 <div className="blog-card">
                   <div className="blog-card-image">
-                    <a href="single-blog.html">
+                    <a href="#">
                       <img src="/images/blogs/blog-3.jpg" alt="invoice security" />
                     </a>
                   </div>
@@ -419,7 +419,7 @@ const Home = () => {
                       <i className="bi bi-shield-lock me-1" /> Security
                     </div>
                     <h3>
-                      <a href="single-blog.html">
+                      <a href="#">
                         Keeping Your Invoices Safe: Security Tips for Your Documents
                       </a>
                     </h3>

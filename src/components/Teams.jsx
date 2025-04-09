@@ -6,27 +6,42 @@ const teams = [
     {
         id:1,
         name: 'Ezea ugochukwu Micheal',
-        occupation:'Software Engineering',
+        occupation:'Software Engineering and CEO of SPOTWEBDEV',
         bio: '',
-        image:'',
+        image: '/images/team/4.jpg',
+        positionStyle:'bottom'
     },
     {
         id:2,
-        name: 'Repented',
-        occupation:'Web Developer',
-        bio: ''
+        name: 'Uchenna Godwill',
+        occupation:'FullStack Web Developer And Graphic Designer',
+        bio: '',
+        image: '/images/team/5.jpg',
+        positionStyle: 'center'
     },
     {
         id: 3,
         name: 'Chidiebere Divine',
         occupation: 'Backend Developer',
-        bio: ''
+        bio: '',
+        image: '/images/team/1.jpg',
+        positionStyle: 'center'
     },
     {
         id: 3,
         name: 'Somto Ogbodo',
         occupation: 'Frontend Developer And Editor',
-        bio: ''
+        bio: '',
+        image: '/images/team/2.jpg',
+        positionStyle: 'bottom'
+    },
+    {
+        id: 4,
+        name: 'Emmanuel Btc',
+        occupation: 'Graphic Designer And UI/UX Designer',
+        bio: '',
+        image: '/images/team/3.jpg',
+        positionStyle: 'bottom'
     }
 ]
 
