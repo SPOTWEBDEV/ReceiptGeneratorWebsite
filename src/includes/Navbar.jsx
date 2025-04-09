@@ -10,7 +10,7 @@ export const ClientNav = () => {
                                     <ul className="topbar-list">
                                         <li>
                                             <i className="icofont-headphone"></i>
-                                            <a href="tel:00321-654-98">+234 08108833188</a>
+                                            <a href="tel:+234 08108833188">+234 08108833188</a>
                                         </li>
                                         <li>
                                             <i className="icofont-ui-message"></i>
@@ -22,12 +22,9 @@ export const ClientNav = () => {
                                     <ul className="topbar-list">
                                         <li>
                                             <i className="icofont-paper-plane"></i>
-                                            <a href="contact.html">Request For Demo</a>
+                                            <a href="/contact">Request For Demo</a>
                                         </li>
-                                        <li className="search-option">
-                                            <i className="icofont-search-1"></i>
-                                            <a href="#" className="search-popup">Search</a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -68,30 +65,30 @@ export const ClientNav = () => {
                                 <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                     <ul className="navbar-nav mx-auto">
                                         <li className="nav-item">
-                                            <a href="#" className="nav-link">Home</a>
+                                            <a href="/" className="nav-link">Home</a>
                                            
                                         </li>
                                         <li className="nav-item">
-                                            <a href="#" className="nav-link ">Example</a>
+                                            <a href="/example" className="nav-link ">Example</a>
                                         
                                         </li>
                                         <li className="nav-item">
-                                        <a href="pricing.html" className="nav-link">Pricing</a>
+                                        <a href="/pricing" className="nav-link">Pricing</a>
                                         
                                         </li>
 
                                         <li className="nav-item"i>
-                                        <a href="our-team.html" className="nav-link active">Our Team</a>
+                                        <a href="/team" className="nav-link active">Our Team</a>
                                         </li>
                                        
                                         <li className="nav-item">
-                                            <a href="contact.html" className="nav-link">Contact</a>
+                                            <a href="/contact" className="nav-link">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="navbar-option">
                                     <div className="navbar-option-item">
-                                        <a href="authentication.html" className="btn main-btn">Login Or Register</a>
+                                        <a href="/authentication" className="btn main-btn">Login Or Register</a>
                                     </div>
                                 </div>
                             </nav>
