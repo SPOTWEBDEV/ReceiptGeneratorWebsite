@@ -5,7 +5,7 @@ import Testimonial from '../includes/Testimonial'
 
 import Feature from '../components/Feature'
 import { who_we_are } from '../data/siteInfo'
-import {about} from '../data/siteInfo'
+import { about } from '../data/siteInfo'
 
 const Home = () => {
   return (
@@ -42,7 +42,7 @@ const Home = () => {
 
         {/* Header */}
         {/* Feature-section */}
-        <section className="feature-section pt-min-100 pb-70">
+        {/* <section className="feature-section pt-min-100 pb-70">
           <div className="container">
             <div className="section-title section-title-lg">
               <h2>
@@ -83,42 +83,6 @@ const Home = () => {
                     <div className="feature-card-body">
                       <p>
                         Receipt for previously issued invoices, showing payment received.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Donation Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Provides proof of donation for tax deductions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Refund Receipt</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Acknowledges return or refund of a purchase.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 pb-30">
-                  <div className="feature-card">
-                    <div className="feature-card-header">
-                      <span>Credit Memo</span>
-                    </div>
-                    <div className="feature-card-body">
-                      <p>
-                        Notification of a reduction in the amount due to the customer.
                       </p>
                     </div>
                   </div>
@@ -186,18 +150,127 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </section> */}
+
+        <section className="feature-section pt-min-100 pb-70">
+          <div className="container">
+            <div className="section-title section-title-lg text-center mb-5">
+              <h2>
+                Smart. Simple. Seamless. <br /> Everything You Need for Receipts & Invoices
+              </h2>
+            </div>
+            <div className="row g-4">
+              {/* Sales Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Sales Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Confirmation of payment for a product or service.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Payment Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Payment Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Acknowledges payments made toward a bill or service.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Invoice Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Invoice Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Receipt for previously issued invoices, showing payment received.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cash Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Cash Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>A receipt for cash payments.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Electronic Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Electronic Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Digital version of a receipt, often sent via email.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Gift Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Gift Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>A receipt for a gift, typically without the price.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Travel Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Travel Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Receipt for travel expenses like accommodation or transportation.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Service Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
+                <div className="feature-card flex-fill">
+                  <div className="feature-card-header">
+                    <span>Service Receipt</span>
+                  </div>
+                  <div className="feature-card-body">
+                    <p>Proof of payment for services rendered.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </section>
+
 
 
 
         {/* Feature-section */}
         {/* About-section */}
 
-        {who_we_are.map(item => <Feature key={item.id} {...item} /> )}
+        {who_we_are.map(item => <Feature key={item.id} {...item} />)}
 
         {about.map(item => <Feature key={item.id} {...item} />)}
-        
-        
+
+
 
 
         {/* About-section */}
@@ -350,60 +423,66 @@ const Home = () => {
         {/* Trial-section */}
         {/* Process-section */}
 
+
+
         <section className="process-section pt-100 pb-70 bg-off-white">
           <div className="container">
-            <div className="section-title section-title-lg">
-              <small>Our Process</small>
-              <h2>How You Can Easily Generate Receipts and Invoices</h2>
-            </div>
-            <div className="process-content">
-              <div className="process-content-line" />
-              <div className="row justify-content-center" data-duration={900}>
-                <div className="col-sm-6 col-lg-4 pb-30">
-                  <div className="process-item process-item-center border">
-                    <div className="process-thumb">
-                      <i className="bi bi-pencil-square fs-1 text-primary" />
-                    </div>
-                    <div className="process-text">
-                      <h3>Customize Details</h3>
-                      <p>
-                        Enter your business name, client details, items, and prices using our smart editor.
-                      </p>
-                    </div>
+            <div className="row g-4">
+              {/* Register & Login */}
+              <div className="col-sm-6 col-lg-4 d-flex">
+                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
+                  <div>
+                    <i className="bi bi-person-check fs-1 text-primary" />
+                  </div>
+                  <div className="process-text mt-auto">
+                    <h3>Register & Login</h3>
+                    <p>
+                      Create an account or sign in to start generating your receipts.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className="col-sm-6 col-lg-4 pb-30">
-                  <div className="process-item process-item-center border">
-                    <div className="process-thumb">
-                      <i className="bi bi-layout-text-window fs-1 text-success" />
-                    </div>
-                    <div className="process-text">
-                      <h3>Design & Preview</h3>
-                      <p>
-                        Choose from modern templates and preview your receipt or invoice instantly before saving.
-                      </p>
-                    </div>
+              {/* Customize & Preview */}
+              <div className="col-sm-6 col-lg-4 d-flex">
+                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
+                  <div>
+                    <i className="bi bi-ui-checks-grid fs-1 text-success" />
+                  </div>
+                  <div className="process-text mt-auto">
+                    <h3>Customize & Preview</h3>
+                    <p>
+                      Enter your business and client info, add items and pricing, then instantly preview your receipt with modern templates.
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                <div className="col-sm-6 col-lg-4 pb-30">
-                  <div className="process-item process-item-center border">
-                    <div className="process-thumb">
-                      <i className="bi bi-file-earmark-arrow-down fs-1 text-danger" />
-                    </div>
-                    <div className="process-text">
-                      <h3>Download or Share</h3>
-                      <p>
-                        Export your document as PDF or share it via email or direct link with one click.
-                      </p>
-                    </div>
+              {/* Download or Share */}
+              <div className="col-sm-6 col-lg-4 d-flex">
+                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
+                  <div>
+                    <i className="bi bi-download fs-1 text-danger" />
+                  </div>
+                  <div className="process-text mt-auto">
+                    <h3>Download or Share</h3>
+                    <p>
+                      Instantly download your receipt as PDF or share it with your client directly through email or link.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+
+
+
+
+
+
+
 
 
 
