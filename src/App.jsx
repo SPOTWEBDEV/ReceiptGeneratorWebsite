@@ -5,13 +5,14 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Example from "./pages/Example";
 import Error404 from "./pages/ErrorPage/404";
-import Editor from "./pages/Editor";
+import Editor from './pages/editor/Editor'
 import Register from "./pages/clients/Register";
 import Login from "./pages/clients/Login";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ForgetPassword from "./pages/clients/ForgetPassword";
 import BlogDetails from "./pages/BlogDetails";
+import Template from "./pages/template";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         <Route path="/editor" element={<Editor />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+
+
+        <Route path="/template" element={<Template />} />
         
       </Routes>
     </BrowserRouter>

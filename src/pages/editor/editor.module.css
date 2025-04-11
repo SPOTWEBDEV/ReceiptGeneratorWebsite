@@ -7,7 +7,7 @@
     background-color: #1f12fd;
 }
 
-nav h1 {
+.nav_h1 {
     color: white;
 }
 
@@ -84,7 +84,7 @@ nav h1 {
     font-weight: bold;
 }
 
-.code {
+.form {
     color: #111;
     font-family: 'Fira Code', monospace;
 }

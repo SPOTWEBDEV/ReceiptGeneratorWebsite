@@ -1,165 +1,347 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from 'react'
+import './template.css'
 
-         <head>
-                  <meta charset="UTF-8" />
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                  <title>Receipts</title>
-                  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-                           rel="stylesheet" />
-                  <style>
-                           body {
-                                    font-family: 'Poppins', sans-serif;
-                                    margin: 0;
-                                    padding: 20px;
-                                    background: #f4f4f4;
-                           }
+const Template = () => {
+  return (
+    <>
 
-                           .receipt-container {
-                                    display: grid;
-                                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                                    gap: 20px;
-                           }
+      <div className="cs-container">
+        <div className="cs-invoice cs-style1">
+          <div className="cs-invoice_in" id="download_section">
+            <div className="cs-invoice_head cs-type1 cs-mb25">
+              <div className="cs-invoice_left">
+                <p className="cs-invoice_number cs-primary_color cs-mb0 cs-f16"><b
+                  className="cs-primary_color">Invoice No:</b> #SM75692</p>
+              </div>
+              <div className="cs-invoice_right cs-text_right">
+                <div className="cs-logo cs-mb5"><img style="width:100px;height:100px"
+                  id="previewImage"
+                  src="http://localhost/EvilFraudIntel/evil/sitelogo.png"
+                  alt="Logo" /></div>
+              </div>
+            </div>
+            <div className="cs-invoice_head cs-mb10">
+              <div className="cs-invoice_left">
+                <b className="cs-primary_color">Invoice To:</b>
+                <p>
+                  Jennifer Richards <br />
+                  365 Bloor Street East, Toronto, <br />Ontario, M4W 3L4, <br />
+                  Canada
+                </p>
 
-                           .receipt {
-                                    background: white;
-                                    border: 1px solid #ddd;
-                                    border-radius: 10px;
-                                    padding: 20px;
-                                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-                           }
+                <div className="cs-invoice_right cs-text_right">
+                  <b className="cs-primary_color">Pay To:</b>
+                  <p>
+                    Theme March <br />
+                    237 Roanoke Road, North York, <br />
+                    Ontario, Canada <br />
+                    demo@email.com
+                  </p>
 
-                           .receipt h2 {
-                                    margin-top: 0;
-                                    font-size: 1.2em;
-                                    color: #333;
-                           }
 
-                           .receipt p {
-                                    margin: 5px 0;
-                                    color: #555;
-                           }
-
-                           .receipt .amount {
-                                    font-weight: bold;
-                                    color: #2d9cdb;
-                                    font-size: 1.1em;
-                           }
-
-                           .receipt .footer {
-                                    border-top: 1px dashed #ccc;
-                                    margin-top: 15px;
-                                    padding-top: 10px;
-                                    font-size: 0.9em;
-                                    color: #999;
-                           }
-                  </style>
-         </head>
-
-         <style>
-                  p{
-                           flex-direction: row-reverse;
-                  }
-         </style>
-
-         <body>
-
-                  <h1 style="text-align:center; color:#333;">Receipts & Invoices</h1>
-
-                  <div class="receipt-container">
-
-                           <div class="receipt">
-                                    <h2>Medical Invoice</h2>
-                                    <p>Patient Name: John Doe</p>
-                                    <p>Service: Consultation + Lab Tests</p>
-                                    <p>Date: 2025-04-08</p>
-                                    <p class="amount">Amount: $120.00</p>
-                                    <div class="footer">HealthCare Clinic, City Hospital</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>School Fees Receipt</h2>
-                                    <p>Student: Jane Smith</p>
-                                    <p>Class: Grade 8</p>
-                                    <p>Date: 2025-04-08</p>
-                                    <p class="amount">Amount: $450.00</p>
-                                    <div class="footer">Greenfield International School</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>Shopping Invoice</h2>
-                                    <p>Customer: Mike Daniels</p>
-                                    <p>Items: Groceries + Electronics</p>
-                                    <p>Date: 2025-04-08</p>
-                                    <p class="amount">Amount: $230.75</p>
-                                    <div class="footer">SuperMart Mall</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>Travel Booking</h2>
-                                    <p>Passenger: Olivia King</p>
-                                    <p>Route: NYC to LA</p>
-                                    <p>Date: 2025-04-08</p>
-                                    <p class="amount">Amount: $320.00</p>
-                                    <div class="footer">SkyHigh Travels</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>House Rent Receipt</h2>
-                                    <p>Tenant: Eric Wallace</p>
-                                    <p>Apartment: 2BHK, 12th Avenue</p>
-                                    <p>Month: April 2025</p>
-                                    <p class="amount">Amount: $750.00</p>
-                                    <div class="footer">Downtown Property Managers</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>Electricity Bill</h2>
-                                    <p>Account: 2938174032</p>
-                                    <p>Month: April 2025</p>
-                                    <p>Units Used: 175 kWh</p>
-                                    <p class="amount">Amount: $85.20</p>
-                                    <div class="footer">City Power Supply Co.</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>Water Bill</h2>
-                                    <p>Account: 8392011</p>
-                                    <p>Month: April 2025</p>
-                                    <p>Usage: 2500 L</p>
-                                    <p class="amount">Amount: $28.00</p>
-                                    <div class="footer">PureDrop Water Board</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>Internet Bill</h2>
-                                    <p>Customer: Sarah Green</p>
-                                    <p>Plan: Unlimited Fiber</p>
-                                    <p>Month: April 2025</p>
-                                    <p class="amount">Amount: $60.00</p>
-                                    <div class="footer">SpeedNet Broadband</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>Gas Bill</h2>
-                                    <p>Account: 47400291</p>
-                                    <p>Month: April 2025</p>
-                                    <p>Usage: 110 m³</p>
-                                    <p class="amount">Amount: $45.90</p>
-                                    <div class="footer">National Gas Ltd</div>
-                           </div>
-
-                           <div class="receipt">
-                                    <h2>Tuition Support Invoice</h2>
-                                    <p>Beneficiary: Clara Joseph</p>
-                                    <p>Support: Semester 1 Fees</p>
-                                    <p>Date: 2025-04-08</p>
-                                    <p class="amount">Amount: $1,200.00</p>
-                                    <div class="footer">Bright Future Foundation</div>
-                           </div>
-
+                  <div className="cs-table cs-style1">
+                    <div className="cs-round_border">
+                      <div className="cs-table_responsive">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th className="cs-width_6 cs-semi_bold cs-primary_color cs-focus_bg cs-f16"
+                                colspan="2">
+                                Passenger
+                                &
+                                Ticket
+                                Information
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td
+                                className="cs-width_6">
+                                <b
+                                  className="cs-primary_color">Passenger
+                                  Name:
+                                </b>Jennifer
+                                Richards
+                              </td>
+                              <td
+                                className="cs-width_6">
+                                <b
+                                  className="cs-primary_color">Ticket
+                                  Number:
+                                </b>#SM75692
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                className="cs-width_6">
+                                <b
+                                  className="cs-primary_color">Issued
+                                  By
+                                  Date:
+                                </b>05
+                                Feb
+                                2022
+                              </td>
+                              <td
+                                className="cs-width_6">
+                                <b
+                                  className="cs-primary_color">Booking
+                                  Reference:
+                                </b>HC76SW
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th className="cs-semi_bold cs-primary_color cs-focus_bg cs-f16 cs-border_top"
+                                colspan="4">
+                                Payment
+                                Information
+                              </th>
+                            </tr>
+                            <tr>
+                              <td
+                                className="cs-width_3 cs-primary_color cs-semi_bold">
+                                Payment
+                                Gatway
+                              </td>
+                              <td
+                                className="cs-width_3 cs-primary_color cs-semi_bold">
+                                Date
+                              </td>
+                              <td
+                                className="cs-width_3 cs-primary_color cs-semi_bold">
+                                Transaction
+                                ID
+                              </td>
+                              <td
+                                className="cs-width_3 cs-primary_color cs-semi_bold cs-text_right">
+                                Total
+                                Amount
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td
+                                className="cs-width_3">
+                                American
+                                Express
+                              </td>
+                              <td
+                                className="cs-width_3">
+                                25
+                                Feb
+                                2022
+                              </td>
+                              <td
+                                className="cs-width_3">
+                                SI2534687
+                              </td>
+                              <td
+                                className="cs-width_3 cs-text_right">
+                                $2440
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th className="cs-width_6 cs-semi_bold cs-primary_color cs-focus_bg cs-f16 cs-border_top"
+                                colspan="5">
+                                Travel
+                                Information
+                              </th>
+                            </tr>
+                            <tr
+                              className=" cs-border_top">
+                              <th
+                                className="cs-width_5 cs-semi_bold cs-primary_color">
+                                Flight
+                                Details
+                              </th>
+                              <th
+                                className="cs-width_2 cs-semi_bold cs-primary_color">
+                                Class
+                              </th>
+                              <th
+                                className="cs-width_2 cs-semi_bold cs-primary_color">
+                                Base
+                                Fare
+                              </th>
+                              <th
+                                className="cs-width_1 cs-semi_bold cs-primary_color">
+                                Taxes
+                              </th>
+                              <th
+                                className="cs-width_2 cs-text_right cs-semi_bold cs-primary_color">
+                                Total
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td
+                                className="cs-width_5">
+                                Air
+                                canada
+                                1S-2539
+                                Toronto-
+                                New
+                                York
+                                <br />
+                                Date:
+                                25
+                                Feb
+                                2022,
+                                Sat
+                                8:30AM
+                              </td>
+                              <td
+                                className="cs-width_2">
+                                Business
+                                <br />Seat
+                              </td>
+                              <td
+                                className="cs-width_2">
+                                $560
+                              </td>
+                              <td
+                                className="cs-width_1">
+                                0
+                              </td>
+                              <td
+                                className="cs-width_2 cs-text_right">
+                                $560
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                className="cs-width_5">
+                                Air
+                                canada
+                                1S-2539
+                                Toronto-
+                                New
+                                York
+                                <br />
+                                Date:
+                                25
+                                Feb
+                                2022,
+                                Sat
+                                8:30AM
+                              </td>
+                              <td
+                                className="cs-width_2">
+                                Economy
+                                <br />Seat
+                              </td>
+                              <td
+                                className="cs-width_2">
+                                $860
+                              </td>
+                              <td
+                                className="cs-width_1">
+                                0
+                              </td>
+                              <td
+                                className="cs-width_2 cs-text_right">
+                                $860
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div
+                        className="cs-invoice_footer cs-border_top">
+                        <div
+                          className="cs-left_footer cs-mobile_hide">
+                        </div>
+                        <div className="cs-right_footer">
+                          <table>
+                            <tbody>
+                              <tr
+                                className="cs-border_left">
+                                <td
+                                  className="cs-width_3 cs-semi_bold cs-primary_color cs-focus_bg">
+                                  Subtoal
+                                </td>
+                                <td
+                                  className="cs-width_3 cs-semi_bold cs-primary_color cs-focus_bg cs-primary_color cs-text_right">
+                                  $1420
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="cs-invoice_footer">
+                      <div className="cs-left_footer cs-mobile_hide">
+                      </div>
+                      <div className="cs-right_footer">
+                        <table>
+                          <tbody>
+                            <tr
+                              className="cs-border_none">
+                              <td
+                                className="cs-width_3 cs-border_top_0 cs-bold cs-f16 cs-primary_color">
+                                Total
+                                Amount
+                              </td>
+                              <td
+                                className="cs-width_3 cs-border_top_0 cs-bold cs-f16 cs-primary_color cs-text_right">
+                                $1420
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
+                  <div className="cs-note">
+                    <div className="cs-note_left">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        className="ionicon"
+                        viewBox="0 0 512 512">
+                        <path d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linejoin="round"
+                          stroke-width="32" />
+                        <path d="M256 56v120a32 32 0 0032 32h120M176 288h160M176 368h160"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="32" />
+                      </svg>
+                    </div>
+                    <div className="cs-note_right">
+                      <p className="cs-mb0"><b
+                        className="cs-primary_color cs-bold">Note:</b>
+                      </p>
+                      <p className="cs-m0">Here we can write a
+                        additional notes for the client to get
+                        a better understanding of this invoice.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-         </body>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</html>
+
+    </>
+  )
+
+}
