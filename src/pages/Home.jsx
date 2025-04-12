@@ -44,6 +44,58 @@ const Home = () => {
         </header>
 
         {/* Header */}
+
+
+        <section className="process-section pt-100 pb-70 bg-off-white">
+          <div className="container">
+            <div className="row g-4">
+              {/* Register & Login */}
+              <div className="col-sm-6 col-lg-4 d-flex">
+                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
+                  <div>
+                    <i className="bi bi-person-check fs-1 text-primary" />
+                  </div>
+                  <div className="process-text mt-auto">
+                    <h3>Register & Login</h3>
+                    <p>
+                      Create an account or sign in to start generating your receipts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Customize & Preview */}
+              <div className="col-sm-6 col-lg-4 d-flex">
+                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
+                  <div>
+                    <i className="bi bi-ui-checks-grid fs-1 text-success" />
+                  </div>
+                  <div className="process-text mt-auto">
+                    <h3>Customize & Preview</h3>
+                    <p>
+                      Enter your business and client info, add items and pricing, then instantly preview your receipt with modern templates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Download or Share */}
+              <div className="col-sm-6 col-lg-4 d-flex">
+                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
+                  <div>
+                    <i className="bi bi-download fs-1 text-danger" />
+                  </div>
+                  <div className="process-text mt-auto">
+                    <h3>Download or Share</h3>
+                    <p>
+                      Instantly download your receipt as PDF or share it with your client directly through email or link.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Feature-section */}
 
 
@@ -51,12 +103,12 @@ const Home = () => {
           <div className="container">
             <div className="section-title section-title-lg text-center mb-5">
               <h2>
-                Smart. Simple. Seamless. <br /> Everything You Need for Receipts & Invoices
+                All Types of Receipts & Invoices<br />Create, Customize & Download in Seconds
               </h2>
             </div>
             <div className="row g-4">
-               {/* Travel Receipt */}
-               <div className="col-md-6 col-lg-3 d-flex">
+              {/* Travel Receipt */}
+              <div className="col-md-6 col-lg-3 d-flex">
                 <div className="feature-card flex-fill">
                   <div className="feature-card-header">
                     <span>Travel Receipt</span>
@@ -66,7 +118,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Service Receipt */}
               <div className="col-md-6 col-lg-3 d-flex">
                 <div className="feature-card flex-fill">
@@ -150,10 +202,6 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
-             
-
-
             </div>
           </div>
         </section>
@@ -161,14 +209,12 @@ const Home = () => {
 
 
 
+
         {/* Feature-section */}
         {/* About-section */}
 
-        {who_we_are.map(item => <Feature key={item.id} {...item} />)}
 
         {about.map(item => <Feature key={item.id} {...item} />)}
-
-
 
 
         {/* About-section */}
@@ -195,12 +241,12 @@ const Home = () => {
                     <p>
                       Let our robot-powered tool auto-fill and generate receipts for any transaction — fast, smart, and paperless.
                     </p>
-                  
+
                   </div>
                 </div>
               </div>
 
-            
+
 
               <div className="col-md-6 col-lg-4 pb-30">
                 <div className="service-card">
@@ -212,14 +258,14 @@ const Home = () => {
                     <p>
                       Our intelligent builder processes your data and formats beautiful, professional invoices with zero hassle.
                     </p>
-                  
+
                   </div>
                 </div>
               </div>
 
-            
 
-        
+
+
 
               <div className="col-md-6 col-lg-4 pb-30">
                 <div className="service-card">
@@ -231,13 +277,17 @@ const Home = () => {
                     <p>
                       All your receipts and invoices are locked and stored securely in encrypted PDF format with cloud access.
                     </p>
-                 
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+
+
+        {who_we_are.map(item => <Feature key={item.id} {...item} />)}
 
 
         {/* Service-section */}
@@ -269,59 +319,6 @@ const Home = () => {
 
         {/* Trial-section */}
         {/* Process-section */}
-
-
-
-        <section className="process-section pt-100 pb-70 bg-off-white">
-          <div className="container">
-            <div className="row g-4">
-              {/* Register & Login */}
-              <div className="col-sm-6 col-lg-4 d-flex">
-                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
-                  <div>
-                    <i className="bi bi-person-check fs-1 text-primary" />
-                  </div>
-                  <div className="process-text mt-auto">
-                    <h3>Register & Login</h3>
-                    <p>
-                      Create an account or sign in to start generating your receipts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Customize & Preview */}
-              <div className="col-sm-6 col-lg-4 d-flex">
-                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
-                  <div>
-                    <i className="bi bi-ui-checks-grid fs-1 text-success" />
-                  </div>
-                  <div className="process-text mt-auto">
-                    <h3>Customize & Preview</h3>
-                    <p>
-                      Enter your business and client info, add items and pricing, then instantly preview your receipt with modern templates.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Download or Share */}
-              <div className="col-sm-6 col-lg-4 d-flex">
-                <div className="process-item process-item-center border flex-fill d-flex flex-column text-center p-4">
-                  <div>
-                    <i className="bi bi-download fs-1 text-danger" />
-                  </div>
-                  <div className="process-text mt-auto">
-                    <h3>Download or Share</h3>
-                    <p>
-                      Instantly download your receipt as PDF or share it with your client directly through email or link.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
 
@@ -446,7 +443,7 @@ const Home = () => {
 
         {/* Newsletter-section */}
 
-        <ClientFooter/>
+        <ClientFooter />
       </>
     </div>
   )
