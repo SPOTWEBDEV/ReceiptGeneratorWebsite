@@ -51,10 +51,6 @@
 		Typography 2: 'Poppins', sans-serif;
 -------------------------------------------------------------------*/
 
-/*************** IMPORT FONTS ***************/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
 /*************** COLOR VARIABLE ***************/
 $main-color: #1f12fd;
 $main-color-dark: #1509d8;
@@ -80,7 +76,6 @@ $font-secondary: 'Poppins', sans-serif;
 
 /*************** DEFAULT CSS ***************/
 body {
-    font-family: $font-default;
     background-color: #fff;
     font-size: 16px;
     color: $placeholder;
@@ -216,7 +211,6 @@ a {
 h1, h2, h3, h4, h5, h6 {
     color: $text-color;
     font-weight: 600;
-    font-family: $font-secondary;
 }
 .fluid-height {
     height: calc(100% - 30px);
@@ -1141,7 +1135,7 @@ select {
                     padding-right: 15px;
                     font-size: 16px;
                     text-transform: none;
-                    font-family: $font-secondary;
+                    
                     font-weight: 500;
                     &.dropdown-toggle {
                         &:after {
@@ -4184,7 +4178,7 @@ select {
     span {
         font-size: 16px;
         font-weight: bold;
-        font-family: $font-secondary;
+        
         color: $text-color;
     }
 }
@@ -4686,7 +4680,7 @@ select {
         padding-left: 50px;
         padding-right: 50px;
         position: relative;
-        font-family: $font-secondary;
+        
         &:before {
             content: ":";
             position: absolute;

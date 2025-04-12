@@ -19,7 +19,7 @@ const Editor = () => {
             <div className={editor.content}>
                 {sideBar && <div className={editor.sidebar}>
                     <div>
-                        <AccordionItem_invoiceType  className="AccordionItem" title="Payment Invoice" />
+                        <AccordionItem_invoiceType removeSide={setSideBar} className="AccordionItem" title="Payment Invoice" />
 
                     </div>
                 </div>}
