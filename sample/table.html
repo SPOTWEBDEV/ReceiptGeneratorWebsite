@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+         <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Document</title>
+         </head>
+
+         <body>
+                  <style>
+                           @font-face {
+                                    font-family: text;
+                                    src: url('../public/fonts/Poppins-Light.ttf');
+                           }
+
+                           * {
+                                    font-family: text;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                           }
+
+                           body {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                           }
+                           .container{
+                                width: 80%;    
+                           }
+
+                           table {
+                                     
+                                    text-align: center;
+                                    margin: 30px;
+                                    border: 2px solid;
+                                   width: 100% !important;
+                           }
+
+                           /* table css start */
+                           .table.white-space-nowrap {
+                                    white-space: nowrap;
+                           }
+
+                           .table.style--two {
+                                    
+                                    border-radius: 8px;
+                                    -webkit-border-radius: 8px;
+                                    -moz-border-radius: 8px;
+                                    -ms-border-radius: 8px;
+                                    -o-border-radius: 8px;
+                                    overflow: hidden;
+                                    box-shadow: 0 5px 5px 0 rgba(204, 163, 84, 0.25);
+                           }
+
+                           
+
+                           .table.style--two thead tr th {
+                                    border-top: none;
+                                    border-bottom: none;
+                                    color: #232323;
+                                    text-align: center;
+                                    padding: 10px 20px;
+                           }
+
+                           .table.style--two thead tr th:first-child {
+                                    text-align: left;
+                           }
+
+                           .table.style--two thead tr th:last-child {
+                                    text-align: right;
+                           }
+
+                           .table.style--two tr th,
+                           .table.style--two tr td {
+                                    font-size: 14px;
+                                    border-top-color: rgba(204, 163, 84, 0.25);
+                           }
+
+                           .table.style--two tbody tr td {
+                                    text-align: center;
+                                    color: #232323;
+                                    padding: 15px 20px;
+                                    vertical-align: middle;
+                                    font-size: 15px;
+                           }
+
+                           .table.style--two tbody tr td:first-child {
+                                    text-align: left;
+                           }
+
+                           .table.style--two tbody tr td:last-child {
+                                    text-align: right;
+                           }
+
+                           .table.style--two tbody tr:first-child td {
+                                    border-top: none;
+                           }
+
+                           .table .user {
+                                    display: flex;
+                                    align-items: center;
+                           }
+
+                           .table .user .thumb {
+                                    width: 45px;
+                                    height: 45px;
+                                    border: 2px solid #3e3e3e;
+                                    overflow: hidden;
+                                    border-radius: 50%;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    -ms-border-radius: 50%;
+                                    -o-border-radius: 50%;
+                                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+                                    margin-right: 10px;
+                           }
+
+                           .table .user .thumb img {
+                                    width: inherit;
+                                    height: inherit;
+                           }
+
+                           
+
+                           .badge {
+                                    font-weight: 400;
+                                    padding: 4px 10px;
+                           }
+
+                           .icon-btn {
+                                    width: 30px;
+                                    height: 30px;
+                                    display: inline-block;
+                                    text-align: center;
+                                    line-height: 30px;
+                                    border-radius: 3px;
+                                    -webkit-border-radius: 3px;
+                                    -moz-border-radius: 3px;
+                                    -ms-border-radius: 3px;
+                                    -o-border-radius: 3px;
+                                    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+                                    font-size: 14px;
+                           }
+
+                           [data-label] {
+                                    position: relative;
+                           }
+
+                           [data-label]::before {
+                                    position: absolute;
+                                    content: attr(data-label);
+                                    font-weight: 700;
+                                    color: #232323;
+                                    top: 0;
+                                    left: 0;
+                                    padding: 13px 15px;
+                                    display: none;
+                                    font-size: 12px;
+                           }
+
+                           @media (max-width: 1199px) {
+                                    .table-responsive--lg thead {
+                                             display: none;
+                                    }
+
+                                    
+
+                                    .table-responsive--lg tr th,
+                                    .table-responsive--lg tr td {
+                                             display: block;
+                                             padding-left: 45% !important;
+                                             text-align: right !important;
+                                             border-top: 1px solid #3e3e3e !important;
+                                    }
+
+                                    .table-responsive--lg .user {
+                                             justify-content: flex-end;
+                                    }
+
+                                    .table-responsive--lg [data-label]::before {
+                                             display: block;
+                                    }
+                           }
+
+                           @media (max-width: 991px) {
+                                    .table-responsive--md thead {
+                                             display: none;
+                                    }
+
+                                    
+
+                                    .table-responsive--md tr th,
+                                    .table-responsive--md tr td {
+                                             display: block;
+                                             padding-left: 45% !important;
+                                             text-align: right !important;
+                                             border-top: 1px solid #3e3e3e !important;
+                                    }
+
+                                    .table-responsive--md .user {
+                                             justify-content: flex-end;
+                                    }
+
+                                    .table-responsive--md [data-label]::before {
+                                             display: block;
+                                    }
+                           }
+
+                           @media (max-width: 767px) {
+                                    .table-responsive--sm thead {
+                                             display: none;
+                                    }
+
+                                   
+
+                                    .table-responsive--sm tr th,
+                                    .table-responsive--sm tr td {
+                                             display: block;
+                                             padding-left: 45% !important;
+                                             text-align: right !important;
+                                             border-top: 1px solid #3e3e3e !important;
+                                    }
+
+                                    .table-responsive--sm .user {
+                                             justify-content: flex-end;
+                                    }
+
+                                    .table-responsive--sm [data-label]::before {
+                                             display: block;
+                                    }
+                           }
+
+                           @media (max-width: 575px) {
+                                    .table-responsive--xs thead {
+                                             display: none;
+                                    }
+
+                                    
+
+                                    .table-responsive--xs tr th,
+                                    .table-responsive--xs tr td {
+                                             display: block;
+                                             padding-left: 45% !important;
+                                             text-align: right !important;
+                                             border-top: 1px solid #3e3e3e !important;
+                                    }
+
+                                    .table-responsive--xs .user {
+                                             justify-content: flex-end;
+                                    }
+
+                                    .table-responsive--xs [data-label]::before {
+                                             display: block;
+                                    }
+                           }
+
+                           @media (max-width: 1199px) {
+
+                                    *[class*="table-responsive--"].data-label--none tr th,
+                                    *[class*="table-responsive--"].data-label--none tr td {
+                                             padding-left: .75rem;
+                                    }
+                           }
+                  </style>
+
+
+                  <div class="container">
+                           <div class="table-responsive--sm">
+                                    <table class="table style--two">
+                                             <thead>
+                                                      <tr>
+                                                               <th scope="col">Plan</th>
+                                                               <th scope="col">Return</th>
+                                                               <th scope="col">Received</th>
+                                                               <th scope="col">Next Payment</th>
+                                                               <!--<th scope="col"> Status</th>-->
+                                                      </tr>
+                                             </thead>
+                                             <tbody>
+                           
+                                                      <tr>
+                           
+                                                               <td data-label="#Trx">
+                           
+                                                                        <p class="mt-2">Basic</p>
+                                                               </td>
+                           
+                           
+                                                               <td data-label="Amount">
+                                                                        <p>400
+                                                                        </p>
+                                                               </td>
+                           
+                                                               <td data-label="#Trx">
+                           
+                           
+                           
+                           
+                                                                        <p class="mt-2">5900</p>
+                           
+                           
+                                                               </td>
+                           
+                           
+                           
+                                                               <td data-label="Status">
+                           
+                                                                        pending
+                           
+                                                               </td>
+                           
+                                                      </tr>
+                                             </tbody>
+                                    </table>
+                           
+                           
+                           </div>
+                  </div>
+
+         </body>
+
+</html>
