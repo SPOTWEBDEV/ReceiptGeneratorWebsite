@@ -10,7 +10,7 @@ const Contact = () => {
                     <div className="container">
                         <div className="section-title section-title-lg">
                             <small>Contact Information</small>
-                            <h2>Get in Touch to Streamline Your Business</h2>
+                            <h2>Get In Touch Today</h2>
                             <p>We're here to help you simplify your receipt and invoice processes. Whether you have a question or need assistance with our tools, feel free to reach out. Our team is ready to support your business needs and help you stay organized with ease.</p>
                         </div>
 
@@ -24,7 +24,7 @@ const Contact = () => {
                                                 <i className="icofont-ui-call"></i>
                                             </div>
                                             <div className="contact-info-header-text">
-                                                <h3>Make A Call</h3>
+                                                <h3>Message Us On Whatsapp</h3>
                                                 <p>Let’s Talk with our Experts</p>
                                             </div>
                                         </div>

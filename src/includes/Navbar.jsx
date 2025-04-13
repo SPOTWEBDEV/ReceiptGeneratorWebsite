@@ -78,7 +78,7 @@ export const ClientNav = () => {
                                         </li>
 
                                         <li className="nav-item">
-                                        <a href="/team" className="nav-link active">Our Team</a>
+                                        <a href="/teams" className="nav-link active">Our Team</a>
                                         </li>
                                        
                                         <li className="nav-item">
@@ -88,7 +88,7 @@ export const ClientNav = () => {
                                 </div>
                                 <div className="navbar-option">
                                     <div className="navbar-option-item">
-                                        <a href="/login" className="btn main-btn">Login Or Register</a>
+                                        <a href="/login" className="btn main-btn">LOGIN</a>
                                     </div>
                                 </div>
                             </nav>
