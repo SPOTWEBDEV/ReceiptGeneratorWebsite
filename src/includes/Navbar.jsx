@@ -78,7 +78,7 @@ export const ClientNav = () => {
                                         </li>
 
                                         <li className="nav-item">
-                                        <a href="/teams" className="nav-link active">Our Team</a>
+                                        <a href="/teams" className="nav-link ">Our Team</a>
                                         </li>
                                        
                                         <li className="nav-item">

@@ -16,10 +16,10 @@ const Login = () => {
                   <div className="authentication-form">
                     <form>
                       <div className="form-group mb-20">
-                        <input type="text" name="user" className="form-control" required placeholder="Username/Email Address*" />
+                        <input type="text" name="user" className="form-control" required placeholder="Email Address" />
                       </div>
                       <div className="form-group mb-20">
-                        <input type="password" name="email" className="form-control" required placeholder="Password*" />
+                        <input type="password" name="email" className="form-control" required placeholder="Password" />
                       </div>
                       <div className="authentication-account-access mb-20">
                         <div className="authentication-account-access-item">
@@ -30,7 +30,7 @@ const Login = () => {
                         </div>
                         <div className="authentication-account-access-item">
                           <div className="authentication-link">
-                            <a href="/forget-password">Forget password?</a>
+                            <a href="/forgot-password">Forget password?</a>
                           </div>
                         </div>
                       </div>

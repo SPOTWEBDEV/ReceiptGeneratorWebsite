@@ -34,7 +34,7 @@ export const ClientFooter = () => {
                     <li><a href="/privacy-policy">Privacy Policy</a></li>
                     <li><a href="/register">Register </a></li>
                     <li><a href="/login">Login</a></li>
-                    <li><a href="/forget-password">Forget Password </a></li>
+                    <li><a href="/forgot-password">Forget Password </a></li>
 
                   </ul>
                 </div>
