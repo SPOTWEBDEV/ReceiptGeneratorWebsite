@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   return (
     <Landing header="Privacy Policy">
       <div className="container py-4 mt-5 ">
-        <div className=" col-8 mx-auto">
+        <div className="col-8 mx-auto">
           <section>
             <h4 className="">1. Introduction</h4>
             <p>
