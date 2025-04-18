@@ -1,4 +1,19 @@
 import React from 'react'
+import editor from  '../pages/clients/editor/editor.module.css'
+
+
+export const BoxCard = ({title,image,button,text})=>{
+    return (
+     <>
+        <div className={editor.proCard}>
+            {image && <img className='w-100' src={image} />}
+            {title && <div className={editor.proTitle + ' mt-2'}>{title}</div>}
+            {text && <p>{text}</p>}
+            {button && <button className={editor.proBtn}>{button}</button>}
+        </div>
+     </>
+    )
+}
 
 export const Box_Stats = ({ title, count, highlighted }) => {
     return (

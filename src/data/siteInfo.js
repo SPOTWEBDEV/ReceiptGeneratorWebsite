@@ -47,3 +47,30 @@ export const about=[
 
          }
 ]
+
+export const clientLink =  [
+         {
+                  id: 1,
+                  icon: '🏠',
+                  name: 'Home',
+                  href: '/user/dashboard'
+         },
+         {
+                  id: 2,
+                  icon: '📄',
+                  name: 'Templates',
+                  href: '/user/templates'
+         },
+         {
+                  id: 3,
+                  icon: '📄',
+                  name: 'My Template',
+                  href: '/user/my-template'
+         },
+         {
+                  id: 4,
+                  icon: '📁',
+                  name: 'Setting',
+                  href: '/user/setting'
+         },
+]

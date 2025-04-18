@@ -1,5 +1,10 @@
+@font-face {
+  font-family: text;
+  src: url('/public/fonts/Poppins-Regular.ttf');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: text;
     background: #fff;
     color: #333;
     padding: 20px;

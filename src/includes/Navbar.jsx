@@ -36,8 +36,8 @@ export const ClientNav = () => {
                 <div className="">
                     <div className="container sticky-black">
                         <div className="mobile-nav" style={{display:'flex', justifyContent:'space-between',width:'100%'}}>
-                            <a href="index.html" className="mobile-brand">
-                                <img src="/images/logo.png" alt="logo" className="logo" />
+                            <a href="/" className="mobile-brand">
+                                <img style={{height:'100px'}} src="/images/logo.png" alt="logo" className="logo" />
                             </a>
                             
 
@@ -50,8 +50,8 @@ export const ClientNav = () => {
                     <div className="main-nav">
                         <div className="container">
                             <nav className="navbar navbar-expand-md navbar-light">
-                                <a className="navbar-brand" href="index.html">
-                                    <img src="/images/logo.png" alt="logo" className="logo" />
+                                <a className="navbar-brand" href="/">
+                                    <img style={{ height: '100px' , width:'300px'}} src="/images/logo.png" alt="logo" className="logo" />
                                 </a>
                                 <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                     <ul className="navbar-nav mx-auto">
@@ -92,7 +92,7 @@ export const ClientNav = () => {
                 <div className="side-modal side-modal-show">
                     <div className="side-modal-header">
                         <div className="side-modal-logo">
-                            <a href="/"><img src="/images/logo.png" alt="logo" /></a>
+                            <a href="/"><img style={{ height: '60px' }} src="/images/logo.png" alt="logo" /></a>
                         </div>
                         <div className="side-modal-close" onClick={()=>setSide(false)}>
                             <i className="icofont-close"></i>

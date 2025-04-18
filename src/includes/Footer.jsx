@@ -10,9 +10,9 @@ export const ClientFooter = () => {
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-3">
                 <div className="footer-content-item">
-                  {/* <div className="footer-logo">
-                    <a href="index.html"><img src="/images/logo.png" alt="logo" /></a>
-                  </div> */}
+                  <div className="footer-logo">
+                    <a href="/"><img style={{ height: '100px' }} src="/images/logo.png" alt="logo" /></a>
+                  </div>
                   <div className="footer-details">
                     <p>Effortlessly create and manage your receipts and invoices with our easy-to-use online generator. Stay organized, save time, and enjoy seamless transactions. Your receipts, your way, anytime, anywhere.</p>
                   </div>
