@@ -1188,7 +1188,6 @@ select.form-control {
 
 .sidebar-info-content h3 {
     font-size: 24px;
-    font-family: "Roboto", sans-serif;
     color: #000;
     margin-bottom: 20px;
 }
@@ -1295,7 +1294,6 @@ select.form-control {
     padding-right: 15px;
     font-size: 16px;
     text-transform: none;
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
