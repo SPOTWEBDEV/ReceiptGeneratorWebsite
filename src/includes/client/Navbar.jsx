@@ -25,7 +25,7 @@ const Navbar = () => {
                                                       <div className={editor.profileCircle}>S</div>
                                                       <div className={editor.profileInfo}>
                                                                <div><b>Personal</b></div>
-                                                               <small>spotwebdev.com</small>
+                                                               <small> smartinvoicex@gmail.com </small>
                                                       </div>
                                              </div>
                                     </div>

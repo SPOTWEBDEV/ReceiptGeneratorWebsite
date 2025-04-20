@@ -10,13 +10,13 @@ export const ClientNav = () => {
                             <div className="row justify-content-center justify-content-lg-between">
                                 <div className="topbar-item topbar-left">
                                     <ul className="topbar-list">
-                                        <li>
+                                        {/* <li>
                                             <i className="icofont-headphone"></i>
                                             <a href="tel:+234 08108833188">+234 810 8833 188</a>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <i className="icofont-ui-message"></i>
-                                            <a href=""><span className="" >spotwebdev.com@gmail.com</span></a>
+                                            <a href=""><span className="" > smartinvoicex@gmail.com </span></a>
                                         </li>
                                     </ul>
                                 </div>

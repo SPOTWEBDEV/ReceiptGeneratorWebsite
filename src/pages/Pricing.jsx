@@ -14,7 +14,31 @@ const Pricing = () => {
                         </div>
 
                         <div className="row justify-content-center">
-                            {/* Free Plan */}
+                            {/* Demo Plan */}
+                            <div className="col-md-6 col-lg-5 pb-30">
+                                <div className="pricing-card">
+                                    <div className="pricing-category">
+                                        <h3>Free</h3>
+                                        <div className="pricing-thumb">
+                                            <i className="flaticon-rocket"></i>
+                                        </div>
+                                    </div>
+                                    <div className="pricing-info">
+                                        <h3>$0 <span>/ Demo </span></h3>
+                                        <ul>
+                                            <li className="pricing-available">Create Only 1 Invoice or Receipt</li>
+                                            <li className="pricing-available">Basic Templates Included</li>
+                                            <li>Editing Tools Limited</li>
+                                            <li>No Custom Branding</li>
+                                            <li>No Reuse After First Try</li>
+                                            <li>Email Support Only</li>
+                                        </ul>
+                                        <a href="authentication.html" className="btn main-btn">Try Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Free plan */}
                             <div className="col-md-6 col-lg-5 pb-30">
                                 <div className="pricing-card">
                                     <div className="pricing-category">
@@ -28,9 +52,9 @@ const Pricing = () => {
                                         <ul>
                                             <li className="pricing-available">Create Only 1 Invoice or Receipt</li>
                                             <li className="pricing-available">Basic Templates Included</li>
-                                            <li>Editing Tools Limited</li>
-                                            <li>No Custom Branding</li>
-                                            <li>No Reuse After First Try</li>
+                                            <li className="pricing-available">Editing Tools Limited</li>
+                                            <li className="pricing-available">No Custom Branding</li>
+                                            <li className="pricing-available">No Reuse After First Try</li>
                                             <li>Email Support Only</li>
                                         </ul>
                                         <a href="authentication.html" className="btn main-btn">Try Now</a>

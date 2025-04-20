@@ -61,15 +61,15 @@ export const ClientFooter = () => {
                   </div>
                   <div className="footer-details footer-address">
                     <div className="footer-address-item">
-                      <div className="footer-address-text">
+                      {/* <div className="footer-address-text">
                         <h4>Phone:</h4>
                         <p><a href="tel:001-987-654-432">(+234) 8108 833 188</a></p>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="footer-address-item">
                       <div className="footer-address-text">
                         <h4>Email:</h4>
-                        <p><a href="/cdn-cgi/l/email-protection#3950575f56795c4b4c5d5c41175a5654"><span className="__cf_email__" >spotwebdev.com@gmail.com</span></a></p>
+                        <p><a href="/cdn-cgi/l/email-protection#3950575f56795c4b4c5d5c41175a5654"><span className="__cf_email__" > smartinvoicex@gmail.com </span></a></p>
                       </div>
                     </div>
                     

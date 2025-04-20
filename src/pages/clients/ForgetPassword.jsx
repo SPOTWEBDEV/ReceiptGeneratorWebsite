@@ -23,10 +23,10 @@ const ForgetPassword = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       if (!email) throw new Error("Please enter your email");
-      // Simulate API call
+      // Simulated API call
       // await api.post('/forgot-password', { email });
 
       setMessage('Reset link sent to your email.');
@@ -39,35 +39,86 @@ const ForgetPassword = () => {
 
   return (
     <Landing header="Forgot Password">
-      <div className="flex items-center justify-center min-h-[70vh]">
-        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Forgot Your Password?</h2>
-          <p className="text-gray-600 text-center mb-6">
+      {/* <div className="flex items-center justify-center min-h-[70vh] bg-gray-100 px-4">
+        <div className="w-full max-w-md bg-white p-10 rounded-lg shadow-lg">
+          <h3 className="text-3xl font-bold text-black text-center mb-4">Forgot Password</h3>
+          <p className="text-black text-center font-medium mb-6">
             Enter your email to receive a password reset link.
           </p>
           <form onSubmit={handleSubmit}>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email address"
-              className="w-full px-4 py-2 border rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
+            <div className="mb-4">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email address"
+                className="form-control w-full border border-gray-300 px-4 py-3 rounded text-black font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 active:scale-95 transition-transform duration-150 font-medium shadow-md"
+              className="btn main-btn w-full bg-blue-600 text-white py-3 rounded-md font-bold hover:bg-blue-700 transition duration-200"
             >
               Send Reset Link
             </button>
           </form>
-          {message && <p className="mt-4 text-green-600 text-center">{message}</p>}
-          {error && <p className="mt-4 text-red-600 text-center">{error}</p>}
+          {message && (
+            <p className="mt-4 text-green-600 text-center font-semibold">{message}</p>
+          )}
+          {error && (
+            <p className="mt-4 text-red-600 text-center font-semibold">{error}</p>
+          )}
+          <div className="authentication-link mt-4 text-center">
+            <a href="/login" className="text-blue-600 font-medium hover:underline">
+              Back to Login
+            </a>
+          </div>
+        </div>
+      </div> */}
+
+      {/* <div style="display:flex; justify-content:center" className="col-12 col-md-6 pb-30">
+        <div className="authentication-item">
+          <h3>Forgot Password</h3>
+          <div className="authentication-form">
+            <form>
+              <div className="form-group mb-20">
+                <input type="text" name="user" className="form-control" required placeholder="Email Address" />
+              </div>
+
+              <button className="btn main-btn full-width">Send Code</button>
+            </form>
+          </div>
+          <div className="authentication-link mt-3">
+            <p>Don't have an account? <a href="/register">Sign Up</a></p>
+          </div>
+        </div>
+      </div> */}
+
+
+      
+      <div className="col-12 col-md-6 pb-30">
+        <div className="authentication-item">
+          <h3>Forgot Password</h3>
+          <div className="authentication-form">
+            <form>
+              <div className="form-group mb-20">
+                <input type="text" name="user" className="form-control" required placeholder="Email Address" />
+              </div>
+
+              <button className="btn main-btn full-width">Send Code</button>
+            </form>
+          </div>
+          <div className="authentication-link mt-3">
+            <p>Don't have an account? <a href="/register">Sign Up</a></p>
+          </div>
         </div>
       </div>
     </Landing>
   );
 };
+
+
 
 export default ForgetPassword;
 
