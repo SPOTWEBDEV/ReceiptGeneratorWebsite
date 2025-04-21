@@ -29,9 +29,7 @@ const Contact = () => {
                                             </div>
                                         </div>
                                         <div className="contact-info-body">
-                                            <p>
-                                                <a href="tel:+234 08108833188">+234 08108833188</a>
-                                            </p>
+                                        
                                             <p>Mon - sun: 24 hours</p>
                                         </div>
                                     </div>
@@ -48,11 +46,11 @@ const Contact = () => {
                                             </div>
                                         </div>
                                         <div className="contact-info-body">
-                                            <p>
+                                            {/* <p>
                                                 <a href="/cdn-cgi/l/email-protection#1e777078715e7b6c6b7a7b66307d7173"><span className="__cf_email__" data-cfemail="a3cacdc5cce3c6d1d6c7c6db8dc0ccce">[email&#160;protected]</span></a>
-                                            </p>
+                                            </p> */}
                                             <p>
-                                                <a href="/cdn-cgi/l/email-protection#a8dbddd8d8c7dadce8cddaddcccdd086cbc7c5"><span className="__cf_email__" data-cfemail="89fafcf9f9e6fbfdc9ecfbfcedecf1a7eae6e4">[email&#160;protected]</span></a>
+                                                <a href="/cdn-cgi/l/email-protection#a8dbddd8d8c7dadce8cddaddcccdd086cbc7c5"><span className="__cf_email__" data-cfemail="89fafcf9f9e6fbfdc9ecfbfcedecf1a7eae6e4">[ smartinvoicex@gmail.com]</span></a>
                                             </p>
                                         </div>
                                     </div>
