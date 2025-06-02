@@ -34,8 +34,8 @@ export const ClientNav = () => {
                     </div>
                 </div>
                 <div className="">
-                    <div className="container sticky-black">
-                        <div className="mobile-nav" style={{display:'flex', justifyContent:'space-between',width:'100%'}}>
+                    <div  className="container sticky-black ">
+                        <div className="mobile-nav mobile-hornav" >
                             <a href="/" className="mobile-brand">
                                 <img style={{height:'100px'}} src="/images/logo.png" alt="logo" className="logo" />
                             </a>

@@ -20,7 +20,7 @@ const Home = () => {
             <div className="row m-lg-0">
               <div className="col-lg-6 p-lg-0">
                 <div className="max-585 ms-auto">
-                  <div className="header-contents">
+                  <div className="header-contents py-3">
                     <h1>Create & Customize Payment Receipts and Invoices Effortlessly</h1>
                     <p>
                       Generate Payment receipts and invoices in minutes. Our platform is designed to help businesses and individuals easily build, edit, and manage their financial documents with accuracy and ease.
