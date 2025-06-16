@@ -1,6 +1,6 @@
 <?php
 
-include("./server/connection.php")
+include("../../server/connection.php")
 
 
 
@@ -16,38 +16,38 @@ include("./server/connection.php")
     <meta name="description" content="<?php  echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, <?php  echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
     <title><?php  echo $sitename ?> - Premium Admin Template</title>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/feather-icon.css">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/dropzone.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
   </head>
   <body> 
     <!-- loader starts-->
@@ -66,7 +66,7 @@ include("./server/connection.php")
       <div class="page-header">
         <div class="header-wrapper row m-0">
           <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../../assets/images/logo/logo_dark.png" alt=""></a></div>
             <div class="toggle-sidebar">
               <svg class="sidebar-toggle"> 
                 <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-animation"></use>
@@ -109,7 +109,7 @@ include("./server/connection.php")
                     <ul>
                       <li>
                         <div class="user-notification">
-                          <div><img src="../assets/images/avtar/2.jpg" alt="avatar"></div>
+                          <div><img src="../../assets/images/avtar/2.jpg" alt="avatar"></div>
                           <div class="user-description"><a href="letter-box.html">
                               <h4>You have new finical page design.</h4></a><span>Today 11:45pm</span></div>
                         </div>
@@ -121,7 +121,7 @@ include("./server/connection.php")
                       </li>
                       <li>
                         <div class="user-notification">
-                          <div><img src="../assets/images/avtar/17.jpg" alt="avatar"></div>
+                          <div><img src="../../assets/images/avtar/17.jpg" alt="avatar"></div>
                           <div class="user-description"><a href="letter-box.html">
                               <h4>Congrats! you all task for today.</h4></a><span>Today 01:05pm</span></div>
                         </div>
@@ -133,7 +133,7 @@ include("./server/connection.php")
                       </li>
                       <li> 
                         <div class="user-notification">
-                          <div> <img src="../assets/images/avtar/18.jpg" alt="avatar"></div>
+                          <div> <img src="../../assets/images/avtar/18.jpg" alt="avatar"></div>
                           <div class="user-description"><a href="letter-box.html">
                               <h4>You have new in landing page design.</h4></a><span>Today 06:55pm</span></div>
                         </div>
@@ -145,7 +145,7 @@ include("./server/connection.php")
                       </li>
                       <li>
                         <div class="user-notification">
-                          <div><img src="../assets/images/avtar/19.jpg" alt="avatar"></div>
+                          <div><img src="../../assets/images/avtar/19.jpg" alt="avatar"></div>
                           <div class="user-description"><a href="letter-box.html">
                               <h4>Congrats! you all task for today.</h4></a><span>Today 06:55pm</span></div>
                         </div>
@@ -214,7 +214,7 @@ include("./server/connection.php")
                   <ul>
                     <li>
                       <div class="d-flex align-items-start">
-                        <div class="message-img bg-light-primary"><img src="../assets/images/user/3.jpg" alt=""></div>
+                        <div class="message-img bg-light-primary"><img src="../../assets/images/user/3.jpg" alt=""></div>
                         <div class="flex-grow-1">
                           <h5><a href="letter-box.html">Emay Walter</a></h5>
                           <p>Do you want to go see movie?</p>
@@ -224,7 +224,7 @@ include("./server/connection.php")
                     </li>
                     <li>
                       <div class="d-flex align-items-start">
-                        <div class="message-img bg-light-primary"><img src="../assets/images/user/6.jpg" alt=""></div>
+                        <div class="message-img bg-light-primary"><img src="../../assets/images/user/6.jpg" alt=""></div>
                         <div class="flex-grow-1">
                           <h5> <a href="letter-box.html">Jason Borne</a></h5>
                           <p>Thank you for rating us.</p>
@@ -234,7 +234,7 @@ include("./server/connection.php")
                     </li>
                     <li>
                       <div class="d-flex align-items-start"> 
-                        <div class="message-img bg-light-primary"><img src="../assets/images/user/10.jpg" alt=""></div>
+                        <div class="message-img bg-light-primary"><img src="../../assets/images/user/10.jpg" alt=""></div>
                         <div class="flex-grow-1">
                           <h5> <a href="letter-box.html">Sarah Loren</a></h5>
                           <p>What`s the project report update?</p>
@@ -256,7 +256,7 @@ include("./server/connection.php")
                   <h6 class="f-18 mb-0 dropdown-title">Cart</h6>
                   <ul>
                     <li>
-                      <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="../assets/images/ecommerce/05.jpg" alt="">
+                      <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="../../assets/images/ecommerce/05.jpg" alt="">
                         <div class="flex-grow-1"> <span>Women's Track Suit</span>
                           <h6 class="font-primary">8 x $65.00</h6>
                         </div>
@@ -264,7 +264,7 @@ include("./server/connection.php")
                       </div>
                     </li>
                     <li>
-                      <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="../assets/images/ecommerce/02.jpg" alt="">
+                      <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="../../assets/images/ecommerce/02.jpg" alt="">
                         <div class="flex-grow-1"><span>Men's Jacket</span>
                           <h6 class="font-primary">10 x $50.00</h6>
                         </div>
@@ -306,7 +306,7 @@ include("./server/connection.php")
                 </div>
               </li>
               <li class="profile-nav onhover-dropdown pe-0 py-0">
-                <div class="d-flex align-items-center profile-media"><img class="b-r-25" src="../assets/images/dashboard/profile.png" alt="">
+                <div class="d-flex align-items-center profile-media"><img class="b-r-25" src="../../assets/images/dashboard/profile.png" alt="">
                   <div class="flex-grow-1 user"><span>Helen Walter</span>
                     <p class="mb-0 font-nunito">Admin 
                       <svg>
@@ -342,19 +342,19 @@ include("./server/connection.php")
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-layout="stroke-svg">
           <div>
-            <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
+            <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../../assets/images/logo/logo_dark.png" alt=""></a>
               <div class="toggle-sidebar">
                 <svg class="sidebar-toggle"> 
                   <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#toggle-icon"></use>
                 </svg>
               </div>
             </div>
-            <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a></div>
+            <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="../../assets/images/logo/logo-icon.png" alt=""></a></div>
             <nav class="sidebar-main">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
               <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
-                  <li class="back-btn"><a href="index-2.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a>
+                  <li class="back-btn"><a href="index-2.html"><img class="img-fluid" src="../../assets/images/logo/logo-icon.png" alt=""></a>
                     <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                   </li>
                   <li class="pin-title sidebar-main-title">
@@ -1407,37 +1407,37 @@ include("./server/connection.php")
       </div>
     </div>
     <!-- latest jquery-->
-    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
-    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- feather icon js-->
-    <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="../../assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="../../assets/js/icons/feather-icon/feather-icon.js"></script>
     <!-- scrollbar js-->
-    <script src="../assets/js/scrollbar/simplebar.js"></script>
-    <script src="../assets/js/scrollbar/custom.js"></script>
+    <script src="../../assets/js/scrollbar/simplebar.js"></script>
+    <script src="../../assets/js/scrollbar/custom.js"></script>
     <!-- Sidebar jquery-->
-    <script src="../assets/js/config.js"></script>
+    <script src="../../assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>
-    <script src="../assets/js/sidebar-pin.js"></script>
-    <script src="../assets/js/slick/slick.min.js"></script>
-    <script src="../assets/js/slick/slick.js"></script>
-    <script src="../assets/js/header-slick.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-    <script src="../assets/js/dropzone/dropzone.js"></script>
-    <script src="../assets/js/dropzone/dropzone-script.js"></script>
-    <script src="../assets/js/typeahead/handlebars.js"></script>
-    <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
-    <script src="../assets/js/typeahead/typeahead.custom.js"></script>
-    <script src="../assets/js/typeahead-search/handlebars.js"></script>
-    <script src="../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../../assets/js/sidebar-menu.js"></script>
+    <script src="../../assets/js/sidebar-pin.js"></script>
+    <script src="../../assets/js/slick/slick.min.js"></script>
+    <script src="../../assets/js/slick/slick.js"></script>
+    <script src="../../assets/js/header-slick.js"></script>
+    <script src="../../assets/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="../../assets/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="../../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="../../assets/js/dropzone/dropzone.js"></script>
+    <script src="../../assets/js/dropzone/dropzone-script.js"></script>
+    <script src="../../assets/js/typeahead/handlebars.js"></script>
+    <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
+    <script src="../../assets/js/typeahead-search/handlebars.js"></script>
+    <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/theme-customizer/customizer.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/theme-customizer/customizer.js"></script>
     <!-- Plugin used-->
   </body>
 
