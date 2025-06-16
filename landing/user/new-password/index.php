@@ -1,17 +1,24 @@
+<?php
+
+include("../../server/connection.php")
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Mirrored from admin.pixelstrap.net/zono/template/reset-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
+<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/reset-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zono admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Zono admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="description" content="<?php  echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, <?php  echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
-    <title>Zono - Premium Admin Template</title>
+    <title><?php  echo $sitename ?> - Premium Admin Template</title>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
@@ -101,5 +108,5 @@
     <!-- Plugin used-->
   </body>
 
-<!-- Mirrored from admin.pixelstrap.net/zono/template/reset-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
+<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/reset-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
 </html>
