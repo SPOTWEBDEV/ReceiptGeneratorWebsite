@@ -94,7 +94,11 @@ include("./server/connection.php")
                 </div>
                 <h2><?php echo $sitename ?> Developer Friendly Admin Dashboard For Your Business<img class="line-text img-fluid" src="./assets/images/landing/landing-home/vector/line.png" alt="line"></h2>
                 <p class="description-name"><?php echo $sitename ?> is perfect admin template for any business. it has all features and modules to create your amazing C- panel. this template for selling default, ecommerce.</p>
+<<<<<<< HEAD
+                <div class="docutment-button"> <a class="btn bg-secondary" href="index-2.html" target="_blank">View Demo</a><a class="btn bg-light txt-dark" href="https://docs.pixelstrap.net/admin/zono/document/" target="_blank">Documentation</a></div>
+=======
                 <div class="docutment-button"> <a class="btn bg-secondary" href="index-2.html" target="_blank">View Demo</a><a class="btn bg-light txt-dark" href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">Documentation</a></div>
+>>>>>>> a6bd8be8ff817418e9499cf09957cacd0f191af3
               </div>
             </div>
             <div class="col-lg-6 col-md-5">
