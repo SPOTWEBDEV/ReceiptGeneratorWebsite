@@ -8,6 +8,7 @@ include("./server/connection.php")
 
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -30,7 +31,7 @@ include("./server/connection.php")
     <link href="https://fonts.googleapis.com/css2?family=Courgette&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&amp;family=Montserrat:wght@200;300;400;500;600;700;800&amp;family=Nunito:wght@200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/icofont.css">
-    <link rel="icon" href="https://admin.pixelstrap.net/zono/assets/svg/landing-icons.svg">
+    <link rel="icon" href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/landing-icons.svg">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/animate.css">
@@ -62,7 +63,7 @@ include("./server/connection.php")
                   <li class="nav-item"><a class="nav-link" href="#framework">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="#corefeature">Example</a></li>
                   <li class="nav-item"><a class="nav-link" href="#Applications">Contact</a></li>
-                  <!-- <li class="nav-item"><a class="nav-link" href="https://docs.pixelstrap.net/admin/zono/document/" target="_blank"></a></li>
+                  <!-- <li class="nav-item"><a class="nav-link" href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank"></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://www.pixelstrap.com/hire-us" target="_blank"></a></li> -->
                 </ul>
                 <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank">Login</a>
@@ -93,7 +94,11 @@ include("./server/connection.php")
                 </div>
                 <h2><?php echo $sitename ?> Developer Friendly Admin Dashboard For Your Business<img class="line-text img-fluid" src="./assets/images/landing/landing-home/vector/line.png" alt="line"></h2>
                 <p class="description-name"><?php echo $sitename ?> is perfect admin template for any business. it has all features and modules to create your amazing C- panel. this template for selling default, ecommerce.</p>
+<<<<<<< HEAD
                 <div class="docutment-button"> <a class="btn bg-secondary" href="index-2.html" target="_blank">View Demo</a><a class="btn bg-light txt-dark" href="https://docs.pixelstrap.net/admin/zono/document/" target="_blank">Documentation</a></div>
+=======
+                <div class="docutment-button"> <a class="btn bg-secondary" href="index-2.html" target="_blank">View Demo</a><a class="btn bg-light txt-dark" href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">Documentation</a></div>
+>>>>>>> a6bd8be8ff817418e9499cf09957cacd0f191af3
               </div>
             </div>
             <div class="col-lg-6 col-md-5">
@@ -142,7 +147,7 @@ include("./server/connection.php")
             <div class="col-lg-6 col-sm-6 slideInUp wow">
               <div class="demo-box dashboard-images">
                 <div class="layout-name">
-                  <div class="zono-demo-img">
+                  <div class="<?php  echo $sitename ?>-demo-img">
                     <ul class="dot-group"> 
                       <li></li>
                       <li></li>
@@ -156,7 +161,7 @@ include("./server/connection.php")
             <div class="col-lg-6 col-sm-6 slideInUp wow">
               <div class="demo-box dashboard-images">
                 <div class="layout-name">
-                  <div class="zono-demo-img">
+                  <div class="<?php  echo $sitename ?>-demo-img">
                     <ul class="dot-group">
                       <li> </li>
                       <li></li>
@@ -302,22 +307,22 @@ include("./server/connection.php")
           <div class="landing-center">
             <div class="feature-content">
               <div>
-                <h2>The Zono Bootstrap Admin Theme Trusted By Many Developers World Wide.</h2>
+                <h2>The <?php  echo $sitename ?> Bootstrap Admin Theme Trusted By Many Developers World Wide.</h2>
                 <div class="footer-rating">
                   <svg class="fill-warning">
-                    <use href="https://admin.pixelstrap.net/zono/assets/svg/icon-sprite.svg#fill-star"></use>
+                    <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#fill-star"></use>
                   </svg>
                   <svg class="fill-warning">
-                    <use href="https://admin.pixelstrap.net/zono/assets/svg/icon-sprite.svg#fill-star"></use>
+                    <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#fill-star"></use>
                   </svg>
                   <svg class="fill-warning">
-                    <use href="https://admin.pixelstrap.net/zono/assets/svg/icon-sprite.svg#fill-star"></use>
+                    <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#fill-star"></use>
                   </svg>
                   <svg class="fill-warning">
-                    <use href="https://admin.pixelstrap.net/zono/assets/svg/icon-sprite.svg#fill-star"></use>
+                    <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#fill-star"></use>
                   </svg>
                   <svg class="stroke-warning">
-                    <use href="https://admin.pixelstrap.net/zono/assets/svg/icon-sprite.svg#fill-star"></use>
+                    <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#fill-star"></use>
                   </svg>
                 </div>
               </div><a class="btn bg-primary btn-hover-effect txt-light" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank">Login</a>
@@ -326,7 +331,7 @@ include("./server/connection.php")
           <div class="sub-footer row g-md-2 g-3">
             <div class="col-md-6"> 
               <div class="left-subfooter"> <img class="img-fluid" src="./assets/images/logo/logo_dark.png" alt="logo">
-                <p class="mb-0">Copyright 2024 © Zono theme by pixelstrap</p>
+                <p class="mb-0">Copyright 2024 © <?php  echo $sitename ?> theme by pixelstrap</p>
               </div>
             </div>
             <div class="col-md-6">
@@ -334,7 +339,7 @@ include("./server/connection.php")
                 <h3 class="text-end">If You Like Our Theme So Please Rate Us</h3>
                 <ul>
                   <li><a href="https://support.pixelstrap.com/" target="_blank">Home</a></li>
-                  <li><a href="https://docs.pixelstrap.net/admin/zono/document/" target="_blank">About us </a></li>
+                  <li><a href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">About us </a></li>
                   <li><a href="https://www.pixelstrap.com/hire-us" target="_blank">Contact us</a></li>
                 </ul>
               </div>
@@ -364,5 +369,5 @@ include("./server/connection.php")
     <script src="./assets/js/owlcarousel/owl-custom.js"></script>
   </body>
 
-<!-- Mirrored from admin.pixelstrap.net/zono/template/landing-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:01 GMT -->
+<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/landing-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:01 GMT -->
 </html>

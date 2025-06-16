@@ -1,17 +1,24 @@
+<?php
+
+include("../../server/connection.php")
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Mirrored from admin.pixelstrap.net/zono/template/edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:56 GMT -->
+<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:56 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zono admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Zono admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="description" content="<?php  echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, <?php  echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
-    <title>Zono - Premium Admin Template</title>
+    <title><?php  echo $sitename ?> - Premium Admin Template</title>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
@@ -761,7 +768,7 @@
                       <svg class="fill-icon">
                         <use href="../../assets/svg/icon-sprite.svg#fill-internationalization"></use>
                       </svg><span>Translate</span></a></li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="https://admin.pixelstrap.net/zono/starter-kit/index.html" target="_blank">
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/starter-kit/index.html" target="_blank">
                       <svg class="stroke-icon">
                         <use href="../../assets/svg/icon-sprite.svg#stroke-starter-kit"></use>
                       </svg>
@@ -1464,7 +1471,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 p-0 footer-copyright">
-                <p class="mb-0">Copyright 2024 © Zono theme by pixelstrap.</p>
+                <p class="mb-0">Copyright 2024 © <?php  echo $sitename ?> theme by pixelstrap.</p>
               </div>
               <div class="col-md-6 p-0">
                 <p class="heart mb-0">Hand crafted &amp; made with
@@ -1503,5 +1510,5 @@
     <!-- Plugin used-->
   </body>
 
-<!-- Mirrored from admin.pixelstrap.net/zono/template/edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:56 GMT -->
+<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:56 GMT -->
 </html>
