@@ -84,7 +84,7 @@
                       <li><a href="projectcreate.html">Create new</a></li>
                     </ul>
                   </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="file-manager.html">
+                  <!-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="file-manager.html">
                       <svg class="stroke-icon">
                         <use href="../assets/svg/icon-sprite.svg#stroke-file"></use>
                       </svg>
@@ -147,7 +147,7 @@
                       <li><a href="private-chat.html">Private Chat</a></li>
                       <li><a href="group-chat.html">Group Chat</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                       <svg class="stroke-icon">
                         <use href="../assets/svg/icon-sprite.svg#stroke-user"></use>
@@ -161,7 +161,21 @@
                       <li><a href="user-cards.html">Users Cards</a></li>
                     </ul>
                   </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="bookmark.html">
+                                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                      <svg class="stroke-icon">
+                        <use href="../assets/svg/icon-sprite.svg#stroke-blog"></use>
+                      </svg>
+                      <svg class="fill-icon">
+                        <use href="../assets/svg/icon-sprite.svg#fill-blog"></use>
+                      </svg><span>Blog</span></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="blog.html">Blog Details</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
+                      <li><a href="add-post.html">Add Post</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="faq.html">
+                  <!-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="bookmark.html">
                       <svg class="stroke-icon">
                         <use href="../assets/svg/icon-sprite.svg#stroke-bookmark"></use>
                       </svg>
@@ -203,14 +217,14 @@
                       <svg class="fill-icon">
                         <use href="../assets/svg/icon-sprite.svg#fill-to-do"> </use>
                       </svg><span>To-Do</span></a></li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="search.html">
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="search.html"> -->
                       <svg class="stroke-icon">
                         <use href="../assets/svg/icon-sprite.svg#stroke-search"></use>
                       </svg>
                       <svg class="fill-icon">
                         <use href="../assets/svg/icon-sprite.svg#fill-search"> </use>
                       </svg><span>Search Result</span></a></li>
-                  <li class="sidebar-main-title">
+                  <!-- <li class="sidebar-main-title">
                     <div>
                       <h6>Forms & Table</h6>
                     </div>
@@ -534,28 +548,15 @@
                       <li><a href="masonry-gallery-with-disc.html">Masonry with Desc</a></li>
                       <li><a href="gallery-hover.html">Hover Effects</a></li>
                     </ul>
-                  </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                      <svg class="stroke-icon">
-                        <use href="../assets/svg/icon-sprite.svg#stroke-blog"></use>
-                      </svg>
-                      <svg class="fill-icon">
-                        <use href="../assets/svg/icon-sprite.svg#fill-blog"></use>
-                      </svg><span>Blog</span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a href="blog.html">Blog Details</a></li>
-                      <li><a href="blog-single.html">Blog Single</a></li>
-                      <li><a href="add-post.html">Add Post</a></li>
-                    </ul>
-                  </li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="faq.html">
+                  </li> -->
+
                       <svg class="stroke-icon">
                         <use href="../assets/svg/icon-sprite.svg#stroke-faq"></use>
                       </svg>
                       <svg class="fill-icon">
                         <use href="../assets/svg/icon-sprite.svg#fill-faq"></use>
                       </svg><span>FAQ</span></a></li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                  <!-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                       <svg class="stroke-icon">
                         <use href="../assets/svg/icon-sprite.svg#stroke-job-search"></use>
                       </svg>
@@ -614,7 +615,7 @@
                       <svg class="fill-icon">
                         <use href="../assets/svg/icon-sprite.svg#fill-knowledgebase"></use>
                       </svg><span>Knowledgebase</span></a></li>
-                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="support-ticket.html"> -->
                       <svg class="stroke-icon">
                         <use href="../assets/svg/icon-sprite.svg#stroke-support-tickets"></use>
                       </svg>
@@ -623,7 +624,7 @@
                       </svg><span>Support Ticket</span></a></li>
                 </ul>
               </div>
-              <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+              <!-- <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div> -->
             </nav>
           </div>
         </div>
