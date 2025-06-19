@@ -93,3 +93,24 @@ body {
   letter-spacing: 0.1em;
   display: inline-block;
 }
+
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-hospital {
+  color: #007ea7;
+}
