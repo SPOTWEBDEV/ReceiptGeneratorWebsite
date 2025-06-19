@@ -66,7 +66,7 @@ include("./server/connection.php")
                   <!-- <li class="nav-item"><a class="nav-link" href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank"></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://www.pixelstrap.com/hire-us" target="_blank"></a></li> -->
                 </ul>
-                <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank">Login</a>
+                <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="./login/index.php" >Login</a>
                   <div class="toggle-menu"><i class="fa fa-bars"></i></div>
                 </div>
               </nav>
@@ -92,13 +92,9 @@ include("./server/connection.php")
                 
                   </div>
                 </div>
-                <h2><?php echo $sitename ?> Developer Friendly Admin Dashboard For Your Business<img class="line-text img-fluid" src="./assets/images/landing/landing-home/vector/line.png" alt="line"></h2>
-                <p class="description-name"><?php echo $sitename ?> is perfect admin template for any business. it has all features and modules to create your amazing C- panel. this template for selling default, ecommerce.</p>
-<<<<<<< HEAD
-                <div class="docutment-button"> <a class="btn bg-secondary" href="index-2.html" target="_blank">View Demo</a><a class="btn bg-light txt-dark" href="https://docs.pixelstrap.net/admin/zono/document/" target="_blank">Documentation</a></div>
-=======
-                <div class="docutment-button"> <a class="btn bg-secondary" href="index-2.html" target="_blank">View Demo</a><a class="btn bg-light txt-dark" href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">Documentation</a></div>
->>>>>>> a6bd8be8ff817418e9499cf09957cacd0f191af3
+                <h2><?php echo $sitename ?> Developer Friendly Receipt Generator For Your Business<img class="line-text img-fluid" src="./assets/images/landing/landing-home/vector/line.png" alt="line"></h2>
+                <p class="description-name"><?php echo $sitename ?>  is the ideal solution for any business that needs quick and professional receipts. It comes with all the features you need to generate, print, and manage receipts effortlessly — whether you're a freelancer, small shop owner, or service provider..</p>
+                <div class="docutment-button"> <a class="btn bg-secondary" href="./login/index.php" >Get Started</a><a class="btn bg-light txt-dark" href="./login/index.php<?php  echo $sitename ?>/document/">Login</a></div>
               </div>
             </div>
             <div class="col-lg-6 col-md-5">
@@ -128,7 +124,7 @@ include("./server/connection.php")
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
                 <h3 class="sub-title">About Us</h3>
-                <span>We provide an easy-to-use platform that allows individuals and businesses to build and create professional receipts effortlessly. Our goal is to simplify your transaction records with tools that are fast, flexible, and user-friendly.</span><a class="btn link-text btn-primary" href="https://support.pixelstrap.com/" target="_blank">Support</a>
+                <span>We provide an easy-to-use platform that allows individuals and businesses to build and create professional receipts effortlessly. Our goal is to simplify your transaction records with tools that are fast, flexible, and user-friendly.</span><a class="btn link-text btn-primary" href="./login/index.php" >Get Started</a>
               </div>
             </div>
           </div>
@@ -139,8 +135,8 @@ include("./server/connection.php")
       <!-- demo section start-->
       <section class="demo-section section-py-space pt-0" id="demo">
         <div class="title text-center mt-0">
-          <h5>Trending & Clean Design Collection</h5>
-          <h2 class="mb-lg-2 mb-0">Creative & Unique Admin Layout</h2>
+          <h5>Fast & Clean Receipt Generation</h5>
+          <h2 class="mb-lg-2 mb-0">Simple, Professional & Easy-to-Use Layout</h2>
         </div>
         <div class="container">
           <div class="row demo-block demo-imgs">
@@ -186,7 +182,7 @@ include("./server/connection.php")
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
                 <h3 class="sub-title">Our Mission</h3>
-              <span>Our mission is to make receipt creation simple and accessible for everyone. Whether you're a freelancer, a shop owner, or a business manager, we aim to eliminate manual paperwork and help you generate clean, organized receipts in just a few clicks.</span><a class="btn link-text btn-primary" href="https://support.pixelstrap.com/" target="_blank">Support</a>
+              <span>Our mission is to make receipt creation simple and accessible for everyone. Whether you're a freelancer, a shop owner, or a business manager, we aim to eliminate manual paperwork and help you generate clean, organized receipts in just a few clicks.</span><a class="btn link-text btn-primary" href="./login/index.php" >Get Started</a>
               </div>
             </div>
           </div>
@@ -200,8 +196,8 @@ include("./server/connection.php")
           <div class="row">
             <div class="col-sm-12 wow pulse">
               <div class="title text-center"> 
-                <h5>Usefull Application</h5>
-                <h2 class="mb-lg-2 mb-0">Fast & Powerful Applications</h2>
+                <h5>Smart Receipt Tool</h5>
+                <h2 class="mb-lg-2 mb-0">Fast, Reliable & Professional Receipts</h2>
               </div>
             </div>
             <div class="col-sm-12 application">
@@ -295,7 +291,7 @@ include("./server/connection.php")
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
                 <h3 class="sub-title">Who we are</h3>
-               <span>We are a team of passionate developers, designers, and thinkers focused on solving real-world problems with technology. With a strong belief in simplicity and efficiency, we are committed to helping users take control of their finances through modern digital tools.</span><a class="btn link-text btn-primary" href="https://support.pixelstrap.com/" target="_blank">Support</a>
+               <span>We are a team of passionate developers, designers, and thinkers focused on solving real-world problems with technology. With a strong belief in simplicity and efficiency, we are committed to helping users take control of their finances through modern digital tools.</span><a class="btn link-text btn-primary" href="./login/index.php" >Get Started</a>
               </div>
             </div>
           </div>
@@ -307,7 +303,7 @@ include("./server/connection.php")
           <div class="landing-center">
             <div class="feature-content">
               <div>
-                <h2>The <?php  echo $sitename ?> Bootstrap Admin Theme Trusted By Many Developers World Wide.</h2>
+                <h2>The <?php  echo $sitename ?> Receipt Generator Platform — Trusted by Businesses for Creating Professional Receipts Effortlessly.</h2>
                 <div class="footer-rating">
                   <svg class="fill-warning">
                     <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#fill-star"></use>
@@ -325,22 +321,22 @@ include("./server/connection.php")
                     <use href="https://admin.pixelstrap.net/<?php  echo $sitename ?>/assets/svg/icon-sprite.svg#fill-star"></use>
                   </svg>
                 </div>
-              </div><a class="btn bg-primary btn-hover-effect txt-light" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank">Login</a>
+              </div><a class="btn bg-primary btn-hover-effect txt-light" href="./login/index.php">Login</a>
             </div>
           </div>
           <div class="sub-footer row g-md-2 g-3">
             <div class="col-md-6"> 
               <div class="left-subfooter"> <img class="img-fluid" src="./assets/images/logo/logo_dark.png" alt="logo">
-                <p class="mb-0">Copyright 2024 © <?php  echo $sitename ?> theme by pixelstrap</p>
+                <p class="mb-0">Copyright 2024 © <?php  echo $sitename ?> – All rights reserved</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="right-subfooter">
-                <h3 class="text-end">If You Like Our Theme So Please Rate Us</h3>
+                <h3 class="text-end">Help others discover Smart ReceiptX — share it with someone who needs simple receipt tools.</h3>
                 <ul>
-                  <li><a href="https://support.pixelstrap.com/" target="_blank">Home</a></li>
+                  <li><a href="https://support.pixelstrap.com/" >Home</a></li>
                   <li><a href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">About us </a></li>
-                  <li><a href="https://www.pixelstrap.com/hire-us" target="_blank">Contact us</a></li>
+                  <li><a href="https://www.pixelstrap.com/hire-us" >Contact us</a></li>
                 </ul>
               </div>
             </div>
