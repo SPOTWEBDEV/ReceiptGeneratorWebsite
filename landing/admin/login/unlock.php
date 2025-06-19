@@ -1,14 +1,33 @@
 <?php
 
-include("../../server/connection.php")
+include("../../server/connection.php");
+
+
+if(isset($_POST['login'])){
+   $password = htmlspecialchars($_POST['password']);
+
+   $pass = md5($password);
+
+   $query = mysqli_query($connection,"SELECT * FROM `admin` WHERE `password`='$pass' ");
+
+   if(mysqli_num_rows($query) > 0){
+    echo "<script>alert('Login Succesfull')
+       setTimeout(()=>{
+         window.location.href = '../edit/'
+       },3000)
+    </script>";
+  }else{
+    echo "<script>alert('Incorrect Password')</script>";
+  }
+
+
+}
 
 
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/unlock.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,18 +79,18 @@ include("../../server/connection.php")
                 <div>
                   <div><a class="logo" href="index-2.html"><img class="img-fluid for-light" src="../../assets/images/logo/logo.png" alt="looginpage"><img class="img-fluid for-dark" src="../../assets/images/logo/logo_dark.png" alt="looginpage"></a></div>
                   <div class="login-main">
-                    <form class="theme-form">
+                    <form method="POST" class="theme-form">
                       <h4>Unlock</h4>
                       <div class="form-group">
                         <label class="col-form-label">Enter your Password</label>
                         <div class="form-input position-relative">
-                          <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
+                          <input class="form-control" type="password" name="password" required="" placeholder="*********">
                           <div class="show-hide"><span class="show">                      </span></div>
                         </div>
                       </div>
                       <div class="form-group mb-0">
                         
-                        <button class="btn btn-primary btn-block w-100" type="submit">Unlock</button>
+                        <button name="login" class="btn btn-primary btn-block w-100" type="submit">Unlock</button>
                       </div>
                      
                     </form>
