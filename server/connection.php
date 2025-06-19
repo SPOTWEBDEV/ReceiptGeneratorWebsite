@@ -47,11 +47,11 @@ if ($isLocalhost) {
   
 } else {
     // Online (Live Server)
-    $domain = "https://quanstofy.com/";
+    $domain = "https://smartinvoicex.com.spotwebtech.com.ng/";
 
-    define("USER", "quanstof_billz-crypto");
-    define("PASSWORD", "quanstof_billz-crypto");
-    define("DATABASE", "quanstof_billz-crypto");
+    define("USER", "spotwebt_reciept");
+    define("PASSWORD", "spotwebt_reciept");
+    define("DATABASE", "spotwebt_reciept");
 
     // Database connection
     $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
@@ -62,12 +62,8 @@ if ($isLocalhost) {
    
 }
 
-// Site configurations
-// $sitename = "Quanstofy";
 
-// Email Config 
 
-$domain = 'http://localhost/ReceiptGeneratorWebsite/';
 $sitename =  'Smart InvoiceX';
 $siteemail =  'support@smartinvoicex.com';
 $sitephone = '08108833188';

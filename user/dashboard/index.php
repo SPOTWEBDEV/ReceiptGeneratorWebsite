@@ -1,6 +1,6 @@
 <?php
 
-include("../server/connection.php")
+include("../../server/connection.php")
 
 
 
@@ -8,8 +8,6 @@ include("../server/connection.php")
 
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:30 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,38 +15,38 @@ include("../server/connection.php")
     <meta name="description" content="<?php  echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, <?php  echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title><?php  echo $sitename ?> - Premium Admin Template</title>
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <title><?php  echo $sitename ?> - User Dashboard</title>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/feather-icon.css">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/owlcarousel.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/datatables.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/owlcarousel.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
     
   </head>
   <body> 
@@ -381,7 +379,7 @@ include("../server/connection.php")
                   <ol class="breadcrumb"> 
                     <li class="breadcrumb-item"><a href="index-2.html">
                         <svg class="stroke-icon">
-                          <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
+                          <use href="../../assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
                     <li class="breadcrumb-item">Dashboard</li>
                     <li class="breadcrumb-item active">Default</li>
@@ -401,8 +399,8 @@ include("../server/connection.php")
                         <h1 class="f-w-700">Get Thousands Premium Courses.</h1><span class="f-light f-w-400 f-14">Upgrade to watch, play, learn, make and discover. </span><a class="btn btn-square btn-primary f-w-700" href="pricing.html">Go Premium</a>
                       </div>
                       <div class="col-md-7 premium-course-img"> 
-                        <div class="premium-message"><img class="img-fluid" src="../assets/images/dashboard/massage.gif" alt="massage"></div>
-                        <div class="premium-books"><img class="img-fluid" src="../assets/images/dashboard/books.gif" alt="books"></div>
+                        <div class="premium-message"><img class="img-fluid" src="../../assets/images/dashboard/massage.gif" alt="massage"></div>
+                        <div class="premium-books"><img class="img-fluid" src="../../assets/images/dashboard/books.gif" alt="books"></div>
                       </div>
                     </div>
                   </div>
@@ -416,7 +414,7 @@ include("../server/connection.php")
                       <div class="dropdown icon-dropdown setting-menu"> 
                         <button class="btn dropdown-toggle" id="userdropdown1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../assets/svg/icon-sprite.svg#setting"></use>
+                            <use href="../../assets/svg/icon-sprite.svg#setting"></use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown1"><a class="dropdown-item" href="#">Weekly </a><a class="dropdown-item" href="#">Monthly </a><a class="dropdown-item" href="#">Yearly </a></div>
@@ -433,11 +431,11 @@ include("../server/connection.php")
                           <div class="recent-activity-data">
                             <div class="activity-name"><span>
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Chat"> </use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Chat"> </use>
                                 </svg></span><a href="letter-box.html">Nick Mark mentioned Sara</a></div>
                             <div class="view-btn"><a href="#!">View
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
                                 </svg></a></div>
                           </div>
                         </li>
@@ -445,11 +443,11 @@ include("../server/connection.php")
                           <div class="recent-activity-data">
                             <div class="activity-name"> <span>
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Download"> </use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Download"> </use>
                                 </svg></span><a href="letter-box.html">The Post name was removed...</a></div>
                             <div class="view-btn"><a href="#!">View
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
                                 </svg></a></div>
                           </div>
                         </li>
@@ -457,11 +455,11 @@ include("../server/connection.php")
                           <div class="recent-activity-data">
                             <div class="activity-name"><span> 
                                 <svg> 
-                                  <use href="../assets/svg/icon-sprite.svg#Swap"> </use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Swap"> </use>
                                 </svg></span><a href="letter-box.html">Patrick Sullivan published... </a></div>
                             <div class="view-btn"><a href="#!">View 
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
                                 </svg></a></div>
                           </div>
                         </li>
@@ -476,11 +474,11 @@ include("../server/connection.php")
                           <div class="recent-activity-data">
                             <div class="activity-name"><span>
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Send"> </use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Send"> </use>
                                 </svg></span><a href="letter-box.html">Nick Mark mentioned Sara</a></div>
                             <div class="view-btn"><a href="#!">View
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
                                 </svg></a></div>
                           </div>
                         </li>
@@ -488,11 +486,11 @@ include("../server/connection.php")
                           <div class="recent-activity-data">
                             <div class="activity-name"><span>
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Work"> </use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Work"> </use>
                                 </svg></span><a href="letter-box.html">The Post name was removed...</a></div>
                             <div class="view-btn"> <a href="#!">View 
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Arrow-Right-2"></use>
                                 </svg></a></div>
                           </div>
                         </li>
@@ -509,7 +507,7 @@ include("../server/connection.php")
                       <div class="dropdown icon-dropdown setting-menu">
                         <button class="btn dropdown-toggle" id="userdropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../assets/svg/icon-sprite.svg#setting"> </use>
+                            <use href="../../assets/svg/icon-sprite.svg#setting"> </use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown2"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly </a><a class="dropdown-item" href="#">Yearly </a></div>
@@ -545,7 +543,7 @@ include("../server/connection.php")
                       <div class="dropdown icon-dropdown setting-menu">
                         <button class="btn dropdown-toggle" id="userdropdown3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../assets/svg/icon-sprite.svg#setting"></use>
+                            <use href="../../assets/svg/icon-sprite.svg#setting"></use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown3"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly </a><a class="dropdown-item" href="#">Yearly</a></div>
@@ -569,7 +567,7 @@ include("../server/connection.php")
                           <tr> 
                             <td>
                               <div class="user-data">
-                                <div><img src="../assets/images/dashboard/avtar/2.jpg" alt="avatar"></div>
+                                <div><img src="../../assets/images/dashboard/avtar/2.jpg" alt="avatar"></div>
                                 <div> <a href="user-profile.html"> 
                                     <h4>Dmitriy Groshev</h4></a><span>Switzerland</span></div>
                               </div>
@@ -590,7 +588,7 @@ include("../server/connection.php")
                           <tr>
                             <td>
                               <div class="user-data">
-                                <div><img src="../assets/images/dashboard/avtar/17.jpg" alt="avatar"></div>
+                                <div><img src="../../assets/images/dashboard/avtar/17.jpg" alt="avatar"></div>
                                 <div><a href="user-profile.html">
                                     <h4>Patrick Beverley</h4></a><span> Germany</span></div>
                               </div>
@@ -611,7 +609,7 @@ include("../server/connection.php")
                           <tr>
                             <td>
                               <div class="user-data">
-                                <div><img src="../assets/images/avtar/18.jpg" alt="avatar"></div>
+                                <div><img src="../../assets/images/avtar/18.jpg" alt="avatar"></div>
                                 <div><a href="user-profile.html">
                                     <h4>Kevin Greem</h4></a><span> Canada</span></div>
                               </div>
@@ -632,7 +630,7 @@ include("../server/connection.php")
                           <tr>
                             <td>
                               <div class="user-data">
-                                <div><img src="../assets/images/dashboard/avtar/19.jpg" alt="avatar"></div>
+                                <div><img src="../../assets/images/dashboard/avtar/19.jpg" alt="avatar"></div>
                                 <div><a href="user-profile.html">
                                     <h4>William Barton</h4></a><span>United States</span></div>
                               </div>
@@ -664,7 +662,7 @@ include("../server/connection.php")
                       <div class="dropdown icon-dropdown setting-menu">
                         <button class="btn dropdown-toggle" id="userdropdown4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../assets/svg/icon-sprite.svg#setting"> </use>
+                            <use href="../../assets/svg/icon-sprite.svg#setting"> </use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown4"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
@@ -678,7 +676,7 @@ include("../server/connection.php")
                           <div class="monthly-data"> 
                             <div class="invoice-data-icon"><span> 
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#bookmark"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#bookmark"></use>
                                 </svg></span>
                               <div><a href="invoice-1.html">
                                   <h4>Camelun ios Development</h4></a>
@@ -692,7 +690,7 @@ include("../server/connection.php")
                           <div class="monthly-data"> 
                             <div class="invoice-data-icon"><span> 
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Ticket-Star"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Ticket-Star"></use>
                                 </svg></span>
                               <div><a href="#">
                                   <h4>ReactDT Motions</h4></a>
@@ -706,7 +704,7 @@ include("../server/connection.php")
                           <div class="monthly-data">
                             <div class="invoice-data-icon"><span>
                                 <svg>
-                                  <use href="../assets/svg/icon-sprite.svg#Discovery"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Discovery"></use>
                                 </svg></span>
                               <div><a href="invoice-2.html">
                                   <h4>Arocca Store</h4></a>
@@ -720,7 +718,7 @@ include("../server/connection.php")
                           <div class="monthly-data">
                             <div class="invoice-data-icon"><span> 
                                 <svg> 
-                                  <use href="../assets/svg/icon-sprite.svg#Shield-Done"></use>
+                                  <use href="../../assets/svg/icon-sprite.svg#Shield-Done"></use>
                                 </svg></span>
                               <div><a href="invoice-3.html">
                                   <h4>EnterPress Project</h4></a>
@@ -733,7 +731,7 @@ include("../server/connection.php")
                         <li>
                           <button class="btn btn-outline-light txt-dark active w-100" type="button"><a class="d-flex gap-2 align-items-center" href="projects.html"> 
                               <svg>
-                                <use href="../assets/svg/icon-sprite.svg#Plus-Circle"></use>
+                                <use href="../../assets/svg/icon-sprite.svg#Plus-Circle"></use>
                               </svg>Add Project</a></button>
                         </li>
                       </ul>
@@ -750,10 +748,10 @@ include("../server/connection.php")
                         <button class="btn dropdown-toggle custom-date-btn" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span>19 Aug - 25 Aug</span>
                           <div class="custom-date">
                             <svg>
-                              <use href="../assets/svg/icon-sprite.svg#Left-Arrow"></use>
+                              <use href="../../assets/svg/icon-sprite.svg#Left-Arrow"></use>
                             </svg>
                             <svg>
-                              <use href="../assets/svg/icon-sprite.svg#Right-Arrow"></use>
+                              <use href="../../assets/svg/icon-sprite.svg#Right-Arrow"></use>
                             </svg>
                           </div>
                         </button>
@@ -767,14 +765,14 @@ include("../server/connection.php")
                         <li> 
                           <div class="arrow-up">
                             <svg>
-                              <use href="../assets/svg/icon-sprite.svg#Arrow-Up"></use>
+                              <use href="../../assets/svg/icon-sprite.svg#Arrow-Up"></use>
                             </svg>
                           </div><span>$5.850</span>
                         </li>
                         <li>
                           <div class="arrow-down">
                             <svg> 
-                              <use href="../assets/svg/icon-sprite.svg#Arrow-Down"></use>
+                              <use href="../../assets/svg/icon-sprite.svg#Arrow-Down"></use>
                             </svg>
                           </div><span>$1.750</span>
                         </li>
@@ -792,7 +790,7 @@ include("../server/connection.php")
                       <div class="dropdown icon-dropdown setting-menu">
                         <button class="btn dropdown-toggle" id="userdropdown5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../assets/svg/icon-sprite.svg#setting"> </use>
+                            <use href="../../assets/svg/icon-sprite.svg#setting"> </use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown5"><a class="dropdown-item" href="#">Weekly </a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly </a></div>
@@ -804,7 +802,7 @@ include("../server/connection.php")
                       <ul>
                         <li> 
                           <div class="user-notification">
-                            <div><img src="../assets/images/dashboard/avtar/2.jpg" alt="avatar"></div>
+                            <div><img src="../../assets/images/dashboard/avtar/2.jpg" alt="avatar"></div>
                             <div class="user-description"><a href="letter-box.html">
                                 <h4>You have new comments in real finical law agency landing page design.</h4></a><span>Today 11:45pm</span></div>
                           </div>
@@ -816,7 +814,7 @@ include("../server/connection.php")
                         </li>
                         <li>
                           <div class="user-notification">
-                            <div><img src="../assets/images/dashboard/avtar/17.jpg" alt="avatar"></div>
+                            <div><img src="../../assets/images/dashboard/avtar/17.jpg" alt="avatar"></div>
                             <div class="user-description"><a href="letter-box.html">
                                 <h4>Congrats! you complete all task for today. just need to join meting.</h4></a><span>Today 01:05pm</span></div>
                           </div>
@@ -828,7 +826,7 @@ include("../server/connection.php")
                         </li>
                         <li> 
                           <div class="user-notification">
-                            <div> <img src="../assets/images/dashboard/avtar/18.jpg" alt="avatar"></div>
+                            <div> <img src="../../assets/images/dashboard/avtar/18.jpg" alt="avatar"></div>
                             <div class="user-description"><a href="letter-box.html">
                                 <h4>You have new comments in real finical law agency landing page design.</h4></a><span>Today 06:55pm</span></div>
                           </div>
@@ -840,7 +838,7 @@ include("../server/connection.php")
                         </li>
                         <li>
                           <div class="user-notification">
-                            <div><img src="../assets/images/dashboard/avtar/19.jpg" alt="avatar"></div>
+                            <div><img src="../../assets/images/dashboard/avtar/19.jpg" alt="avatar"></div>
                             <div class="user-description"><a href="letter-box.html">
                                 <h4>Congrats! you complete all task for today. just need to join meting.</h4></a><span>Today 06:55pm</span></div>
                           </div>
@@ -863,7 +861,7 @@ include("../server/connection.php")
                       <div class="dropdown icon-dropdown setting-menu">
                         <button class="btn dropdown-toggle" id="userdropdown22" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../assets/svg/icon-sprite.svg#setting"> </use>
+                            <use href="../../assets/svg/icon-sprite.svg#setting"> </use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown22"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly </a></div>
@@ -890,9 +888,9 @@ include("../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/8.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/10.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/2.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/8.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/10.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
                                   <li class="d-inline-block">
                                     <p>26+</p>
                                   </li>
@@ -909,9 +907,9 @@ include("../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/20.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/12.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/20.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/12.jpg" alt=""></li>
                                   <li class="d-inline-block">
                                     <p>6+</p>
                                   </li>
@@ -928,8 +926,8 @@ include("../server/connection.php")
                             <td class="team-avtar"> 
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/14.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/13.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/14.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/13.jpg" alt=""></li>
                                 </ul>
                               </div>
                             </td>
@@ -943,9 +941,9 @@ include("../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul> 
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/22.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/15.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/2.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/22.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/15.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
                                 </ul>
                               </div>
                             </td>
@@ -959,9 +957,9 @@ include("../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/21.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/23.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../assets/images/dashboard/avtar/24.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/21.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/23.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/24.jpg" alt=""></li>
                                   <li class="d-inline-block"> 
                                     <p>5+                           </p>
                                   </li>
@@ -986,7 +984,7 @@ include("../server/connection.php")
                       <div class="dropdown icon-dropdown setting-menu">
                         <button class="btn dropdown-toggle" id="userdropdown9" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../assets/svg/icon-sprite.svg#setting"> </use>
+                            <use href="../../assets/svg/icon-sprite.svg#setting"> </use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown9"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly </a></div>
@@ -1041,47 +1039,47 @@ include("../server/connection.php")
       </div>
     </div>
     <!-- latest jquery-->
-    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
-    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- feather icon js-->
-    <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="../../assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="../../assets/js/icons/feather-icon/feather-icon.js"></script>
     <!-- scrollbar js-->
-    <script src="../assets/js/scrollbar/simplebar.js"></script>
-    <script src="../assets/js/scrollbar/custom.js"></script>
+    <script src="../../assets/js/scrollbar/simplebar.js"></script>
+    <script src="../../assets/js/scrollbar/custom.js"></script>
     <!-- Sidebar jquery-->
-    <script src="../assets/js/config.js"></script>
+    <script src="../../assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/sidebar-menu.js"></script>
-    <script src="../assets/js/sidebar-pin.js"></script>
-    <script src="../assets/js/slick/slick.min.js"></script>
-    <script src="../assets/js/slick/slick.js"></script>
-    <script src="../assets/js/header-slick.js"></script>
-    <script src="../assets/js/chart/morris-chart/raphael.js"></script>
-    <script src="../assets/js/chart/morris-chart/morris.js"> </script>
-    <script src="../assets/js/chart/morris-chart/prettify.min.js"></script>
-    <script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
-    <script src="../assets/js/chart/apex-chart/stock-prices.js"></script>
-    <script src="../assets/js/chart/apex-chart/moment.min.js"></script>
-    <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
-    <script src="../assets/js/dashboard/default.js"></script>
-    <script src="../assets/js/notify/index.js"></script>
-    <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
-    <script src="../assets/js/datatable/datatables/datatable.custom1.js"></script>
-    <script src="../assets/js/owlcarousel/owl.carousel.js"></script>
-    <script src="../assets/js/owlcarousel/owl-custom.js"></script>
-    <script src="../assets/js/typeahead/handlebars.js"></script>
-    <script src="../assets/js/typeahead/typeahead.bundle.js"></script>
-    <script src="../assets/js/typeahead/typeahead.custom.js"></script>
-    <script src="../assets/js/typeahead-search/handlebars.js"></script>
-    <script src="../assets/js/typeahead-search/typeahead-custom.js"></script>
-    <script src="../assets/js/height-equal.js"></script>
+    <script src="../../assets/js/sidebar-menu.js"></script>
+    <script src="../../assets/js/sidebar-pin.js"></script>
+    <script src="../../assets/js/slick/slick.min.js"></script>
+    <script src="../../assets/js/slick/slick.js"></script>
+    <script src="../../assets/js/header-slick.js"></script>
+    <script src="../../assets/js/chart/morris-chart/raphael.js"></script>
+    <script src="../../assets/js/chart/morris-chart/morris.js"> </script>
+    <script src="../../assets/js/chart/morris-chart/prettify.min.js"></script>
+    <script src="../../assets/js/chart/apex-chart/apex-chart.js"></script>
+    <script src="../../assets/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="../../assets/js/chart/apex-chart/moment.min.js"></script>
+    <script src="../../assets/js/notify/bootstrap-notify.min.js"></script>
+    <script src="../../assets/js/dashboard/default.js"></script>
+    <script src="../../assets/js/notify/index.js"></script>
+    <script src="../../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../assets/js/datatable/datatables/datatable.custom.js"></script>
+    <script src="../../assets/js/datatable/datatables/datatable.custom1.js"></script>
+    <script src="../../assets/js/owlcarousel/owl.carousel.js"></script>
+    <script src="../../assets/js/owlcarousel/owl-custom.js"></script>
+    <script src="../../assets/js/typeahead/handlebars.js"></script>
+    <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
+    <script src="../../assets/js/typeahead-search/handlebars.js"></script>
+    <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../../assets/js/height-equal.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/theme-customizer/customizer.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/theme-customizer/customizer.js"></script>
     <!-- Plugin used-->
   </body>
 
