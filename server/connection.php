@@ -47,7 +47,7 @@ if ($isLocalhost) {
   
 } else {
     // Online (Live Server)
-    $domain = "https://quanstofy.com/";
+    $domain = "https://smartinvoicex.com.spotwebtech.com.ng/";
 
     define("USER", "spotwebt_reciept");
     define("PASSWORD", "spotwebt_reciept");
@@ -62,12 +62,8 @@ if ($isLocalhost) {
    
 }
 
-// Site configurations
-// $sitename = "Quanstofy";
 
-// Email Config 
 
-$domain = 'http://localhost/ReceiptGeneratorWebsite/';
 $sitename =  'Smart InvoiceX';
 $siteemail =  'support@smartinvoicex.com';
 $sitephone = '08108833188';
