@@ -49,9 +49,9 @@ if ($isLocalhost) {
     // Online (Live Server)
     $domain = "https://quanstofy.com/";
 
-    define("USER", "quanstof_billz-crypto");
-    define("PASSWORD", "quanstof_billz-crypto");
-    define("DATABASE", "quanstof_billz-crypto");
+    define("USER", "spotwebt_reciept");
+    define("PASSWORD", "spotwebt_reciept");
+    define("DATABASE", "spotwebt_reciept");
 
     // Database connection
     $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
