@@ -8,8 +8,6 @@ include("../../server/connection.php")
 
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:30 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +17,7 @@ include("../../server/connection.php")
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
-    <title><?php  echo $sitename ?> - Premium Admin Template</title>
+    <title><?php  echo $sitename ?> - User Dashboard</title>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">

@@ -1,6 +1,6 @@
 <?php
 
-function Model() {
+function Model(): string {
     return '
     <div class="toast-container position-fixed top-0 end-0 p-3 toast-index toast-rtl">
         <div class="toast hide toast fade" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
