@@ -332,7 +332,7 @@ include("./server/connection.php")
             </div>
             <div class="col-md-6">
               <div class="right-subfooter">
-                <h3 class="text-end">If You Like Our Theme So Please Rate Us</h3>
+                <h3 class="text-end">Help others discover Smart ReceiptX — share it with someone who needs simple receipt tools.</h3>
                 <ul>
                   <li><a href="https://support.pixelstrap.com/" >Home</a></li>
                   <li><a href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">About us </a></li>
