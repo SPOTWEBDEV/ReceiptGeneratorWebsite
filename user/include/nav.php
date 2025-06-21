@@ -32,7 +32,7 @@
                   <input type="text" placeholder="Search here...">
                 </div>
               </li>
-              <li class="onhover-dropdown"> 
+              <!-- <li class="onhover-dropdown"> 
                 <div class="notification-box">
                   <svg> 
                     <use href="../assets/svg/icon-sprite.svg#Bell"></use>
@@ -94,8 +94,8 @@
                     </ul>
                   </div>
                 </div>
-              </li>
-              <li class="onhover-dropdown">
+              </li> -->
+              <!-- <li class="onhover-dropdown">
                 <svg>
                   <use href="../assets/svg/icon-sprite.svg#Bookmark"></use>
                 </svg>
@@ -137,8 +137,8 @@
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="onhover-dropdown"> 
+              </li> -->
+              <!-- <li class="onhover-dropdown"> 
                 <div class="message position-relative">
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#Message"></use>
@@ -180,8 +180,8 @@
                     <li> <a class="f-w-700" href="private-chat.html">Check all</a></li>
                   </ul>
                 </div>
-              </li>
-              <li class="cart-nav onhover-dropdown">
+              </li> -->
+              <!-- <li class="cart-nav onhover-dropdown">
                 <div class="cart-box"> 
                   <svg>
                     <use href="../assets/svg/icon-sprite.svg#Buy"></use>
@@ -213,7 +213,7 @@
                         <button class="btn btn-outline-primary" type="button">View Cart</button></a><a class="btn btn-primary view-checkout" href="checkout.html">Checkout  </a></li>
                   </ul>
                 </div>
-              </li>
+              </li> -->
               <li>
                 <div class="mode">
                   <svg class="for-dark">
@@ -227,7 +227,7 @@
               <li class="language-nav">
                 <div class="translate_wrapper">
                   <div class="current_lang">
-                    <div class="lang"><i class="flag-icon flag-icon-gb"></i><span class="lang-txt box-col-none">EN            </span></div>
+                    <div class="lang"><i class="flag-icon flag-icon-gb"></i><span class="lang-txt box-col-none">EN </span></div>
                   </div>
                   <div class="more_lang">
                     <div class="lang selected" data-value="en"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">English<span> (US)</span></span></div>
