@@ -32,9 +32,6 @@
     ";
     }
 
-
-   
-
     ?>
     <script src="<?php echo $domain ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/notify/custom-notify.js"></script>

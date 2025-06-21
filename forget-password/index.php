@@ -11,9 +11,6 @@ include("../server/connection.php")
 
 
 <html lang="en">
-
-<!-- Mirrored from admin.pixelstrap.net/<?php echo $sitename ?>/template/forget-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,17 +72,17 @@ include("../server/connection.php")
 
                 if ( !isset($_GET['step']) || $_GET['step'] == 1 )  { ?>
 
-                  <form class="theme-form">
+                  <form method="POST" class="theme-form">
                     <h4>Reset Your Password</h4>
                     <div class="form-group">
                       <label class="col-form-label">Enter Your Account Email</label>
                       <div class="row">
                         <div class="col-12">
-                          <input class="form-control mb-1" type="email" placeholder="test@gmail.com">
+                          <input class="form-control mb-1" name="email" type="email" placeholder="test@gmail.com">
                         </div>
                         <div class="col-12">
                           <div class="text-end">
-                            <button class="btn btn-primary btn-block m-t-10" type="submit">Send</button>
+                            <button name="sendOtp" class="btn btn-primary btn-block m-t-10" type="submit">Send</button>
                           </div>
                         </div>
                       </div>
@@ -172,7 +169,4 @@ include("../server/connection.php")
   <script src="../assets/js/script.js"></script>
   <!-- Plugin used-->
 </body>
-
-<!-- Mirrored from admin.pixelstrap.net/<?php echo $sitename ?>/template/forget-password.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
-
 </html>

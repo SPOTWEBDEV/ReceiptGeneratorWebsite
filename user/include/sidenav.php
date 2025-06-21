@@ -64,8 +64,8 @@
     <span class="lan-3">Deposite</span>
   </a>
   <ul class="sidebar-submenu">
-    <li><a class="lan-4" href="index-2.html">Deposite Request</a></li>
-    <li><a class="lan-5" href="dashboard-02.html">Deposite History</a></li>
+    <li><a class="lan-4" href="<?php echo $domain ?>user/deposit/">Deposite Request</a></li>
+    <li><a class="lan-5" href="">Deposite History</a></li>
   </ul>
 </li>
 
