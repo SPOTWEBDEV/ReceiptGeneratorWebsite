@@ -65,7 +65,20 @@
   </a>
   <ul class="sidebar-submenu">
     <li><a class="lan-4" href="<?php echo $domain ?>user/deposit/">Deposite Request</a></li>
-    <li><a class="lan-5" href="">Deposite History</a></li>
+    <li><a class="lan-5" href="<?php echo $domain ?>user/deposit/history/">Deposite History</a></li>
+  </ul>
+</li>
+
+
+<li class="sidebar-list">
+  <i class="bi bi-pin-angle-fill"></i>
+  <a class="sidebar-link sidebar-title" href="#">
+    <i class="bi bi-folder2-open"></i>
+    <span class="lan-7">Invoice</span>
+  </a>
+  <ul class="sidebar-submenu">
+    <li><a href="<?php echo $domain ?>user/project/create-project">Create Invoice</a></li>
+    <li><a href="<?php echo $domain ?>user/project/list-project">List Invoice</a></li>
   </ul>
 </li>
 
@@ -73,11 +86,11 @@
   <i class="bi bi-pin-angle-fill"></i>
   <a class="sidebar-link sidebar-title" href="#">
     <i class="bi bi-folder2-open"></i>
-    <span class="lan-7">My Project</span>
+    <span class="lan-7">My Template</span>
   </a>
   <ul class="sidebar-submenu">
-    <li><a href="<?php echo $domain ?>user/setting/profile/index.php">Create Project</a></li>
-    <li><a href="<?php echo $domain ?>user/setting/profile/index.php">List Project</a></li>
+    <li><a href="<?php echo $domain ?>user/project/create-project">Create Template</a></li>
+    <li><a href="<?php echo $domain ?>user/project/list-project">List Template</a></li>
   </ul>
 </li>
 
@@ -88,8 +101,8 @@
     <span class="lan-7">Setting</span>
   </a>
   <ul class="sidebar-submenu">
-    <li><a href="<?php echo $domain ?>user/setting/profile/index.php">Create Project</a></li>
-    <li><a href="<?php echo $domain ?>user/setting/profile/index.php">List Project</a></li>
+    <li><a href="<?php echo $domain ?>user/setting/profile/">Account Setting</a></li>
+    <li><a href="<?php echo $domain ?>user/setting/template-setting/">Template Setting</a></li>
   </ul>
 </li>
 

@@ -1,7 +1,7 @@
 <?php
 
 include("../../server/connection.php");
-
+include("../../server/model.php");
 
 
 $banks = mysqli_query($connection, "SELECT id, type, accountorwallet FROM payment_methods WHERE method = 'bank'");
@@ -10,14 +10,15 @@ $cryptos = mysqli_query($connection, "SELECT id, type, accountorwallet FROM paym
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    session_start();
-    $user_id = $_SESSION['user_id'] ?? null;
+    $user_id = 2;
 
-    $amount = $_POST['amount'] ?? 0;
-    $payment_option_id = $_POST['payment_option'] ?? null;
+    $amount = $_POST['amount'] ;
+    $payment_option_id = $_POST['payment_option'] ;
+
+    echo "<script>alert($user_id + ' =>amount '  + $amount  + ' =>payment '  + $payment_option_id)</script>";
 
     if (!$user_id || !$payment_option_id || !$amount) {
-        echo "<script>Model({ message: 'Missing required fields.' });</script>";
+        echo Model('Missing required fields.');
     } else {
         $amount = floatval($amount);
         $payment_option_id = intval($payment_option_id);
@@ -32,14 +33,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ");
 
         if ($insert) {
+            echo  Model("Deposit recorded successfully. Reference: $deposit_id");
             echo "<script>
-                Model({ message: 'Deposit recorded successfully. Reference: $deposit_id' });
                 setTimeout(() => {
-                    window.location.reload();
+                    window.location.href= './history/';
                 }, 2000);
             </script>";
         } else {
-            echo "<script>Model({ message: 'Failed to record deposit.' });</script>";
+            echo Model('Failed to record deposit.');
         }
     }
 }
@@ -231,40 +232,59 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const paymentMethod = document.getElementById('paymentMethod');
-            const bankSelect = document.getElementById('bankSelect');
-            const cryptoSelect = document.getElementById('cryptoSelect');
-            const bankOptions = document.getElementById('bankOptions');
-            const cryptoOptions = document.getElementById('cryptoOptions');
-            const accountDisplay = document.getElementById('accountDisplay');
-            const accountInput = document.getElementById('accountInput');
+  document.addEventListener('DOMContentLoaded', function () {
+    const paymentMethod = document.getElementById('paymentMethod');
+    const bankSelect = document.getElementById('bankSelect');
+    const cryptoSelect = document.getElementById('cryptoSelect');
+    const bankOptions = document.getElementById('bankOptions');
+    const cryptoOptions = document.getElementById('cryptoOptions');
+    const accountDisplay = document.getElementById('accountDisplay');
+    const accountInput = document.getElementById('accountInput');
 
-            // Handle payment method change
-            paymentMethod.addEventListener('change', function() {
-                const method = this.value;
-                bankSelect.classList.toggle('d-none', method !== 'bank');
-                cryptoSelect.classList.toggle('d-none', method !== 'crypto');
-                accountDisplay.classList.add('d-none');
-                accountInput.value = '';
-            });
+    paymentMethod.addEventListener('change', function () {
+      const method = this.value;
 
-            // Handle sub-option (bank or crypto) change
-            [bankOptions, cryptoOptions].forEach(select => {
-                select.addEventListener('change', function() {
-                    const selected = this.options[this.selectedIndex];
-                    const account = selected.getAttribute('data-account') || '';
-                    if (account) {
-                        accountInput.value = account;
-                        accountDisplay.classList.remove('d-none');
-                    } else {
-                        accountInput.value = '';
-                        accountDisplay.classList.add('d-none');
-                    }
-                });
-            });
-        });
-    </script>
+      // Toggle visibility
+      bankSelect.classList.toggle('d-none', method !== 'bank');
+      cryptoSelect.classList.toggle('d-none', method !== 'crypto');
+
+      // Enable the relevant select and disable the other
+      if (method === 'bank') {
+        bankOptions.disabled = false;
+        cryptoOptions.disabled = true;
+      } else if (method === 'crypto') {
+        cryptoOptions.disabled = false;
+        bankOptions.disabled = true;
+      } else {
+        bankOptions.disabled = true;
+        cryptoOptions.disabled = true;
+      }
+
+      // Reset account display
+      accountDisplay.classList.add('d-none');
+      accountInput.value = '';
+    });
+
+    [bankOptions, cryptoOptions].forEach(select => {
+      select.addEventListener('change', function () {
+        const selected = this.options[this.selectedIndex];
+        const account = selected.getAttribute('data-account') || '';
+        if (account) {
+          accountInput.value = account;
+          accountDisplay.classList.remove('d-none');
+        } else {
+          accountInput.value = '';
+          accountDisplay.classList.add('d-none');
+        }
+      });
+    });
+
+    // Trigger initial disable
+    bankOptions.disabled = true;
+    cryptoOptions.disabled = true;
+  });
+</script>
+
 
 
 
@@ -295,7 +315,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="<?php echo $domain ?>assets/js/chart/apex-chart/moment.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/dashboard/default.js"></script>
-    <script src="<?php echo $domain ?>assets/js/notify/index.js"></script>
     <script src="<?php echo $domain ?>assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/datatable/datatables/datatable.custom.js"></script>
     <script src="<?php echo $domain ?>assets/js/datatable/datatables/datatable.custom1.js"></script>
