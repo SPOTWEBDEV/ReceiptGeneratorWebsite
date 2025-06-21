@@ -55,23 +55,33 @@
                         <i class="bi bi-pin-angle-fill"></i>
                         <a class="sidebar-link sidebar-title" href="#">
                             <i class="bi bi-cash-stack"></i>
-                            <span class="lan-3">Deposit</span>
+                            <span class="lan-3">Deposite</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a class="lan-4" href="<?php echo $domain ?>user/deposit/">Pending Deposit </a></li>
+                            <li><a class="lan-4" href="<?php echo $domain ?>user/deposit/">Pending Deposite</a></li>
                             <li><a class="lan-5" href="<?php echo $domain ?>user/deposit/history/">Approved Deposit</a></li>
-                            <li><a class="lan-5" href="<?php echo $domain ?>user/deposit/history/">Declined Deposit</a></li>
+                             <li><a class="lan-5" href="<?php echo $domain ?>user/deposit/history/">Declined Deposit</a></li>
                         </ul>
                     </li>
 
 
-                
+                    <!-- <li class="sidebar-list">
+                        <i class="bi bi-pin-angle-fill"></i>
+                        <a class="sidebar-link sidebar-title" href="#">
+                            <i class="bi bi-folder2-open"></i>
+                            <span class="lan-7">Invoice</span>
+                        </a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="<?php echo $domain ?>user/project/create-project">Create Invoice</a></li>
+                            <li><a href="<?php echo $domain ?>user/project/list-project">List Invoice</a></li>
+                        </ul>
+                    </li> -->
 
                     <li class="sidebar-list">
                         <i class="bi bi-pin-angle-fill"></i>
                         <a class="sidebar-link sidebar-title" href="#">
                             <i class="bi bi-folder2-open"></i>
-                            <span class="lan-7">Template</span>
+                            <span class="lan-7">My Template</span>
                         </a>
                         <ul class="sidebar-submenu">
                             <li><a href="<?php echo $domain ?>user/project/create-project">Create Template</a></li>
@@ -86,8 +96,8 @@
                             <span class="lan-7">Setting</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a href="<?php echo $domain ?>user/setting/profile/">Account Setting</a></li>
-                            <li><a href="<?php echo $domain ?>user/setting/template-setting/">Profie Setting</a></li>
+                            <li><a href="<?php echo $domain ?>user/setting/profile/">Profile Setting</a></li>
+                            <li><a href="<?php echo $domain ?>user/setting/template-setting/">Account Setting</a></li>
                             <li><a href="<?php echo $domain ?>user/setting/template-setting/">Template Setting</a></li>
                         </ul>
                     </li>
