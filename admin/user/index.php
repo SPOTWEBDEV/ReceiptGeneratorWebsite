@@ -104,7 +104,6 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 <div class="left-header main-sub-header p-0">
                   <div class="left-menu-header">
                     <ul class="header-left">
-
                       <li class="onhover-dropdown p-0"><span class="f-w-700">Miscellaneous</span>
                         <ul class="onhover-show-div left-dropdown">
                           <li class="flyout-right"><a href="#">Gallery</a>

@@ -87,6 +87,8 @@ include("../server/connection.php")
                         </div>
                       </div>
                     </div>
+<<<<<<< HEAD
+=======
                   </form>
 
 
@@ -95,6 +97,7 @@ include("../server/connection.php")
                   <form class="theme-form">
 
 
+>>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
                     <div class="mt-4 mb-4"><span class="reset-password-link">If don't receive OTP?  <a class="btn-link text-danger" href="#">Resend</a></span></div>
                     <div class="form-group">
                       <label class="col-form-label pt-0">Enter OTP</label>
@@ -110,6 +113,8 @@ include("../server/connection.php")
                         </div>
                       </div>
                     </div>
+<<<<<<< HEAD
+=======
 
                   </form>
 
@@ -117,6 +122,7 @@ include("../server/connection.php")
                 <?php } else if($_GET['step'] == 3) { ?>
 
                   <form class="theme-form">
+>>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
                     <h6 class="mt-4">Create Your Password</h6>
                     <div class="form-group">
                       <label class="col-form-label">New Password</label>
