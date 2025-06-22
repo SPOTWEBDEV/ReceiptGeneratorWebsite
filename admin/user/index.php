@@ -182,7 +182,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
               <div class="card">
                 <div class="card-header">
                   <div class="header-top">
-                    <h4>Deposit History Table </h4>
+                    <h4>All Users Table </h4>
                     <div class="dropdown icon-dropdown setting-menu ">
                       <button class="btn dropdown-toggle" id="userdropdown22" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <svg>
@@ -195,23 +195,27 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </div>
                 <div class="card-body">
                   <div class="table-responsive custom-scrollbar">
-                    
+
+                  <input type="text" id="userSearch" placeholder="Search by name or email" class="form-control mb-3">
+
+
 
                     <table class="table card-table table-vcenter text-nowrap">
                       <thead>
                         <tr>
-                         <th>#</th>
+                          <th>#</th>
                           <th>Username</th>
                           <th>Email</th>
                           <th>Account Status</th>
-                          <th>Action</th></tr>
+                          <th>Action</th>
+                        </tr>
                         </tr>
                       </thead>
                       <tbody>
 
-                      <?php
+                        <?php
 
-                      $select = mysqli_query($connection, "SELECT * FROM `users`");
+                        $select = mysqli_query($connection, "SELECT * FROM `users`");
                         if (mysqli_num_rows($select) > 0) {
                           $count = 0;
                           while ($row = mysqli_fetch_array($select)) {
@@ -219,23 +223,32 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                             $userId = $row['id'];
                             $status = $row['status'];
                         ?>
-                       
-                           
-                        <tr>
-                          <td class="f-w-600"><?= $count ?></td>
-                          <td><?= htmlspecialchars($row['username']) ?></td>
-                          <td><?= htmlspecialchars($row['email']) ?></td>
-                          <td class="<?= $status === 'active' ? 'text-success' : ($status === 'inactive' ? 'text-warning' : 'text-danger') ?>">
-                            <?= ucfirst($status) ?>
-                          </td>
-                          <td class="text-end"><a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-sm" href="javascript:void(0)"><i class="fa fa-pencil"></i> Edit</a><a class="icon" href="javascript:void(0)"></a><a class="btn btn-transparent btn-sm" href="javascript:void(0)"><i class="fa fa-link"></i> Update</a><a class="icon" href="javascript:void(0)"></a><a class="btn btn-danger btn-sm" href="javascript:void(0)"><i class="fa fa-trash"></i> Delete</a></td>
-                        </tr>
 
-                        <?php  }}  ?>
-                        
-                        
-                        
-                        
+
+                            <tr>
+                              <td class="f-w-600"><?= $count ?></td>
+                              <td><?= htmlspecialchars($row['username']) ?></td>
+                              <td><?= htmlspecialchars($row['email']) ?></td>
+                              <td class="<?= $status === 'active' ? 'text-success' : ($status === 'inactive' ? 'text-warning' : 'text-danger') ?>">
+                                <?= ucfirst($status) ?>
+                              </td>
+                              <td class="text-end">
+                                <a class="btn btn-primary btn-sm" href="edit-user.php?id=<?= $userId ?>"><i class="fa fa-pencil"></i> Edit</a>
+                                <a class="btn btn-warning btn-sm" href="?action=suspend&id=<?= $userId ?>" onclick="return confirm('Are you sure you want to suspend this user?')"><i class="fa fa-ban"></i> Suspend</a>
+                                <a class="btn btn-danger btn-sm" href="?action=delete&id=<?= $userId ?>" onclick="return confirm('Are you sure you want to delete this user?')"><i class="fa fa-trash"></i> Delete</a>
+                              </td>
+                            </tr>
+
+                          <?php  }
+                        } else { ?>
+
+                          <p>Table is empty</p>
+
+                        <?php }  ?>
+
+
+
+
                       </tbody>
                     </table>
 
@@ -251,6 +264,30 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
       <?php include('../include/footer.php') ?>
     </div>
   </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("userSearch");
+    const table = document.querySelector(".table tbody");
+
+    searchInput.addEventListener("keyup", function () {
+      const filter = this.value.toLowerCase();
+      const rows = table.querySelectorAll("tr");
+
+      rows.forEach(row => {
+        const username = row.cells[1]?.textContent.toLowerCase() || '';
+        const email = row.cells[2]?.textContent.toLowerCase() || '';
+        const status = row.cells[3]?.textContent.toLowerCase() || '';
+
+        const match = username.includes(filter) || email.includes(filter) || status.includes(filter);
+
+        row.style.display = match ? "" : "none";
+      });
+    });
+  });
+</script>
+
+
   <!-- latest jquery-->
   <script src="../../assets/js/jquery.min.js"></script>
   <!-- Bootstrap js-->

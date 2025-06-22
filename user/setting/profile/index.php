@@ -428,7 +428,7 @@ include("../../../server/connection.php")
                       </form>
                     </div>
                   </div>
-                </div> -->
+                </div> 
                 <div class="col-xl-12">
                   <form class="card">
                     <div class="card-header pb-0">
