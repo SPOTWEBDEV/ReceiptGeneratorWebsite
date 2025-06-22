@@ -99,6 +99,12 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
               <div class="col-xl-4 col-sm-7 box-col-3">
                 <h3> Project Create</h3>
               </div>
+
+              <div class="col-5 d-none d-xl-block">
+                  <!-- Page Sub Header Start-->
+        
+                  <!-- Page Sub Header end -->
+                </div>
           
               <div class="col-xl-3 col-sm-5 box-col-4">
                 <ol class="breadcrumb">
@@ -171,7 +177,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                                 <?= ucfirst($status) ?>
                               </td>
                               <td class="text-end">
-                                <a class="btn btn-primary btn-sm" href="edit-user.php?id=<?= $userId ?>"><i class="fa fa-pencil"></i> Edit</a>
+                                
                                 <a class="btn btn-warning btn-sm" href="?action=suspend&id=<?= $userId ?>" onclick="return confirm('Are you sure you want to suspend this user?')"><i class="fa fa-ban"></i> Suspend</a>
                                 <a class="btn btn-danger btn-sm" href="?action=delete&id=<?= $userId ?>" onclick="return confirm('Are you sure you want to delete this user?')"><i class="fa fa-trash"></i> Delete</a>
                               </td>

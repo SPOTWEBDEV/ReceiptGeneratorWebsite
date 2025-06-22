@@ -192,8 +192,13 @@ include("../../../server/client/auth/index.php");
                   </div>
                   <div class="card-body">
                     <div class="row">
-                    
-                      <div class="col-sm-6 col-md-3">
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label class="form-label">Old Password</label>
+                          <input class="form-control" name="oldpassword" type="text" placeholder="Enter Your Old Password" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
                         <div class="mb-3">
                           <label class="form-label">New Password</label>
                           <input class="form-control" name="newpassword" type="text" placeholder="Enter Your New Password" required>
@@ -201,29 +206,10 @@ include("../../../server/client/auth/index.php");
                       </div>
                       <div class="col-12">
                         <div class="mb-3">
-                          <label class="form-label">Email address</label>
-                          <input class="form-control" type="email" placeholder="Email">
+                          <label class="form-label">Confirm Password</label>
+                          <input class="form-control" type="text" name="confirmpassword" placeholder="Confirm Password" required>
                         </div>
-                      </div>
-                    
-                      <div class="col-md-5">
-                        <div class="mb-3">
-                          <label class="form-label">status</label>
-                          <select class="form-control btn-square">
-                            <option value="0">--Select--</option>
-                            <option value="1">Germany</option>
-                            <option value="2">Canada</option>
-                            <option value="3">Usa</option>
-                            <option value="4">Aus</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!-- <div class="col-md-12">
-                        <div>
-                          <label class="form-label">About Me</label>
-                          <textarea class="form-control" rows="4" placeholder="Enter About your description"></textarea>
-                        </div>
-                      </div> -->
+                      </div> 
                     </div>
                   </div>
                   <div class="card-footer text-end">
@@ -233,6 +219,7 @@ include("../../../server/client/auth/index.php");
               </div>
 
 
+              
               
             </div>
           </div>

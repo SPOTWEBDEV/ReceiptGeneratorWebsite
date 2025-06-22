@@ -306,5 +306,5 @@ include("../../server/connection.php")
     <!-- Plugin used-->
   </body>
 
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:30 GMT -->
+
 </html>

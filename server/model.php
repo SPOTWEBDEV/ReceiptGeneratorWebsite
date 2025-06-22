@@ -40,9 +40,4 @@
     <script src="<?php echo $domain ?>assets/js/notify/custom-notify.js"></script>
 
 </body>
-
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> e293d098f7677cf459e2770197f5671644c9a48f
