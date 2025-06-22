@@ -74,7 +74,6 @@ include("../server/model.php");
 
                     // Verify password
                     if (password_verify($password, $user['password'])) {
-                      session_start();
                       $_SESSION['user_id'] = $user['id'];
 
                       echo Model('Login successful. Redirecting...');

@@ -1,6 +1,8 @@
 <?php
 
-include("../../../server/connection.php")
+include("../../../server/connection.php");
+include("../../../server/model.php");
+include("../../../server/client/auth/index.php");
 
 
 
@@ -395,201 +397,118 @@ include("../../../server/connection.php")
                     <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
                   </div>
                   <div class="card-body">
-                    <form>
-                      <div class="row mb-2">
-                        <div class="profile-title">
-                          <div class="d-flex"> <img class="img-70 rounded-circle" alt="" src="<?php echo $domain ?>assets/images/user/7.jpg">
-                            <div class="flex-grow-1">
-                              <h3 class="mb-1 f-w-600">MARK JECNO</h3>
-                              <p>DESIGNER</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <?php
+
+
+                    if(isset($_POST['saveprofile'])){
+                         $username = $_POST['username'];
+                         $email = $_POST['email'];
+
+
+
+                         $update = mysqli_query($connection, "UPDATE `users` SET `username`='$username', `email`='$email' WHERE `id` ='$id'");
+
+                         if($update){
+                            echo Model("Successful update your email and username");
+                            echo "<script>setTimeout(()=>{
+                                 window.location.href = './index.php';
+                            },2000)</script>";
+                         }else{
+                            echo Model("Something went when trying to update your profile information");
+                         }
+                         
+                         
+                    }
+
+
+
+                    ?>
+                    <form method="POST">
                       <div class="mb-3">
                         <label class="form-label">Username</label>
-                        <input class="form-control" placeholder="Enter Username">
+                        <input name="username" class="form-control" name="username" value="<?php echo $userDetails['username'] ?>" required >
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Email-Address</label>
-                        <input class="form-control" placeholder="your-email@domain.com">
+                        <input name="email" class="form-control" name="email" value="<?php echo $userDetails['email'] ?>" required>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Password</label>
-                        <input class="form-control" type="password" value="password">
+                        <input name="password" class="form-control" name="password" type="password" value="<?php echo $userDetails['password'] ?>" readonly>
                       </div>
 
                       <div class="form-footer">
-                        <button class="btn btn-primary btn-block">Save</button>
+                        <button name="saveprofile" type="submit" class="btn btn-primary btn-block">Save</button>
                       </div>
                     </form>
                   </div>
                 </div>
               </div>
               <div class="col-xl-8">
-                <form class="card">
+                <?php
+
+                if(isset($_POST['changepassword'])){
+
+                  $oldpassword = $_POST['oldpassword'];
+                  $newpassword = $_POST['newpassword'];
+                  $confirmpassword = $_POST['confirmpassword'];
+
+                  if($oldpassword == $userDetails['password']){
+                       if($newpassword == $confirmpassword){
+                        $hashedPassword = password_hash($newpassword, PASSWORD_DEFAULT);
+                            $update = mysqli_query($connection , "UPDATE `users` SET `password`='$hashedPassword'");
+                            if($update){
+                                echo Model("Successful update your password");
+                                echo "<script>setTimeout(()=>{
+                                 window.location.href = './index.php';
+                                 },2000)</script>";
+                            }else{
+                              echo Model("Something went when trying to update your password");
+                            }
+                       }else{
+                          echo Model("New password don't match confirm password. please try again");
+                       }
+                  }else{
+                    echo Model("Your password you enter don't match this account password. please try again");
+                  }
+                }
+
+                ?>
+                <form method="POST" class="card">
                   <div class="card-header pb-0">
                     <h4 class="card-title mb-0">Edit Profile</h4>
                     <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
                   </div>
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-md-5">
+                      <div class="col-12">
                         <div class="mb-3">
-                          <label class="form-label">Company</label>
-                          <input class="form-control" type="text" placeholder="Company">
+                          <label class="form-label">Old Password</label>
+                          <input class="form-control" name="oldpassword" type="text" placeholder="Enter Your Old Password" required>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-md-3">
+                      <div class="col-12">
                         <div class="mb-3">
-                          <label class="form-label">Username</label>
-                          <input class="form-control" type="text" placeholder="Username">
+                          <label class="form-label">New Password</label>
+                          <input class="form-control" name="newpassword" type="text" placeholder="Enter Your New Password" required>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-md-4">
+                      <div class="col-12">
                         <div class="mb-3">
-                          <label class="form-label">Email address</label>
-                          <input class="form-control" type="email" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-3">
-                          <label class="form-label">First Name</label>
-                          <input class="form-control" type="text" placeholder="Company">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-3">
-                          <label class="form-label">Last Name</label>
-                          <input class="form-control" type="text" placeholder="Last Name">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-3">
-                          <label class="form-label">Address</label>
-                          <input class="form-control" type="text" placeholder="Home Address">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-3">
-                          <label class="form-label">City</label>
-                          <input class="form-control" type="text" placeholder="City">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-3">
-                          <label class="form-label">Postal Code</label>
-                          <input class="form-control" type="number" placeholder="ZIP Code">
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="mb-3">
-                          <label class="form-label">Country</label>
-                          <select class="form-control btn-square">
-                            <option value="0">--Select--</option>
-                            <option value="1">Germany</option>
-                            <option value="2">Canada</option>
-                            <option value="3">Usa</option>
-                            <option value="4">Aus</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div>
-                          <label class="form-label">About Me</label>
-                          <textarea class="form-control" rows="4" placeholder="Enter About your description"></textarea>
+                          <label class="form-label">Confirm Password</label>
+                          <input class="form-control" type="text" name="confirmpassword" placeholder="Confirm Password" required>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="card-footer text-end">
-                    <button class="btn btn-primary" type="submit">Update Profile</button>
+                    <button name="changepassword" class="btn btn-primary" type="submit">Update Password</button>
                   </div>
                 </form>
               </div>
 
 
-              <div class="col-12">
-                <form class="card">
-                  <div class="card-header pb-0">
-                    <h4 class="card-title mb-0">Edit Profile</h4>
-                    <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-5">
-                        <div class="mb-3">
-                          <label class="form-label">Company</label>
-                          <input class="form-control" type="text" placeholder="Company">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-3">
-                          <label class="form-label">Username</label>
-                          <input class="form-control" type="text" placeholder="Username">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-3">
-                          <label class="form-label">Email address</label>
-                          <input class="form-control" type="email" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-3">
-                          <label class="form-label">First Name</label>
-                          <input class="form-control" type="text" placeholder="Company">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-3">
-                          <label class="form-label">Last Name</label>
-                          <input class="form-control" type="text" placeholder="Last Name">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-3">
-                          <label class="form-label">Address</label>
-                          <input class="form-control" type="text" placeholder="Home Address">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-3">
-                          <label class="form-label">City</label>
-                          <input class="form-control" type="text" placeholder="City">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-3">
-                          <label class="form-label">Postal Code</label>
-                          <input class="form-control" type="number" placeholder="ZIP Code">
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="mb-3">
-                          <label class="form-label">Country</label>
-                          <select class="form-control btn-square">
-                            <option value="0">--Select--</option>
-                            <option value="1">Germany</option>
-                            <option value="2">Canada</option>
-                            <option value="3">Usa</option>
-                            <option value="4">Aus</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div>
-                          <label class="form-label">About Me</label>
-                          <textarea class="form-control" rows="4" placeholder="Enter About your description"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary" type="submit">Update Profile</button>
-                  </div>
-                </form>
-              </div>
+              
               
             </div>
           </div>
