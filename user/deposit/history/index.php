@@ -1,6 +1,6 @@
 <?php
 
-include("../../server/connection.php")
+include("../../../server/connection.php")
 
 
 
@@ -15,38 +15,38 @@ include("../../server/connection.php")
     <meta name="description" content="<?php  echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, <?php  echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
     <title><?php  echo $sitename ?> - User Dashboard</title>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/feather-icon.css">
     <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/datatables.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/owlcarousel.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/datatables.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/owlcarousel.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/style.css">
+    <link id="color" rel="stylesheet" href="<?php echo $domain ?>assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
   </head>
@@ -65,13 +65,13 @@ include("../../server/connection.php")
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page Header Start-->
 
-        <?php  include("../include/nav.php") ?>
+        <?php  include("../../include/nav.php") ?>
     
       <!-- Page Header Ends                              -->
       <!-- Page body Start -->
       <div class="page-body-wrapper"> 
         <!-- Page Sidebar Start-->
-        <?php  include("../include/sidenav.php") ?>
+        <?php  include("../../include/sidenav.php") ?>
 
 
         
@@ -84,7 +84,7 @@ include("../../server/connection.php")
             <div class="page-title"> 
               <div class="row">
                 <div class="col-xl-4 col-sm-7 box-col-3">
-                  <h3> Dashboard</h3>
+                  <h3> Deposit History</h3>
                 </div>
                 <div class="col-5 d-none d-xl-block">
                   <!-- Page Sub Header Start-->
@@ -95,10 +95,10 @@ include("../../server/connection.php")
                   <ol class="breadcrumb"> 
                     <li class="breadcrumb-item"><a href="index-2.html">
                         <svg class="stroke-icon">
-                          <use href="../../assets/svg/icon-sprite.svg#stroke-home"></use>
+                          <use href="<?php echo $domain ?>assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Home</li>
-                    <li class="breadcrumb-item active">Dashboard</li>
+                    <li class="breadcrumb-item">Deposit</li>
+                    <li class="breadcrumb-item active">History</li>
                   </ol>
                 </div>
               </div>
@@ -107,33 +107,15 @@ include("../../server/connection.php")
           <!-- Container-fluid starts-->
           <div class="container-fluid default-dashboard"> 
             <div class="row">
-              <div class="col-xl-12 box-col-7 proorder-md-1"> 
-                <div class="card">
-                  <div class="card-body premium-card">
-                    <div class="row premium-courses-card">
-                      <div class="col-md-5 premium-course">
-                        <h1 class="f-w-700">Get Thousands Premium Courses.</h1><span class="f-light f-w-400 f-14">Upgrade to watch, play, learn, make and discover. </span><a class="btn btn-square btn-primary f-w-700" href="pricing.html">Go Premium</a>
-                      </div>
-                      <div class="col-md-7 premium-course-img"> 
-                        <div class="premium-message"><img class="img-fluid" src="../../assets/images/dashboard/massage.gif" alt="massage"></div>
-                        <div class="premium-books"><img class="img-fluid" src="../../assets/images/dashboard/books.gif" alt="books"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-             
-             
               <div class="col-xl-12 proorder-md-9 box-col-6">
                 <div class="card">
                   <div class="card-header"> 
                     <div class="header-top"> 
-                      <h4>Project Summary </h4>
-                      <div class="dropdown icon-dropdown setting-menu">
+                      <h4 >Deposit History Table </h4>
+                      <div class="dropdown icon-dropdown setting-menu ">
                         <button class="btn dropdown-toggle" id="userdropdown22" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>
-                            <use href="../../assets/svg/icon-sprite.svg#setting"> </use>
+                            <use href="<?php echo $domain ?>assets/svg/icon-sprite.svg#setting"> </use>
                           </svg>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown22"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly </a></div>
@@ -160,9 +142,9 @@ include("../../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/8.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/10.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/8.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/10.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/2.jpg" alt=""></li>
                                   <li class="d-inline-block">
                                     <p>26+</p>
                                   </li>
@@ -179,9 +161,9 @@ include("../../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/20.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/12.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/2.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/20.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/12.jpg" alt=""></li>
                                   <li class="d-inline-block">
                                     <p>6+</p>
                                   </li>
@@ -198,8 +180,8 @@ include("../../server/connection.php")
                             <td class="team-avtar"> 
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/14.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/13.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/14.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/13.jpg" alt=""></li>
                                 </ul>
                               </div>
                             </td>
@@ -213,9 +195,9 @@ include("../../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul> 
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/22.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/15.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/22.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/15.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/2.jpg" alt=""></li>
                                 </ul>
                               </div>
                             </td>
@@ -229,9 +211,9 @@ include("../../server/connection.php")
                             <td class="team-avtar">
                               <div class="customers d-inline-block avatar-group">
                                 <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/21.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/23.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/24.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/21.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/23.jpg" alt=""></li>
+                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/24.jpg" alt=""></li>
                                   <li class="d-inline-block"> 
                                     <p>5+                           </p>
                                   </li>
@@ -254,7 +236,7 @@ include("../../server/connection.php")
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
-       <?php  include ("../include/footer.php") ?>
+       <?php  include ("../../include/footer.php") ?>
 
 
 
@@ -262,49 +244,47 @@ include("../../server/connection.php")
       </div>
     </div>
     <!-- latest jquery-->
-    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
-    <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- feather icon js-->
-    <script src="../../assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="../../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather-icon.js"></script>
     <!-- scrollbar js-->
-    <script src="../../assets/js/scrollbar/simplebar.js"></script>
-    <script src="../../assets/js/scrollbar/custom.js"></script>
+    <script src="<?php echo $domain ?>assets/js/scrollbar/simplebar.js"></script>
+    <script src="<?php echo $domain ?>assets/js/scrollbar/custom.js"></script>
     <!-- Sidebar jquery-->
-    <script src="../../assets/js/config.js"></script>
+    <script src="<?php echo $domain ?>assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <script src="../../assets/js/sidebar-menu.js"></script>
-    <script src="../../assets/js/sidebar-pin.js"></script>
-    <script src="../../assets/js/slick/slick.min.js"></script>
-    <script src="../../assets/js/slick/slick.js"></script>
-    <script src="../../assets/js/header-slick.js"></script>
-    <script src="../../assets/js/chart/morris-chart/raphael.js"></script>
-    <script src="../../assets/js/chart/morris-chart/morris.js"> </script>
-    <script src="../../assets/js/chart/morris-chart/prettify.min.js"></script>
-    <script src="../../assets/js/chart/apex-chart/apex-chart.js"></script>
-    <script src="../../assets/js/chart/apex-chart/stock-prices.js"></script>
-    <script src="../../assets/js/chart/apex-chart/moment.min.js"></script>
-    <script src="../../assets/js/notify/bootstrap-notify.min.js"></script>
-    <script src="../../assets/js/dashboard/default.js"></script>
-    <script src="../../assets/js/notify/index.js"></script>
-    <script src="../../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../assets/js/datatable/datatables/datatable.custom.js"></script>
-    <script src="../../assets/js/datatable/datatables/datatable.custom1.js"></script>
-    <script src="../../assets/js/owlcarousel/owl.carousel.js"></script>
-    <script src="../../assets/js/owlcarousel/owl-custom.js"></script>
-    <script src="../../assets/js/typeahead/handlebars.js"></script>
-    <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
-    <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
-    <script src="../../assets/js/typeahead-search/handlebars.js"></script>
-    <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
-    <script src="../../assets/js/height-equal.js"></script>
+    <script src="<?php echo $domain ?>assets/js/sidebar-menu.js"></script>
+    <script src="<?php echo $domain ?>assets/js/sidebar-pin.js"></script>
+    <script src="<?php echo $domain ?>assets/js/slick/slick.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/slick/slick.js"></script>
+    <script src="<?php echo $domain ?>assets/js/header-slick.js"></script>
+    <script src="<?php echo $domain ?>assets/js/chart/morris-chart/raphael.js"></script>
+    <script src="<?php echo $domain ?>assets/js/chart/morris-chart/morris.js"> </script>
+    <script src="<?php echo $domain ?>assets/js/chart/morris-chart/prettify.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/chart/apex-chart/apex-chart.js"></script>
+    <script src="<?php echo $domain ?>assets/js/chart/apex-chart/stock-prices.js"></script>
+    <script src="<?php echo $domain ?>assets/js/chart/apex-chart/moment.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/notify/bootstrap-notify.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/dashboard/default.js"></script>
+    <script src="<?php echo $domain ?>assets/js/notify/index.js"></script>
+    <script src="<?php echo $domain ?>assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?php echo $domain ?>assets/js/datatable/datatables/datatable.custom.js"></script>
+    <script src="<?php echo $domain ?>assets/js/datatable/datatables/datatable.custom1.js"></script>
+    <script src="<?php echo $domain ?>assets/js/owlcarousel/owl.carousel.js"></script>
+    <script src="<?php echo $domain ?>assets/js/owlcarousel/owl-custom.js"></script>
+    <script src="<?php echo $domain ?>assets/js/typeahead/handlebars.js"></script>
+    <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.custom.js"></script>
+    <script src="<?php echo $domain ?>assets/js/typeahead-search/handlebars.js"></script>
+    <script src="<?php echo $domain ?>assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="<?php echo $domain ?>assets/js/height-equal.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
-    <script src="../../assets/js/script.js"></script>
-    <script src="../../assets/js/theme-customizer/customizer.js"></script>
+    <script src="<?php echo $domain ?>assets/js/script.js"></script>
+    <script src="<?php echo $domain ?>assets/js/theme-customizer/customizer.js"></script>
     <!-- Plugin used-->
   </body>
-
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:30 GMT -->
 </html>

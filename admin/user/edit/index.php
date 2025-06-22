@@ -1,39 +1,8 @@
 <?php
 
-include("../../server/connection.php");
+include("../../../server/connection.php");
 
 
-<<<<<<< HEAD
-=======
-if (isset($_GET['action']) && isset($_GET['id'])) {
-  $userId = intval($_GET['id']);
-  $action = $_GET['action'];
-
-  if ($action === 'suspend') {
-    $update = mysqli_query($connection, "UPDATE users SET status = 'suspended' WHERE id = $userId");
-    if ($update) {
-      echo "<script>Model({ message: 'User suspended successfully.' });</script>";
-    } else {
-      echo "<script>Model({ message: 'Failed to suspend user.' });</script>";
-    }
-  }
-
-  if ($action === 'delete') {
-    $delete = mysqli_query($connection, "DELETE FROM users WHERE id = $userId");
-    if ($delete) {
-      echo "<script>Model({ message: 'User deleted successfully.' });</script>";
-    } else {
-      echo "<script>Model({ message: 'Failed to delete user.' });</script>";
-    }
-  }
-
-  // Optional: refresh to prevent repeat actions on reload
-  echo "<script>setTimeout(() => { window.location.href = window.location.pathname; }, 1000);</script>";
-}
-
-
-
->>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
 
 ?>
 <!DOCTYPE html>
@@ -46,69 +15,347 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
   <meta name="description" content="<?php echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
   <meta name="keywords" content="admin template, <?php echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
   <meta name="author" content="pixelstrap">
-  <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
-  <title><?php echo $sitename ?> - View All Users Deposits</title>
+  <link rel="icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
+  <title><?php echo $sitename ?> - Admin Upload Template</title>
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/font-awesome.css">
   <!-- ico-font-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/icofont.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/icofont.css">
   <!-- Themify icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/themify.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/themify.css">
   <!-- Flag icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/flag-icon.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/flag-icon.css">
   <!-- Feather icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/feather-icon.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/feather-icon.css">
   <!-- Plugins css start-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/scrollbar.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/animate.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/date-picker.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/dropzone.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/animate.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/date-picker.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/dropzone.css">
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/bootstrap.css">
   <!-- App css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-  <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/style.css">
+  <link id="color" rel="stylesheet" href="<?php echo $domain ?>assets/css/color-1.css" media="screen">
   <!-- Responsive css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/responsive.css">
 </head>
 
 <body>
-
+  
   <!-- tap on top starts-->
   <div class="tap-top"><i data-feather="chevrons-up"></i></div>
   <!-- tap on tap ends-->
   <!-- page-wrapper Start-->
   <div class="page-wrapper default-wrapper" id="pageWrapper">
     <!-- Page Header Start-->
-    <?php include('../include/navbar.php')  ?>
+    <div class="page-header">
+      <div class="header-wrapper row m-0">
+        <div class="header-logo-wrapper col-auto p-0">
+          <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="<?php echo $domain ?>assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="<?php echo $domain ?>assets/images/logo/logo_dark.png" alt=""></a></div>
+          <div class="toggle-sidebar">
+            <svg class="sidebar-toggle">
+              <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-animation"></use>
+            </svg>
+          </div>
+        </div>
+        <form class="col-sm-4 form-inline search-full d-none d-xl-block" action="#" method="get">
+          <div class="form-group">
+            <div class="Typeahead Typeahead--twitterUsers">
+              <div class="u-posRelative">
+                <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Type to Search .." name="q" title="" autofocus>
+                <svg class="search-bg svg-color">
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#search"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="nav-right col-xl-8 col-lg-12 col-auto pull-right right-header p-0">
+          <ul class="nav-menus">
+            <li class="serchinput">
+              <div class="serchbox">
+                <svg>
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#search"></use>
+                </svg>
+              </div>
+              <div class="form-group search-form">
+                <input type="text" placeholder="Search here...">
+              </div>
+            </li>
+            <li class="onhover-dropdown">
+              <div class="notification-box">
+                <svg>
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#Bell"></use>
+                </svg>
+              </div>
+              <div class="onhover-show-div notification-dropdown">
+                <h6 class="f-18 mb-0 dropdown-title">Notifications</h6>
+                <div class="notification-card">
+                  <ul>
+                    <li>
+                      <div class="user-notification">
+                        <div><img src="<?php echo $domain ?>assets/images/avtar/2.jpg" alt="avatar"></div>
+                        <div class="user-description"><a href="letter-box.html">
+                            <h4>You have new finical page design.</h4>
+                          </a><span>Today 11:45pm</span></div>
+                      </div>
+                      <div class="notification-btn">
+                        <button class="btn btn-pill btn-primary" type="button" title="btn btn-pill btn-primary">Accpet</button>
+                        <button class="btn btn-pill btn-secondary" type="button" title="btn btn-pill btn-primary">Decline</button>
+                      </div>
+                      <div class="show-btn"><a href="index-2.html"> <span>Show</span></a></div>
+                    </li>
+                    <li>
+                      <div class="user-notification">
+                        <div><img src="<?php echo $domain ?>assets/images/avtar/17.jpg" alt="avatar"></div>
+                        <div class="user-description"><a href="letter-box.html">
+                            <h4>Congrats! you all task for today.</h4>
+                          </a><span>Today 01:05pm</span></div>
+                      </div>
+                      <div class="notification-btn">
+                        <button class="btn btn-pill btn-primary" type="button" title="btn btn-pill btn-primary">Accpet</button>
+                        <button class="btn btn-pill btn-secondary" type="button" title="btn btn-pill btn-primary">Decline</button>
+                      </div>
+                      <div class="show-btn"><a href="index-2.html"> <span>Show</span></a></div>
+                    </li>
+                    <li>
+                      <div class="user-notification">
+                        <div> <img src="<?php echo $domain ?>assets/images/avtar/18.jpg" alt="avatar"></div>
+                        <div class="user-description"><a href="letter-box.html">
+                            <h4>You have new in landing page design.</h4>
+                          </a><span>Today 06:55pm</span></div>
+                      </div>
+                      <div class="notification-btn">
+                        <button class="btn btn-pill btn-primary" type="button" title="btn btn-pill btn-primary">Accpet</button>
+                        <button class="btn btn-pill btn-secondary" type="button" title="btn btn-pill btn-primary">Decline</button>
+                      </div>
+                      <div class="show-btn"><a href="index-2.html"> <span>Show</span></a></div>
+                    </li>
+                    <li>
+                      <div class="user-notification">
+                        <div><img src="<?php echo $domain ?>assets/images/avtar/19.jpg" alt="avatar"></div>
+                        <div class="user-description"><a href="letter-box.html">
+                            <h4>Congrats! you all task for today.</h4>
+                          </a><span>Today 06:55pm</span></div>
+                      </div>
+                      <div class="notification-btn">
+                        <button class="btn btn-pill btn-primary" type="button" title="btn btn-pill btn-primary">Accpet</button>
+                        <button class="btn btn-pill btn-secondary" type="button" title="btn btn-pill btn-primary">Decline</button>
+                      </div>
+                      <div class="show-btn"> <a href="index-2.html"> <span>Show</span></a></div>
+                    </li>
+                    <li> <a class="f-w-700" href="letter-box.html">Check all </a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="onhover-dropdown">
+              <svg>
+                <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#Bookmark"></use>
+              </svg>
+              <div class="onhover-show-div bookmark-flip">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="front">
+                      <h6 class="f-18 mb-0 dropdown-title">Bookmark</h6>
+                      <ul class="bookmark-dropdown">
+                        <li>
+                          <div class="row">
+                            <div class="col-4 text-center"><a href="form-validation.html">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon bg-light-primary"><i data-feather="file-text"></i></div><span>Forms</span>
+                                </div>
+                              </a></div>
+                            <div class="col-4 text-center"><a href="user-profile.html">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon bg-light-secondary"><i data-feather="user"></i></div><span>Profile</span>
+                                </div>
+                              </a></div>
+                            <div class="col-4 text-center"><a href="bootstrap-basic-table.html">
+                                <div class="bookmark-content">
+                                  <div class="bookmark-icon bg-light-warning"> <i data-feather="server"> </i></div><span>Tables </span>
+                                </div>
+                              </a></div>
+                          </div>
+                        </li>
+                        <li class="text-centermedia-body"> <a class="flip-btn f-w-700" id="flip-btn" href="javascript:void(0)">Add New Bookmark</a></li>
+                      </ul>
+                    </div>
+                    <div class="back">
+                      <ul>
+                        <li>
+                          <div class="bookmark-dropdown flip-back-content">
+                            <input type="text" placeholder="search...">
+                          </div>
+                        </li>
+                        <li><a class="f-w-700 d-block flip-back" id="flip-back" href="javascript:void(0)">Back</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="onhover-dropdown">
+              <div class="message position-relative">
+                <svg>
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#Message"></use>
+                </svg><span class="rounded-pill badge-danger"></span>
+              </div>
+              <div class="onhover-show-div message-dropdown">
+                <h6 class="f-18 mb-0 dropdown-title">Message </h6>
+                <ul>
+                  <li>
+                    <div class="d-flex align-items-start">
+                      <div class="message-img bg-light-primary"><img src="<?php echo $domain ?>assets/images/user/3.jpg" alt=""></div>
+                      <div class="flex-grow-1">
+                        <h5><a href="letter-box.html">Emay Walter</a></h5>
+                        <p>Do you want to go see movie?</p>
+                      </div>
+                      <div class="notification-right"><i data-feather="x"></i></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-start">
+                      <div class="message-img bg-light-primary"><img src="<?php echo $domain ?>assets/images/user/6.jpg" alt=""></div>
+                      <div class="flex-grow-1">
+                        <h5> <a href="letter-box.html">Jason Borne</a></h5>
+                        <p>Thank you for rating us.</p>
+                      </div>
+                      <div class="notification-right"><i data-feather="x"></i></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex align-items-start">
+                      <div class="message-img bg-light-primary"><img src="<?php echo $domain ?>assets/images/user/10.jpg" alt=""></div>
+                      <div class="flex-grow-1">
+                        <h5> <a href="letter-box.html">Sarah Loren</a></h5>
+                        <p>What`s the project report update?</p>
+                      </div>
+                      <div class="notification-right"><i data-feather="x"></i></div>
+                    </div>
+                  </li>
+                  <li> <a class="f-w-700" href="private-chat.html">Check all</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="cart-nav onhover-dropdown">
+              <div class="cart-box">
+                <svg>
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#Buy"></use>
+                </svg>
+              </div>
+              <div class="cart-dropdown onhover-show-div">
+                <h6 class="f-18 mb-0 dropdown-title">Cart</h6>
+                <ul>
+                  <li>
+                    <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="<?php echo $domain ?>assets/images/ecommerce/05.jpg" alt="">
+                      <div class="flex-grow-1"> <span>Women's Track Suit</span>
+                        <h6 class="font-primary">8 x $65.00</h6>
+                      </div>
+                      <div class="close-circle"><a class="bg-primary" href="#"><i data-feather="x"></i></a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="<?php echo $domain ?>assets/images/ecommerce/02.jpg" alt="">
+                      <div class="flex-grow-1"><span>Men's Jacket</span>
+                        <h6 class="font-primary">10 x $50.00</h6>
+                      </div>
+                      <div class="close-circle"><a class="bg-primary" href="#"><i data-feather="x"></i></a></div>
+                    </div>
+                  </li>
+                  <li class="total">
+                    <h6 class="mb-0">Order Total :<span class="f-right">$1020.00</span></h6>
+                  </li>
+                  <li class="text-center"> <a href="cart.html">
+                      <button class="btn btn-outline-primary" type="button">View Cart</button></a><a class="btn btn-primary view-checkout" href="checkout.html">Checkout </a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="mode">
+                <svg class="for-dark">
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#moon"></use>
+                </svg>
+                <svg class="for-light">
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#Sun"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="language-nav">
+              <div class="translate_wrapper">
+                <div class="current_lang">
+                  <div class="lang"><i class="flag-icon flag-icon-gb"></i><span class="lang-txt box-col-none">EN </span></div>
+                </div>
+                <div class="more_lang">
+                  <div class="lang selected" data-value="en"><i class="flag-icon flag-icon-us"></i><span class="lang-txt">English<span> (US)</span></span></div>
+                  <div class="lang" data-value="de"><i class="flag-icon flag-icon-de"></i><span class="lang-txt">Deutsch</span></div>
+                  <div class="lang" data-value="es"><i class="flag-icon flag-icon-es"></i><span class="lang-txt">Español</span></div>
+                  <div class="lang" data-value="fr"><i class="flag-icon flag-icon-fr"></i><span class="lang-txt">Français</span></div>
+                  <div class="lang" data-value="pt"><i class="flag-icon flag-icon-pt"></i><span class="lang-txt">Português<span> (BR)</span></span></div>
+                  <div class="lang" data-value="cn"><i class="flag-icon flag-icon-cn"></i><span class="lang-txt">简体中文</span></div>
+                  <div class="lang" data-value="ae"><i class="flag-icon flag-icon-ae"></i><span class="lang-txt">لعربية <span> (ae)</span></span></div>
+                </div>
+              </div>
+            </li>
+            <li class="profile-nav onhover-dropdown pe-0 py-0">
+              <div class="d-flex align-items-center profile-media"><img class="b-r-25" src="<?php echo $domain ?>assets/images/dashboard/profile.png" alt="">
+                <div class="flex-grow-1 user"><span>Helen Walter</span>
+                  <p class="mb-0 font-nunito">Admin
+                    <svg>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#header-arrow-down"></use>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+              <ul class="profile-dropdown onhover-show-div">
+                <li><a href="user-profile.html"><i data-feather="user"></i><span>Account </span></a></li>
+                <li><a href="letter-box.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
+                <li><a href="task.html"><i data-feather="file-text"></i><span>Taskboard</span></a></li>
+                <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Settings</span></a></li>
+                <li><a href="login.html"> <i data-feather="log-in"></i><span>Log Out</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <script class="result-template" type="text/x-handlebars-template">
+          <div class="ProfileCard u-cf">              
+            <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
+            <div class="ProfileCard-details">
+            <div class="ProfileCard-realName">{{name}}</div>
+            </div>
+            </div>
+          </script>
+        <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
+      </div>
+    </div>
     <!-- Page Header Ends                              -->
     <!-- Page Body Start-->
     <div class="page-body-wrapper default-menu default-menu">
       <!-- Page Sidebar Start-->
-<<<<<<< HEAD
       <div class="sidebar-wrapper" data-layout="stroke-svg">
         <div>
-          <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../../assets/images/logo/logo_dark.png" alt=""></a>
+          <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="<?php echo $domain ?>assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="<?php echo $domain ?>assets/images/logo/logo_dark.png" alt=""></a>
             <div class="toggle-sidebar">
               <svg class="sidebar-toggle">
-                <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#toggle-icon"></use>
+                <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#toggle-icon"></use>
               </svg>
             </div>
           </div>
-          <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="../../assets/images/logo/logo-icon.png" alt=""></a></div>
+          <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="<?php echo $domain ?>assets/images/logo/logo-icon.png" alt=""></a></div>
           <nav class="sidebar-main">
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
               <ul class="sidebar-links" id="simple-bar">
-                <li class="back-btn"><a href="index-2.html"><img class="img-fluid" src="../../assets/images/logo/logo-icon.png" alt=""></a>
+                <li class="back-btn"><a href="index-2.html"><img class="img-fluid" src="<?php echo $domain ?>assets/images/logo/logo-icon.png" alt=""></a>
                   <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                 </li>
                 <li class="pin-title sidebar-main-title">
@@ -123,10 +370,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-home"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-home"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-home"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-home"></use>
                     </svg><span class="lan-3">Dashboard </span></a>
                   <ul class="sidebar-submenu">
                     <li><a class="lan-4" href="index-2.html">Default</a></li>
@@ -135,10 +382,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-widget"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-widget"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-widget"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-widget"></use>
                     </svg><span class="lan-6">Widgets</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="general-widget.html">General</a></li>
@@ -147,10 +394,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"> <i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-layout"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-layout"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-layout"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-layout"></use>
                     </svg><span class="lan-7">Page layout</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="box-layout.html">Boxed</a></li>
@@ -169,10 +416,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-project"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-project"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-project"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-project"></use>
                     </svg><span>Project </span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="projects.html">Project List</a></li>
@@ -181,24 +428,24 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="file-manager.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-file"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-file"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-file"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-file"></use>
                     </svg><span>File manager</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title link-nav" href="kanban.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-board"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-board"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-board"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-board"></use>
                     </svg><span>kanban Board</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-ecommerce"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-ecommerce"></use>
                     </svg><span>Ecommerce</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="add-products.html">Add Product</a></li>
@@ -227,17 +474,17 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title link-nav" href="letter-box.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-email"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-email"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-email"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-email"></use>
                     </svg><span>Letter Box</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-chat"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-chat"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-chat"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-chat"></use>
                     </svg><span>Chat</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="private-chat.html">Private Chat</a></li>
@@ -246,10 +493,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-user"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-user"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-user"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-user"></use>
                     </svg><span>Users</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="user-profile.html">Users Profile</a></li>
@@ -259,52 +506,52 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="bookmark.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-bookmark"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-bookmark"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-bookmark"> </use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-bookmark"> </use>
                     </svg><span>Bookmarks </span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="contacts.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-contact"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-contact"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-contact"> </use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-contact"> </use>
                     </svg><span>Contacts</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="task.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-task"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-task"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-task"> </use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-task"> </use>
                     </svg><span>Tasks</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="calendar-basic.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-calendar"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-calendar"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-calender"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-calender"></use>
                     </svg><span>Calendar</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="social-app.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-social"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-social"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-social"> </use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-social"> </use>
                     </svg><span>Social App</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="to-do.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-to-do"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-to-do"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-to-do"> </use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-to-do"> </use>
                     </svg><span>To-Do</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="search.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-search"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-search"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-search"> </use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-search"> </use>
                     </svg><span>Search Result</span></a></li>
                 <li class="sidebar-main-title">
                   <div>
@@ -313,10 +560,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-form"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-form"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-form"> </use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-form"> </use>
                     </svg><span>Forms</span></a>
                   <ul class="sidebar-submenu">
                     <li><a class="submenu-title" href="#">Form Controls
@@ -356,10 +603,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-table"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-table"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-table"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-table"></use>
                     </svg><span>Tables</span></a>
                   <ul class="sidebar-submenu">
                     <li><a class="submenu-title" href="#">Bootstrap Tables
@@ -391,10 +638,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-ui-kits"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-ui-kits"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-ui-kits"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-ui-kits"></use>
                     </svg><span>Ui Kits</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="typography.html">Typography</a></li>
@@ -415,10 +662,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-bonus-kit"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-bonus-kit"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-bonus-kit"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-bonus-kit"></use>
                     </svg><span>Bonus Ui</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="scrollable.html">Scrollable</a></li>
@@ -443,10 +690,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-animation"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-animation"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-animation"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-animation"></use>
                     </svg><span>Animation</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="animate.html">Animate</a></li>
@@ -458,10 +705,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-icons"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-icons"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-icons"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-icons"></use>
                     </svg><span>Icons</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="flag-icon.html">Flag icon</a></li>
@@ -474,10 +721,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-button"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-button"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-button"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-button"></use>
                     </svg><span>Buttons</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="buttons.html">Default Style</a></li>
@@ -486,10 +733,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-charts"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-charts"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-charts"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-charts"></use>
                     </svg><span>Charts</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="chart-apex.html">Apex Chart</a></li>
@@ -511,38 +758,38 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="landing-page.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-landing-page"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-landing-page"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-landing-page"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-landing-page"></use>
                     </svg><span>Landing page</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="sample-page.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-sample-page"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-sample-page"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-sample-page"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-sample-page"></use>
                     </svg><span>Sample page</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="translate.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-internationalization"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-internationalization"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-internationalization"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-internationalization"></use>
                     </svg><span>Translate</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="https://admin.pixelstrap.net/<?php echo $sitename ?>/starter-kit/index.html" target="_blank">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-starter-kit"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-starter-kit"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-starter-kit"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-starter-kit"></use>
                     </svg><span>Starter kit</span></a></li>
                 <li class="mega-menu sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-others"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-others"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-others"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-others"></use>
                     </svg><span>Others</span></a>
                   <div class="mega-menu-container menu-content">
                     <div class="container-fluid">
@@ -623,10 +870,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-gallery"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-gallery"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-gallery"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-gallery"></use>
                     </svg><span>Gallery</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="gallery.html">Gallery Grid</a></li>
@@ -638,10 +885,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-blog"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-blog"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-blog"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-blog"></use>
                     </svg><span>Blog</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="blog.html">Blog Details</a></li>
@@ -651,17 +898,17 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="faq.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-faq"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-faq"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-faq"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-faq"></use>
                     </svg><span>FAQ</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-job-search"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-job-search"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-job-search"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-job-search"></use>
                     </svg><span>Job Search</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="job-cards-view.html">Cards view</a></li>
@@ -672,10 +919,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-learning"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-learning"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-learning"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-learning"></use>
                     </svg><span>Learning</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="learning-list-view.html">Learning List</a></li>
@@ -684,10 +931,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-maps"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-maps"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-maps"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-maps"></use>
                     </svg><span>Maps</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="map-js.html">Maps JS</a></li>
@@ -696,10 +943,10 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-editors"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-editors"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-editors"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-editors"></use>
                     </svg><span>Editors</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="summernote.html">Summer Note</a></li>
@@ -710,17 +957,17 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="knowledgebase.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-knowledgebase"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-knowledgebase"></use>
                     </svg><span>Knowledgebase</span></a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
                     <svg class="stroke-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-support-tickets"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-support-tickets"></use>
                     </svg>
                     <svg class="fill-icon">
-                      <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#fill-support-tickets"></use>
+                      <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#fill-support-tickets"></use>
                     </svg><span>Support Ticket</span></a></li>
               </ul>
             </div>
@@ -728,9 +975,6 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
           </nav>
         </div>
       </div>
-=======
-      <?php include('../include/sidenav.php') ?>
->>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
       <!-- Page Sidebar Ends-->
       <div class="page-body">
         <div class="container-fluid">
@@ -744,7 +988,6 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 <div class="left-header main-sub-header p-0">
                   <div class="left-menu-header">
                     <ul class="header-left">
-<<<<<<< HEAD
                       <li class="onhover-dropdown"> <span class="f-w-700">General </span>
                         <ul class="onhover-show-div left-dropdown">
                           <li class="flyout-right"><a href="#">Dashboards</a><i class="fa fa-angle-right"></i>
@@ -973,9 +1216,6 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                           </li>
                         </ul>
                       </li>
-=======
-
->>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
                       <li class="onhover-dropdown p-0"><span class="f-w-700">Miscellaneous</span>
                         <ul class="onhover-show-div left-dropdown">
                           <li class="flyout-right"><a href="#">Gallery</a>
@@ -1037,7 +1277,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index-2.html">
                       <svg class="stroke-icon">
-                        <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-home"></use>
+                        <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-home"></use>
                       </svg></a></li>
                   <li class="breadcrumb-item">Apps</li>
                   <li class="breadcrumb-item active">Project Create </li>
@@ -1051,192 +1291,91 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
           <div class="row">
             <div class="col-sm-12">
               <div class="card">
-                <div class="card-header">
-                  <div class="header-top">
-<<<<<<< HEAD
-                    <h4>Project Summary </h4>
-                    <div class="dropdown icon-dropdown setting-menu">
-                      <button class="btn dropdown-toggle" id="userdropdown22" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg>
-                          <use href="../../assets/svg/icon-sprite.svg#setting"> </use>
-=======
-                    <h4>All Users Table </h4>
-                    <div class="dropdown icon-dropdown setting-menu ">
-                      <button class="btn dropdown-toggle" id="userdropdown22" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg>
-                          <use href="<?php echo $domain ?>assets/svg/icon-sprite.svg#setting"> </use>
->>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
-                        </svg>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown22"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly </a></div>
-                    </div>
-                  </div>
-                </div>
                 <div class="card-body">
-                  <div class="table-responsive custom-scrollbar">
-<<<<<<< HEAD
-                    <table class="project-summary table" id="project-summary">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>Project Name</th>
-                          <th>Team</th>
-                          <th>Project Cost</th>
-                          <th>Project Status</th>
-                          <th>Payment</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="f-w-600">A908</td>
-                          <td> <a href="projects.html">Amazon Website</a></td>
-                          <td class="team-avtar">
-                            <div class="customers d-inline-block avatar-group">
-                              <ul>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/8.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/10.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                                <li class="d-inline-block">
-                                  <p>26+</p>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                          <td>$23,490</td>
-                          <td>Completed</td>
-                          <td class="txt-success">Done </td>
-                        </tr>
-                        <tr>
-                          <td>R840</td>
-                          <td> <a href="projects.html">Paytm bank app</a></td>
-                          <td class="team-avtar">
-                            <div class="customers d-inline-block avatar-group">
-                              <ul>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/20.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/12.jpg" alt=""></li>
-                                <li class="d-inline-block">
-                                  <p>6+</p>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                          <td>$45,459</td>
-                          <td>In Progress</td>
-                          <td class="txt-danger">Pending</td>
-                        </tr>
-                        <tr>
-                          <td class="f-w-600">V908</td>
-                          <td class="f-w-600"> <a href="projects.html">Cytrust Dashboard</a></td>
-                          <td class="team-avtar">
-                            <div class="customers d-inline-block avatar-group">
-                              <ul>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/14.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/13.jpg" alt=""></li>
-                              </ul>
-                            </div>
-                          </td>
-                          <td class="f-w-600">$78,748 </td>
-                          <td class="f-w-600">Completed</td>
-                          <td class="txt-success f-w-600">Done</td>
-                        </tr>
-                        <tr>
-                          <td class="f-w-600">K450</td>
-                          <td> <a href="projects.html">Project Mecha</a></td>
-                          <td class="team-avtar">
-                            <div class="customers d-inline-block avatar-group">
-                              <ul>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/22.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/15.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                              </ul>
-                            </div>
-                          </td>
-                          <td class="f-w-600"> $98,878</td>
-                          <td class="f-w-600">In Progress</td>
-                          <td class="txt-danger f-w-600">Pending</td>
-                        </tr>
-                        <tr>
-                          <td class="f-w-600">D480</td>
-                          <td class="f-w-600"><a href="projects.html">Dynamic Program</a></td>
-                          <td class="team-avtar">
-                            <div class="customers d-inline-block avatar-group">
-                              <ul>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/21.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/23.jpg" alt=""></li>
-                                <li class="d-inline-block"><img class="img-40 rounded-circle" src="../../assets/images/dashboard/avtar/24.jpg" alt=""></li>
-                                <li class="d-inline-block">
-                                  <p>5+ </p>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                          <td class="f-w-600">$23,490</td>
-                          <td class="f-w-600">In Progress</td>
-                          <td class="txt-danger f-w-600">Pending</td>
-                        </tr>
-                      </tbody>
-                    </table>
-=======
-
-                  <input type="text" id="userSearch" placeholder="Search by name or email" class="form-control mb-3">
+                   
+                <div class="col-xl-12">
+                  <form class="card">
+                    <div class="card-header pb-0">
+                      <h4 class="card-title mb-0">Edit Profile</h4>
+                      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="mb-3">
+                            <label class="form-label">Company</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">Username</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input class="form-control" type="email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">First Name</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input class="form-control" type="text" placeholder="Last Name">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input class="form-control" type="text" placeholder="Home Address">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <input class="form-control" type="text" placeholder="City">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">Postal Code</label>
+                            <input class="form-control" type="number" placeholder="ZIP Code">
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="mb-3">
+                            <label class="form-label">Country</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">Germany</option>
+                              <option value="2">Canada</option>
+                              <option value="3">Usa</option>
+                              <option value="4">Aus</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div>
+                            <label class="form-label">About Me</label>
+                            <textarea class="form-control" rows="4" placeholder="Enter About your description"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer text-end">
+                      <button class="btn btn-primary" type="submit">Update Profile</button>
+                    </div>
+                  </form>
+                </div>
 
 
-
-                    <table class="table card-table table-vcenter text-nowrap">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>Username</th>
-                          <th>Email</th>
-                          <th>Account Status</th>
-                          <th>Action</th>
-                        </tr>
-                        </tr>
-                      </thead>
-                      <tbody>
-
-                        <?php
-
-                        $select = mysqli_query($connection, "SELECT * FROM `users`");
-                        if (mysqli_num_rows($select) > 0) {
-                          $count = 0;
-                          while ($row = mysqli_fetch_array($select)) {
-                            $count++;
-                            $userId = $row['id'];
-                            $status = $row['status'];
-                        ?>
-
-
-                            <tr>
-                              <td class="f-w-600"><?= $count ?></td>
-                              <td><?= htmlspecialchars($row['username']) ?></td>
-                              <td><?= htmlspecialchars($row['email']) ?></td>
-                              <td class="<?= $status === 'active' ? 'text-success' : ($status === 'inactive' ? 'text-warning' : 'text-danger') ?>">
-                                <?= ucfirst($status) ?>
-                              </td>
-                              <td class="text-end">
-                                <a class="btn btn-primary btn-sm" href="edit-user.php?id=<?= $userId ?>"><i class="fa fa-pencil"></i> Edit</a>
-                                <a class="btn btn-warning btn-sm" href="?action=suspend&id=<?= $userId ?>" onclick="return confirm('Are you sure you want to suspend this user?')"><i class="fa fa-ban"></i> Suspend</a>
-                                <a class="btn btn-danger btn-sm" href="?action=delete&id=<?= $userId ?>" onclick="return confirm('Are you sure you want to delete this user?')"><i class="fa fa-trash"></i> Delete</a>
-                              </td>
-                            </tr>
-
-                          <?php  }
-                        } else { ?>
-
-                          <p>Table is empty</p>
-
-                        <?php }  ?>
-
-
-
-
-                      </tbody>
-                    </table>
-
->>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
-                  </div>
                 </div>
               </div>
             </div>
@@ -1245,7 +1384,6 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
         <!-- Container-fluid Ends-->
       </div>
       <!-- footer start-->
-<<<<<<< HEAD
       <footer class="footer">
         <div class="container-fluid">
           <div class="row">
@@ -1255,7 +1393,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
             <div class="col-md-6 p-0">
               <p class="heart mb-0">Hand crafted &amp; made with
                 <svg class="footer-icon">
-                  <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#heart"></use>
+                  <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#heart"></use>
                 </svg>
               </p>
             </div>
@@ -1264,67 +1402,38 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
       </footer>
     </div>
   </div>
-=======
-      <?php include('../include/footer.php') ?>
-    </div>
-  </div>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("userSearch");
-    const table = document.querySelector(".table tbody");
-
-    searchInput.addEventListener("keyup", function () {
-      const filter = this.value.toLowerCase();
-      const rows = table.querySelectorAll("tr");
-
-      rows.forEach(row => {
-        const username = row.cells[1]?.textContent.toLowerCase() || '';
-        const email = row.cells[2]?.textContent.toLowerCase() || '';
-        const status = row.cells[3]?.textContent.toLowerCase() || '';
-
-        const match = username.includes(filter) || email.includes(filter) || status.includes(filter);
-
-        row.style.display = match ? "" : "none";
-      });
-    });
-  });
-</script>
-
-
->>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
   <!-- latest jquery-->
-  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/jquery.min.js"></script>
   <!-- Bootstrap js-->
-  <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- feather icon js-->
-  <script src="../../assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="../../assets/js/icons/feather-icon/feather-icon.js"></script>
+  <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather-icon.js"></script>
   <!-- scrollbar js-->
-  <script src="../../assets/js/scrollbar/simplebar.js"></script>
-  <script src="../../assets/js/scrollbar/custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/scrollbar/simplebar.js"></script>
+  <script src="<?php echo $domain ?>assets/js/scrollbar/custom.js"></script>
   <!-- Sidebar jquery-->
-  <script src="../../assets/js/config.js"></script>
+  <script src="<?php echo $domain ?>assets/js/config.js"></script>
   <!-- Plugins JS start-->
-  <script src="../../assets/js/sidebar-menu.js"></script>
-  <script src="../../assets/js/sidebar-pin.js"></script>
-  <script src="../../assets/js/slick/slick.min.js"></script>
-  <script src="../../assets/js/slick/slick.js"></script>
-  <script src="../../assets/js/header-slick.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-  <script src="../../assets/js/dropzone/dropzone.js"></script>
-  <script src="../../assets/js/dropzone/dropzone-script.js"></script>
-  <script src="../../assets/js/typeahead/handlebars.js"></script>
-  <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
-  <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
-  <script src="../../assets/js/typeahead-search/handlebars.js"></script>
-  <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/sidebar-menu.js"></script>
+  <script src="<?php echo $domain ?>assets/js/sidebar-pin.js"></script>
+  <script src="<?php echo $domain ?>assets/js/slick/slick.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/slick/slick.js"></script>
+  <script src="<?php echo $domain ?>assets/js/header-slick.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.en.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/dropzone/dropzone.js"></script>
+  <script src="<?php echo $domain ?>assets/js/dropzone/dropzone-script.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/handlebars.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.bundle.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead-search/handlebars.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead-search/typeahead-custom.js"></script>
   <!-- Plugins JS Ends-->
   <!-- Theme js-->
-  <script src="../../assets/js/script.js"></script>
-  <script src="../../assets/js/theme-customizer/customizer.js"></script>
+  <script src="<?php echo $domain ?>assets/js/script.js"></script>
+  <script src="<?php echo $domain ?>assets/js/theme-customizer/customizer.js"></script>
   <!-- Plugin used-->
 </body>
 
