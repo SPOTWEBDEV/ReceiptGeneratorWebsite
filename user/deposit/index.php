@@ -2,6 +2,7 @@
 
 include("../../server/connection.php");
 include("../../server/model.php");
+include("../../server/client/auth/index.php");
 
 
 $banks = mysqli_query($connection, "SELECT id, type, accountorwallet FROM payment_methods WHERE method = 'bank'");
@@ -10,12 +11,12 @@ $cryptos = mysqli_query($connection, "SELECT id, type, accountorwallet FROM paym
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $user_id = 2;
+    
 
     $amount = $_POST['amount'] ;
     $payment_option_id = $_POST['payment_option'] ;
 
-    echo "<script>alert($user_id + ' =>amount '  + $amount  + ' =>payment '  + $payment_option_id)</script>";
+   
 
     if (!$user_id || !$payment_option_id || !$amount) {
         echo Model('Missing required fields.');
@@ -29,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Insert into deposits table
         $insert = mysqli_query($connection, "
             INSERT INTO deposits (user, deposit_id, payment_method_id, amount)
-            VALUES ('$user_id', '$deposit_id', '$payment_option_id', '$amount')
+            VALUES ('$id', '$deposit_id', '$payment_option_id', '$amount')
         ");
 
         if ($insert) {
