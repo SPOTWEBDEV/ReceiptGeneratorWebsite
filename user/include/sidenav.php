@@ -51,7 +51,7 @@
 
           <li class="sidebar-list">
   <i class="bi bi-pin-angle"></i>
-  <a class="sidebar-link sidebar-title" href="#">
+  <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/dashboard/">
     <i class="bi bi-speedometer2"></i>
     <span class="lan-7">Dashboard</span>
   </a>
