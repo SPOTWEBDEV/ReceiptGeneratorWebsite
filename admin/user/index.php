@@ -99,68 +99,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
               <div class="col-xl-4 col-sm-7 box-col-3">
                 <h3> Project Create</h3>
               </div>
-              <div class="col-5 d-none d-xl-block">
-                <!-- Page Sub Header Start-->
-                <div class="left-header main-sub-header p-0">
-                  <div class="left-menu-header">
-                    <ul class="header-left">
-                      <li class="onhover-dropdown p-0"><span class="f-w-700">Miscellaneous</span>
-                        <ul class="onhover-show-div left-dropdown">
-                          <li class="flyout-right"><a href="#">Gallery</a>
-                            <ul>
-                              <li><a href="gallery.html">Gallery Grid</a></li>
-                              <li><a href="gallery-with-description.html">gallery-with-description</a></li>
-                              <li><a href="gallery-masonry.html">gallery-masonry</a></li>
-                              <li><a href="masonry-gallery-with-disc.html">masonry-gallery-with-disc</a></li>
-                              <li><a href="gallery-hover.html">gallery-hover</a></li>
-                            </ul><i class="fa fa-angle-right"></i>
-                          </li>
-                          <li class="flyout-right"><a href="#">Blog</a>
-                            <ul>
-                              <li><a href="blog.html">blog</a></li>
-                              <li><a href="blog-single.html">blog-single</a></li>
-                              <li><a href="add-post.html">add-post</a></li>
-                            </ul><i class="fa fa-angle-right"></i>
-                          </li>
-                          <li><a href="FAQ-2.html">FAQ</a></li>
-                          <li class="flyout-right"><a href="#">Job Search</a>
-                            <ul>
-                              <li><a href="job-cards-view.html">job-cards-view</a></li>
-                              <li><a href="job-list-view.html">job-list-view</a></li>
-                              <li><a href="job-details.html">job-details</a></li>
-                              <li><a href="job-apply.html">job-apply</a></li>
-                            </ul><i class="fa fa-angle-right"></i>
-                          </li>
-                          <li class="flyout-right"><a href="#">Job Search</a>
-                            <ul>
-                              <li><a href="job-cards-view.html">learning-list</a></li>
-                              <li><a href="learning-detailed.html">learning-detailed</a></li>
-                            </ul><i class="fa fa-angle-right"></i>
-                          </li>
-                          <li class="flyout-right"><a href="#">Maps</a>
-                            <ul>
-                              <li><a href="map-js.html">Map-js</a></li>
-                              <li><a href="vector-map.html">Vector Maps</a></li>
-                            </ul><i class="fa fa-angle-right"></i>
-                          </li>
-                          <li class="flyout-right"><a href="#">Editors </a>
-                            <ul>
-                              <li><a href="summernote.html">Summer Note</a></li>
-                              <li><a href="CK%20editor.html">CK editor</a></li>
-                              <li><a href="simple-MDE.html">MDE editor</a></li>
-                              <li><a href="ace-code-editor.html">ACE code editor </a></li>
-                            </ul><i class="fa fa-angle-right"> </i>
-                          </li>
-                          <li><a href="knowledgebase.html">Knowledgebase </a></li>
-                          <li> <a href="support-ticket-2.html">Support Ticket</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Page Sub Header end
-                  -->
-              </div>
+          
               <div class="col-xl-3 col-sm-5 box-col-4">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index-2.html">

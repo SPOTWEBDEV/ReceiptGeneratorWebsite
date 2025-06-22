@@ -1,6 +1,6 @@
 <?php
 
-include("../../server/connection.php");
+include("../../../server/connection.php");
 
 
 
@@ -15,38 +15,38 @@ include("../../server/connection.php");
   <meta name="description" content="<?php echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
   <meta name="keywords" content="admin template, <?php echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
   <meta name="author" content="pixelstrap">
-  <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
   <title><?php echo $sitename ?> - Admin Upload Template</title>
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/font-awesome.css">
   <!-- ico-font-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/icofont.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/icofont.css">
   <!-- Themify icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/themify.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/themify.css">
   <!-- Flag icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/flag-icon.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/flag-icon.css">
   <!-- Feather icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/feather-icon.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/feather-icon.css">
   <!-- Plugins css start-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/scrollbar.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/animate.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/date-picker.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/dropzone.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/animate.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/date-picker.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/dropzone.css">
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/bootstrap.css">
   <!-- App css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-  <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/style.css">
+  <link id="color" rel="stylesheet" href="<?php echo $domain ?>assets/css/color-1.css" media="screen">
   <!-- Responsive css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/responsive.css">
 </head>
 
 <body>
@@ -60,7 +60,7 @@ include("../../server/connection.php");
     <div class="page-header">
       <div class="header-wrapper row m-0">
         <div class="header-logo-wrapper col-auto p-0">
-          <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../../assets/images/logo/logo_dark.png" alt=""></a></div>
+          <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="<?php echo $domain ?>assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="<?php echo $domain ?>assets/images/logo/logo_dark.png" alt=""></a></div>
           <div class="toggle-sidebar">
             <svg class="sidebar-toggle">
               <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#stroke-animation"></use>
@@ -103,7 +103,7 @@ include("../../server/connection.php");
                   <ul>
                     <li>
                       <div class="user-notification">
-                        <div><img src="../../assets/images/avtar/2.jpg" alt="avatar"></div>
+                        <div><img src="<?php echo $domain ?>assets/images/avtar/2.jpg" alt="avatar"></div>
                         <div class="user-description"><a href="letter-box.html">
                             <h4>You have new finical page design.</h4>
                           </a><span>Today 11:45pm</span></div>
@@ -116,7 +116,7 @@ include("../../server/connection.php");
                     </li>
                     <li>
                       <div class="user-notification">
-                        <div><img src="../../assets/images/avtar/17.jpg" alt="avatar"></div>
+                        <div><img src="<?php echo $domain ?>assets/images/avtar/17.jpg" alt="avatar"></div>
                         <div class="user-description"><a href="letter-box.html">
                             <h4>Congrats! you all task for today.</h4>
                           </a><span>Today 01:05pm</span></div>
@@ -129,7 +129,7 @@ include("../../server/connection.php");
                     </li>
                     <li>
                       <div class="user-notification">
-                        <div> <img src="../../assets/images/avtar/18.jpg" alt="avatar"></div>
+                        <div> <img src="<?php echo $domain ?>assets/images/avtar/18.jpg" alt="avatar"></div>
                         <div class="user-description"><a href="letter-box.html">
                             <h4>You have new in landing page design.</h4>
                           </a><span>Today 06:55pm</span></div>
@@ -142,7 +142,7 @@ include("../../server/connection.php");
                     </li>
                     <li>
                       <div class="user-notification">
-                        <div><img src="../../assets/images/avtar/19.jpg" alt="avatar"></div>
+                        <div><img src="<?php echo $domain ?>assets/images/avtar/19.jpg" alt="avatar"></div>
                         <div class="user-description"><a href="letter-box.html">
                             <h4>Congrats! you all task for today.</h4>
                           </a><span>Today 06:55pm</span></div>
@@ -215,7 +215,7 @@ include("../../server/connection.php");
                 <ul>
                   <li>
                     <div class="d-flex align-items-start">
-                      <div class="message-img bg-light-primary"><img src="../../assets/images/user/3.jpg" alt=""></div>
+                      <div class="message-img bg-light-primary"><img src="<?php echo $domain ?>assets/images/user/3.jpg" alt=""></div>
                       <div class="flex-grow-1">
                         <h5><a href="letter-box.html">Emay Walter</a></h5>
                         <p>Do you want to go see movie?</p>
@@ -225,7 +225,7 @@ include("../../server/connection.php");
                   </li>
                   <li>
                     <div class="d-flex align-items-start">
-                      <div class="message-img bg-light-primary"><img src="../../assets/images/user/6.jpg" alt=""></div>
+                      <div class="message-img bg-light-primary"><img src="<?php echo $domain ?>assets/images/user/6.jpg" alt=""></div>
                       <div class="flex-grow-1">
                         <h5> <a href="letter-box.html">Jason Borne</a></h5>
                         <p>Thank you for rating us.</p>
@@ -235,7 +235,7 @@ include("../../server/connection.php");
                   </li>
                   <li>
                     <div class="d-flex align-items-start">
-                      <div class="message-img bg-light-primary"><img src="../../assets/images/user/10.jpg" alt=""></div>
+                      <div class="message-img bg-light-primary"><img src="<?php echo $domain ?>assets/images/user/10.jpg" alt=""></div>
                       <div class="flex-grow-1">
                         <h5> <a href="letter-box.html">Sarah Loren</a></h5>
                         <p>What`s the project report update?</p>
@@ -257,7 +257,7 @@ include("../../server/connection.php");
                 <h6 class="f-18 mb-0 dropdown-title">Cart</h6>
                 <ul>
                   <li>
-                    <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="../../assets/images/ecommerce/05.jpg" alt="">
+                    <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="<?php echo $domain ?>assets/images/ecommerce/05.jpg" alt="">
                       <div class="flex-grow-1"> <span>Women's Track Suit</span>
                         <h6 class="font-primary">8 x $65.00</h6>
                       </div>
@@ -265,7 +265,7 @@ include("../../server/connection.php");
                     </div>
                   </li>
                   <li>
-                    <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="../../assets/images/ecommerce/02.jpg" alt="">
+                    <div class="d-flex"><img class="img-fluid b-r-5 img-50" src="<?php echo $domain ?>assets/images/ecommerce/02.jpg" alt="">
                       <div class="flex-grow-1"><span>Men's Jacket</span>
                         <h6 class="font-primary">10 x $50.00</h6>
                       </div>
@@ -307,7 +307,7 @@ include("../../server/connection.php");
               </div>
             </li>
             <li class="profile-nav onhover-dropdown pe-0 py-0">
-              <div class="d-flex align-items-center profile-media"><img class="b-r-25" src="../../assets/images/dashboard/profile.png" alt="">
+              <div class="d-flex align-items-center profile-media"><img class="b-r-25" src="<?php echo $domain ?>assets/images/dashboard/profile.png" alt="">
                 <div class="flex-grow-1 user"><span>Helen Walter</span>
                   <p class="mb-0 font-nunito">Admin
                     <svg>
@@ -343,19 +343,19 @@ include("../../server/connection.php");
       <!-- Page Sidebar Start-->
       <div class="sidebar-wrapper" data-layout="stroke-svg">
         <div>
-          <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../../assets/images/logo/logo_dark.png" alt=""></a>
+          <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="<?php echo $domain ?>assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="<?php echo $domain ?>assets/images/logo/logo_dark.png" alt=""></a>
             <div class="toggle-sidebar">
               <svg class="sidebar-toggle">
                 <use href="https://admin.pixelstrap.net/<?php echo $sitename ?>/assets/svg/icon-sprite.svg#toggle-icon"></use>
               </svg>
             </div>
           </div>
-          <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="../../assets/images/logo/logo-icon.png" alt=""></a></div>
+          <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="<?php echo $domain ?>assets/images/logo/logo-icon.png" alt=""></a></div>
           <nav class="sidebar-main">
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
               <ul class="sidebar-links" id="simple-bar">
-                <li class="back-btn"><a href="index-2.html"><img class="img-fluid" src="../../assets/images/logo/logo-icon.png" alt=""></a>
+                <li class="back-btn"><a href="index-2.html"><img class="img-fluid" src="<?php echo $domain ?>assets/images/logo/logo-icon.png" alt=""></a>
                   <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                 </li>
                 <li class="pin-title sidebar-main-title">
@@ -1292,97 +1292,88 @@ include("../../server/connection.php");
             <div class="col-sm-12">
               <div class="card">
                 <div class="card-body">
-                  <?php
-                  
-
-                  if (isset($_POST['saveTemplate'])) {
-                    $project_title = mysqli_real_escape_string($connection, $_POST['project_title'] ?? '');
-                    $html_contents = mysqli_real_escape_string($connection, $_POST['html_contents'] ?? '');
-                    $sell = mysqli_real_escape_string($connection, $_POST['sell'] ?? '0');
-                    $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
-                    $user = 0; // You can replace with the session user ID
-
-                    // Handle image upload
-                    $image_name = '';
-                    if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-                      $target_dir = "../../uploads/template";
-                      $image_name = basename($_FILES["image"]["name"]);
-                      $target_file = $target_dir . $image_name;
-                      move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-                    }
-
-                    // Insert into database
-                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title)
-              VALUES ('$user', '$sell', '$html_contents', '$tags', '$image_name', '$project_title')";
-
-                    if (mysqli_query($connection, $query)) {
-                      echo "<script>alert('✅ Template saved successfully!')</script>";
-                    } else {
-                      echo "<script>alert('❌ Error: Couldnot insert contents to database')</script>";
-                    }
-                  }
-                  ?>
-
-
-                  <form method="POST" enctype="multipart/form-data" class="form theme-form">
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label>Project Title</label>
-                          <input class="form-control" name="project_title" type="text" placeholder="Project name *" required>
+                   
+                <div class="col-xl-12">
+                  <form class="card">
+                    <div class="card-header pb-0">
+                      <h4 class="card-title mb-0">Edit Profile</h4>
+                      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="mb-3">
+                            <label class="form-label">Company</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">Username</label>
+                            <input class="form-control" type="text" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input class="form-control" type="email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">First Name</label>
+                            <input class="form-control" type="text" placeholder="Company">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input class="form-control" type="text" placeholder="Last Name">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <input class="form-control" type="text" placeholder="Home Address">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                          <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <input class="form-control" type="text" placeholder="City">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                          <div class="mb-3">
+                            <label class="form-label">Postal Code</label>
+                            <input class="form-control" type="number" placeholder="ZIP Code">
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="mb-3">
+                            <label class="form-label">Country</label>
+                            <select class="form-control btn-square">
+                              <option value="0">--Select--</option>
+                              <option value="1">Germany</option>
+                              <option value="2">Canada</option>
+                              <option value="3">Usa</option>
+                              <option value="4">Aus</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div>
+                            <label class="form-label">About Me</label>
+                            <textarea class="form-control" rows="4" placeholder="Enter About your description"></textarea>
+                          </div>
                         </div>
                       </div>
                     </div>
-
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label>Sell this Template?</label>
-                          <select class="form-select" name="sell" required>
-                            <option value="1">Yes, sell it</option>
-                            <option value="0">No, keep it private</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label>Tags</label>
-                          <input class="form-control" name="tags" type="text" placeholder="e.g., medical, hostel" required>
-                          <small class="form-text text-muted">Use commas to separate tags</small>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label>HTML Contents</label>
-                          <textarea class="form-control" name="html_contents" rows="6" placeholder="Paste HTML template content here..." required></textarea>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                    <div class="row">
-                      <div class="col">
-                        <div class="mb-3">
-                          <label>Upload Image</label>
-                          <input class="form-control" name="image" type="file" accept="image/*">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col text-end">
-                        <button class="btn btn-success me-3" type="submit" name="saveTemplate">Save</button>
-                        <a class="btn btn-danger" href="./index.php">Cancel</a>
-                      </div>
+                    <div class="card-footer text-end">
+                      <button class="btn btn-primary" type="submit">Update Profile</button>
                     </div>
                   </form>
+                </div>
 
 
                 </div>
@@ -1412,37 +1403,37 @@ include("../../server/connection.php");
     </div>
   </div>
   <!-- latest jquery-->
-  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/jquery.min.js"></script>
   <!-- Bootstrap js-->
-  <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- feather icon js-->
-  <script src="../../assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="../../assets/js/icons/feather-icon/feather-icon.js"></script>
+  <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather-icon.js"></script>
   <!-- scrollbar js-->
-  <script src="../../assets/js/scrollbar/simplebar.js"></script>
-  <script src="../../assets/js/scrollbar/custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/scrollbar/simplebar.js"></script>
+  <script src="<?php echo $domain ?>assets/js/scrollbar/custom.js"></script>
   <!-- Sidebar jquery-->
-  <script src="../../assets/js/config.js"></script>
+  <script src="<?php echo $domain ?>assets/js/config.js"></script>
   <!-- Plugins JS start-->
-  <script src="../../assets/js/sidebar-menu.js"></script>
-  <script src="../../assets/js/sidebar-pin.js"></script>
-  <script src="../../assets/js/slick/slick.min.js"></script>
-  <script src="../../assets/js/slick/slick.js"></script>
-  <script src="../../assets/js/header-slick.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-  <script src="../../assets/js/dropzone/dropzone.js"></script>
-  <script src="../../assets/js/dropzone/dropzone-script.js"></script>
-  <script src="../../assets/js/typeahead/handlebars.js"></script>
-  <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
-  <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
-  <script src="../../assets/js/typeahead-search/handlebars.js"></script>
-  <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/sidebar-menu.js"></script>
+  <script src="<?php echo $domain ?>assets/js/sidebar-pin.js"></script>
+  <script src="<?php echo $domain ?>assets/js/slick/slick.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/slick/slick.js"></script>
+  <script src="<?php echo $domain ?>assets/js/header-slick.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.en.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/dropzone/dropzone.js"></script>
+  <script src="<?php echo $domain ?>assets/js/dropzone/dropzone-script.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/handlebars.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.bundle.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead-search/handlebars.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead-search/typeahead-custom.js"></script>
   <!-- Plugins JS Ends-->
   <!-- Theme js-->
-  <script src="../../assets/js/script.js"></script>
-  <script src="../../assets/js/theme-customizer/customizer.js"></script>
+  <script src="<?php echo $domain ?>assets/js/script.js"></script>
+  <script src="<?php echo $domain ?>assets/js/theme-customizer/customizer.js"></script>
   <!-- Plugin used-->
 </body>
 

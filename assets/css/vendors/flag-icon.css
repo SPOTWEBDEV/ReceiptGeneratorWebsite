@@ -20,6 +20,8 @@
 
 .flag-icon-es-ct {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   background-image: url(https://admin.pixelstrap.net/zono/assets/fonts/flag-icon/es-ct.svg);
 }
 .flag-icon-es-ct.flag-icon-squared {
@@ -1810,6 +1812,7 @@
 .flag-icon-zw.flag-icon-squared {
   background-image: url(https://admin.pixelstrap.net/zono/assets/fonts/flag-icon/zw.svg);
 =======
+>>>>>>> e293d098f7677cf459e2770197f5671644c9a48f
   background-image: url(http://localhost/ReceiptGeneratorWebsite/assets/fonts/flag-icon/es-ct.svg);
 }
 .flag-icon-es-ct.flag-icon-squared {
@@ -3599,5 +3602,8 @@
 }
 .flag-icon-zw.flag-icon-squared {
   background-image: url(http://localhost/ReceiptGeneratorWebsite/assets/fonts/flag-icon/zw.svg);
+<<<<<<< HEAD
+=======
 >>>>>>> d0f16a9cb096d9503a9e38b05a10e0902c9ec521
+>>>>>>> e293d098f7677cf459e2770197f5671644c9a48f
 }
