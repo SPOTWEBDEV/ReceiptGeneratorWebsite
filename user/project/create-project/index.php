@@ -65,13 +65,13 @@ include("../../../server/connection.php")
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page Header Start-->
 
-        <?php  include("../../../include/nav.php") ?>
+        <?php  include("../../include/nav.php") ?>
     
       <!-- Page Header Ends                              -->
       <!-- Page body Start -->
       <div class="page-body-wrapper"> 
         <!-- Page Sidebar Start-->
-        <?php  include("../../../include/sidenav.php") ?>
+        <?php  include("../../include/sidenav.php") ?>
 
 
         
@@ -84,7 +84,7 @@ include("../../../server/connection.php")
             <div class="page-title"> 
               <div class="row">
                 <div class="col-xl-4 col-sm-7 box-col-3">
-                  <h3> Dashboard</h3>
+                  <h3> Project</h3>
                 </div>
                 <div class="col-5 d-none d-xl-block">
                   <!-- Page Sub Header Start-->
@@ -98,7 +98,7 @@ include("../../../server/connection.php")
                           <use href="../../../assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
                     <li class="breadcrumb-item">Home</li>
-                    <li class="breadcrumb-item active">Dashboard</li>
+                    <li class="breadcrumb-item active">New Project</li>
                   </ol>
                 </div>
               </div>
@@ -111,7 +111,7 @@ include("../../../server/connection.php")
                 <div class="card">
                   <div class="card-header"> 
                     <div class="header-top"> 
-                      <h4>Project Summary </h4>
+                      <h4> Create Project </h4>
                       <div class="dropdown icon-dropdown setting-menu">
                         <button class="btn dropdown-toggle" id="userdropdown22" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <svg>

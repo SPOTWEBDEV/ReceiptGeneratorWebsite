@@ -89,8 +89,8 @@
     <span class="lan-7">My Template</span>
   </a>
   <ul class="sidebar-submenu">
-    <li><a href="<?php echo $domain ?>user/project/create-project">Create Template</a></li>
-    <li><a href="<?php echo $domain ?>user/project/list-project">List Template</a></li>
+    <li><a href="<?php echo $domain ?>user/template/create-template">Create Template</a></li>
+    <li><a href="<?php echo $domain ?>user/template/list-template">List Template</a></li>
   </ul>
 </li>
 
