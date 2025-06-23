@@ -97,7 +97,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
           <div class="page-title">
             <div class="row">
               <div class="col-xl-4 col-sm-7 box-col-3">
-                <h3> Project Create</h3>
+                <h3> Users</h3>
               </div>
 
               <div class="col-5 d-none d-xl-block">
@@ -113,7 +113,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                         <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-home"></use>
                       </svg></a></li>
                   <li class="breadcrumb-item">Apps</li>
-                  <li class="breadcrumb-item active">Project Create </li>
+                  <li class="breadcrumb-item active">Users </li>
                 </ol>
               </div>
             </div>

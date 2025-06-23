@@ -67,14 +67,11 @@
           
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="#">
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/project/create-project">
               <i class="bi bi-folder2-open"></i>
-              <span class="lan-7">Payment</span>
+              <span class="lan-7">Payment Method</span>
             </a>
-            <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/project/create-project">Payment Method</a></li>
-              
-            </ul>
+        
           </li>
 
           <li class="sidebar-list">
@@ -84,22 +81,18 @@
               <span class="lan-7">Template</span>
             </a>
             <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/project/create-project">Create Template</a></li>
+              <li><a href="<?php echo $domain ?>user/project/create-project">Upload Template</a></li>
               <li><a href="<?php echo $domain ?>user/project/list-project">List Template</a></li>
             </ul>
           </li>
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="#">
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/setting/profile/">
               <i class="bi bi-gear"></i>
-              <span class="lan-7">Setting</span>
+              <span class="lan-7">Profile Setting</span>
             </a>
-            <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/setting/profile/">Profile Setting</a></li>
-              <li><a href="<?php echo $domain ?>user/setting/template-setting/">Account Setting</a></li>
-              <li><a href="<?php echo $domain ?>user/setting/template-setting/">Template Setting</a></li>
-            </ul>
+         
           </li>
 
         </ul>
