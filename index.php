@@ -1,6 +1,6 @@
 <?php
 
-include("./server/connection.php")
+// include("./server/connection.php")
 
 
 
@@ -365,5 +365,5 @@ include("./server/connection.php")
     <script src="./assets/js/owlcarousel/owl-custom.js"></script>
   </body>
 
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/landing-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:01 GMT -->
+
 </html>
