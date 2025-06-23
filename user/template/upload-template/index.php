@@ -120,20 +120,22 @@ include("../../../server/client/auth/index.php");
                     $html_contents = mysqli_real_escape_string($connection, $_POST['html_contents'] ?? '');
                     $sell = mysqli_real_escape_string($connection, $_POST['sell'] ?? '0');
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
+
+                    $amount = mysqli_real_escape_string($connection, $_POST['amount']);
                     
 
                     // Handle image upload
                     $image_name = '';
                     if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-                      $target_dir = "../../uploads/template";
+                      $target_dir = "../../../uploads/template/";
                       $image_name = basename($_FILES["image"]["name"]);
                       $target_file = $target_dir . $image_name;
                       move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
                     }
 
                     // Insert into database
-                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title)
-              VALUES ('$id', '$sell', '$html_contents', '$tags', '$image_name', '$project_title')";
+                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title,price)
+              VALUES ('$id', '$sell', '$html_contents', '$tags', '$image_name', '$project_title','$amount')";
 
                     if (mysqli_query($connection, $query)) {
                       echo Model('✅ Template saved successfully!');
@@ -158,13 +160,37 @@ include("../../../server/client/auth/index.php");
                       <div class="col">
                         <div class="mb-3">
                           <label>Sell this Template?</label>
-                          <select class="form-select" name="sell" required>
+                          <select id="sell"   class="form-select" name="sell" required>
                             <option value="1">Yes, sell it</option>
                             <option value="0">No, keep it private</option>
                           </select>
                         </div>
                       </div>
                     </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label>Amount</label>
+                          <input class="form-control" id="amount" name="amount" type="text" value="0" required>
+                        </div>
+                      </div>
+                    </div>
+
+                    <script>
+
+                      document.querySelector('#sell').onchange = (event)=>{
+                          if(event.target.value == 1){
+                             document.querySelector("#amount").style.display = 'block'
+                          }else{
+                            document.querySelector("#amount").style.display = 'none'
+                            document.querySelector("#amount").value = 0
+                          }
+                      }
+
+                    </script>
+
+                    
 
                     <div class="row">
                       <div class="col">

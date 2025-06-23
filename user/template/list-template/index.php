@@ -115,7 +115,7 @@ include("../../../server/client/auth/index.php");
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header pb-0">
-                                    <h4>IMAGE GALLERY WITH DESCRIPTION </h4>
+                                    <h4>My Template </h4>
                                 </div>
 
                                 <div class="row mt-3 px-2">
