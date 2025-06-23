@@ -83,6 +83,13 @@ include("../../../server/client/auth/index.php");
               <div class="col-xl-4 col-sm-7 box-col-3">
                 <h3>Edit Profile</h3>
               </div>
+
+              <div class="col-4 d-none d-xl-block">
+                  <!-- Page Sub Header Start-->
+              
+                  <!-- Page Sub Header end
+                  -->
+                </div>
             
               <div class="col-xl-3 col-sm-5 box-col-4">
                 <ol class="breadcrumb">

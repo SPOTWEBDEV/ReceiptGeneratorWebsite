@@ -1,14 +1,14 @@
 <?php
 
-include("../../../server/connection.php")
+include("../../../server/connection.php");
+include("../../../server/model.php");
+include("../../../server/client/auth/index.php");
 
 
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:56 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,22 +80,22 @@ include("../../../server/connection.php")
             <div class="page-title">
               <div class="row">
                 <div class="col-xl-4 col-sm-7 box-col-3">
-                  <h3>Edit Profile</h3>
+                  <h3>Template Setting</h3>
                 </div>
-                <div class="col-5 d-none d-xl-block">
+                <div class="col-4 d-none d-xl-block">
                   <!-- Page Sub Header Start-->
               
                   <!-- Page Sub Header end
                   -->
                 </div>
-                <div class="col-xl-3 col-sm-5 box-col-4">
+                <div class="col-xl-4 col-sm-5 box-col-4">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index-2.html">
                         <svg class="stroke-icon">
                           <use href="../../../assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Users</li>
-                    <li class="breadcrumb-item active">Edit Profile</li>
+                    <li class="breadcrumb-item">Setting</li>
+                    <li class="breadcrumb-item active">Template Setting</li>
                   </ol>
                 </div>
               </div>
@@ -105,50 +105,12 @@ include("../../../server/connection.php")
           <div class="container-fluid">
             <div class="edit-profile">
               <div class="row">
-                  <div class="card">
-                    <div class="card-header pb-0">
-                      <h4 class="card-title mb-0">My Profile</h4>
-                      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
-                    </div>
-                    <div class="card-body">
-                      <form>
-                        <div class="row mb-2">
-                          <div class="profile-title">
-                            <div class="d-flex">                        <img class="img-70 rounded-circle" alt="" src="../../../assets/images/user/7.jpg">
-                              <div class="flex-grow-1">
-                                <h3 class="mb-1 f-w-600">MARK JECNO</h3>
-                                <p>DESIGNER</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                          <h6 class="form-label">Bio</h6>
-                          <textarea class="form-control" rows="5">On the other hand, we denounce with righteous indignation</textarea>
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Email-Address</label>
-                          <input class="form-control" placeholder="your-email@domain.com">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Password</label>
-                          <input class="form-control" type="password" value="password">
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Website</label>
-                          <input class="form-control" placeholder="http://Uplor .com">
-                        </div>
-                        <div class="form-footer">
-                          <button class="btn btn-primary btn-block">Save</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div> 
+                 
+                
                 <div class="col-xl-12">
                   <form class="card">
                     <div class="card-header pb-0">
-                      <h4 class="card-title mb-0">Edit Profile</h4>
+                      <h4 class="card-title mb-0">Template Setting</h4>
                       <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a></div>
                     </div>
                     <div class="card-body">
@@ -243,5 +205,4 @@ include("../../../server/connection.php")
     <!-- Plugin used-->
   </body>
 
-<!-- Mirrored from admin.pixelstrap.net/<?php  echo $sitename ?>/template/edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:24:56 GMT -->
 </html>
