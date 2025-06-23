@@ -84,7 +84,7 @@ include("../../../server/connection.php")
             <div class="page-title"> 
               <div class="row">
                 <div class="col-xl-4 col-sm-7 box-col-3">
-                  <h3> Dashboard</h3>
+                  <h3>Project List </h3>
                 </div>
                 <div class="col-5 d-none d-xl-block">
                   <!-- Page Sub Header Start-->
@@ -98,7 +98,7 @@ include("../../../server/connection.php")
                           <use href="../../../assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
                     <li class="breadcrumb-item">Home</li>
-                    <li class="breadcrumb-item active">Dashboard</li>
+                    <li class="breadcrumb-item active">All project</li>
                   </ol>
                 </div>
               </div>

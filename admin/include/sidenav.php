@@ -58,24 +58,24 @@
               <span class="lan-3">Deposite</span>
             </a>
             <ul class="sidebar-submenu">
-              <li><a class="lan-4" href="<?php echo $domain ?>user/deposit/">Pending Deposit</a></li>
-              <li><a class="lan-5" href="<?php echo $domain ?>user/deposit/history/">Approved Deposit</a></li>
-              <li><a class="lan-5" href="<?php echo $domain ?>user/deposit/history/">Declined Deposit</a></li>
+              <li><a class="lan-4" href="<?php echo $domain ?>admin/deposit/deposit-history/">Pending Deposit</a></li>
+              <li><a class="lan-5" href="<?php echo $domain ?>admin/deposit/deposit-history/">Approved Deposit</a></li>
+              <li><a class="lan-5" href="<?php echo $domain ?>admin/deposit/deposit-history/">Declined Deposit</a></li>
             </ul>
           </li>
 
-          <!-- 
+          
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
             <a class="sidebar-link sidebar-title" href="#">
               <i class="bi bi-folder2-open"></i>
-              <span class="lan-7">Invoice</span>
+              <span class="lan-7">Payment</span>
             </a>
             <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/project/create-project">Create Invoice</a></li>
-              <li><a href="<?php echo $domain ?>user/project/list-project">List Invoice</a></li>
+              <li><a href="<?php echo $domain ?>user/project/create-project">Payment Method</a></li>
+              
             </ul>
-          </li> -->
+          </li>
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
