@@ -2,10 +2,43 @@
 include('../../server/model.php');
 include('../../server/client/auth/index.php');
 
+
+$sql = "SELECT `credit_value`,`nairaRate`,`id` FROM `siteinfo` ORDER BY `id` DESC LIMIT 1";
+$result = $connection->query($sql);
+
+
+if ($result && $result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $creditPrice = floatval($row['credit_value']);
+    $nairaRate = $row['nairaRate'];
+    $credit_id = $row['id'];
+}
+
+
+if (isset($_POST['submit'])) {
+    $creditAmount = intval($_POST['credit_amount'] ?? 0);
+    $usdtAmount = $creditAmount * $creditPrice;
+    $nairaAmount = $usdtAmount * $nairaRate;
+
+    $deposit_id = 'DEP_' . strtoupper(uniqid());
+
+    // Insert into deposit table
+    $stmt = mysqli_query($connection , "INSERT INTO deposits (credit, usdt_amount, naira_amount , deposit_id,user) VALUES ('$creditAmount', '$usdtAmount', '$nairaAmount' , '$deposit_id','$id')");
+    
+
+    if($stmt) {
+      echo "<script>window.location.href='../deposit/?deposit_id=$deposit_id'</script>";
+    } else {
+      echo  Model("Something went wrong");
+    }
+
+}
+
+
+
 ?>
 
 <html lang="en">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -115,23 +148,60 @@ include('../../server/client/auth/index.php');
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6">
+
                             <div class="card">
                                 <div class="card-header pb-0">
-                                    <h4>Default Range Slider</h4>
+                                    <h4>Purchase Credit</h4>
                                     <div class="currency">
-                                        <p class="f-m-light mt-1">10 Credit </p>
-                                        <p class="f-m-light mt-1">10 USD </p>
+                                        <p class="f-m-light mt-1">1 Credit = <?php echo number_format($creditPrice, 2); ?> USDT</p>
+                                        <p class="f-m-light mt-1">10 Credit = <?php echo number_format($creditPrice * 10, 2); ?> USDT</p>
                                     </div>
                                 </div>
                                 <div class="card-body">
+                                    <?php
 
-                                    <input type="range">
+                                    if (isset($_POST['submit'])) {
+                                        $credit_id_ = $_POST['credit_id'];
+                                    }
+
+                                    ?>
+                                    <form method="POST">
+                                        <div class="d-flex gap-2">
+                                            <input style="width: 75%;" type="hidden" id="credit_id" name="credit_id" value="10">
+                                            <input style="width: 75%;" type="range" id="creditRange" name="credit_amount" min="1" max="100" value="10" oninput="updatePrice()">
+                                            <output id="creditOutput">10</output> Credit(s)
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <p><span id="usdtAmount">2.50</span> USDT</p>
+                                            <p><span id="nairaAmount">₦3,750</span></p>
+                                        </div>
+                                        <button name="submit" class="btn btn-success" type="submit">Buy Now</button>
                                     </form>
                                 </div>
                             </div>
+
+                            <script>
+                                const creditPrice = <?php echo $creditPrice; ?>;
+                                const nairaRate = <?php echo $nairaRate; ?>;
+
+                                function updatePrice() {
+                                    const creditInput = document.getElementById("creditRange");
+                                    const creditValue = parseInt(creditInput.value);
+
+                                    const usdt = creditValue * creditPrice;
+                                    const naira = usdt * nairaRate;
+
+                                    // Update live values
+                                    document.getElementById("creditOutput").textContent = creditValue;
+                                    document.getElementById("usdtAmount").textContent = usdt.toFixed(2);
+                                    document.getElementById("nairaAmount").textContent = "₦" + naira.toLocaleString();
+                                }
+
+                                // Initialize values on page load
+                                updatePrice();
+                            </script>
+
                         </div>
-
-
                     </div>
                 </div>
                 <!-- Container-fluid Ends-->

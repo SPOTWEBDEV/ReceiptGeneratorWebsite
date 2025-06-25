@@ -5,32 +5,34 @@ include("../../server/model.php");
 include("../../server/client/auth/index.php");
 
 
+if(isset($_GET['deposit_id'])){
+  $deposit_id  = $_GET['deposit_id'];
+}else{
+    echo "<script>window.location.href='../pricing/'</script>";
+}
+
+
 $banks = mysqli_query($connection, "SELECT id, type, accountorwallet FROM payment_methods WHERE method = 'bank'");
 $cryptos = mysqli_query($connection, "SELECT id, type, accountorwallet FROM payment_methods WHERE method = 'crypto'");
+
+
+$getamount = mysqli_fetch_assoc(mysqli_query($connection,"SELECT * FROM `deposits` WHERE `deposit_id`='$deposit_id'"));
 
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
 
-    $amount = $_POST['amount'] ;
+    
     $payment_option_id = $_POST['payment_option'] ;
 
-   
-
-    if (!$user_id || !$payment_option_id || !$amount) {
+    if (!$payment_option_id) {
         echo Model('Missing required fields.');
     } else {
-        $amount = floatval($amount);
         $payment_option_id = intval($payment_option_id);
-
-        // Generate a unique deposit ID
-        $deposit_id = 'DEP_' . strtoupper(uniqid());
-
         // Insert into deposits table
         $insert = mysqli_query($connection, "
-            INSERT INTO deposits (user, deposit_id, payment_method_id, amount)
-            VALUES ('$id', '$deposit_id', '$payment_option_id', '$amount')
+            UPDATE `deposits` SET `payment_method_id`='$payment_option_id'
         ");
 
         if ($insert) {
@@ -164,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <form method="POST">
                                         <div class="mb-3">
                                             <label class="form-label">Amount</label>
-                                            <input class="form-control" name="amount" type="number" placeholder="Enter amount" required>
+                                            <input value="<?php echo $getamount['usdt_amount'] . ' USDT OR ' . $getamount['naira_amount'] . ' NARIA' ?>" class="form-control" name="amount" type="text"  required readonly>
                                         </div>
 
                                         <div class="mb-3">

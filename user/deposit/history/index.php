@@ -139,7 +139,6 @@ include("../../../server/client/auth/index.php");
                           <th>Amount</th>
                           <th>Date</th>
                           <th>Account Status</th>
-                          <th>Action</th>
                         </tr>
                         </tr>
                       </thead>
@@ -159,7 +158,7 @@ include("../../../server/client/auth/index.php");
                             <tr>
                               <td class="f-w-600"><?= $count ?></td>
                               <td><?= htmlspecialchars($row['deposit_id']) ?></td>
-                              <td><?= htmlspecialchars($row['amount']) ?></td>
+                              <td><?= $row['usdt_amount'] . 'USDT' . ' => ' . $row['naira_amount'] . ' NARIA' ?></td>
                                <td><?= htmlspecialchars($row['created_at']) ?></td>
                               
                               <td class="text-end">
@@ -167,13 +166,13 @@ include("../../../server/client/auth/index.php");
                               <?php
 
                               if($row['status'] == 'pending'){ ?>
-                              <a class="btn btn-danger btn-sm" ><i class="fa fa-ban"></i> <?php echo $row['status'] ?></a>
+                              <a style="text-transform: capitalize;" class="btn btn-danger btn-sm" > <?php echo $row['status'] ?></a>
 
                               <?php }else if($row['status'] == 'declined'){ ?>
-                                <a class="btn btn-warning btn-sm" ><i class="fa fa-ban"></i> <?php echo $row['status'] ?></a>
-                              <?php } ?>
-                                  <a class="btn btn-danger btn-sm" ><i class="fa fa-ban"></i> <?php echo $row['status'] ?></a>
-                             <?php ?>
+                                <a style="text-transform: capitalize;" class="btn btn-warning btn-sm" > <?php echo $row['status'] ?></a>
+                              <?php }else if($row['status'] == 'approved'){ ?>
+                                  <a style="text-transform: capitalize;" class="btn btn-danger btn-sm" > <?php echo $row['status'] ?></a>
+                             <?php }?>
                                 
                                 
                               </td>

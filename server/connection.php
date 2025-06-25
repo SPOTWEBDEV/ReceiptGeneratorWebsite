@@ -22,7 +22,7 @@ define("HOST", "localhost");
 $isLocalhost = ($_SERVER['HTTP_HOST'] === 'localhost');
 
 // Database connection (Only use one based on environment)
-$connection = '';
+// $connection = '';
 
 if ($isLocalhost) {
     // Offline (Localhost)
@@ -38,7 +38,6 @@ if ($isLocalhost) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-  
 } else {
     // Online (Live Server)
     $domain = "https://smartinvoicex.com.spotwebtech.com.ng/";
@@ -52,8 +51,6 @@ if ($isLocalhost) {
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }
-
-   
 }
 
 
@@ -63,9 +60,6 @@ $siteemail =  'support@smartinvoicex.com';
 $sitephone = '08108833188';
 
 session_start();
-
-
-
 
 
 ?>
