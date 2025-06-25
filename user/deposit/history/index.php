@@ -1,6 +1,8 @@
 <?php
 
-include("../../../server/connection.php")
+include("../../../server/connection.php");
+include("../../../server/model.php");
+include("../../../server/client/auth/index.php");
 
 
 
@@ -123,110 +125,74 @@ include("../../../server/connection.php")
                     </div>
                   </div>
                   <div class="card-body">
-                    <div class="table-responsive custom-scrollbar"> 
-                      <table class="project-summary table" id="project-summary">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>Project Name</th>
-                            <th>Team</th>
-                            <th>Project Cost</th>
-                            <th>Project Status</th>
-                            <th>Payment</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="f-w-600">A908</td>
-                            <td> <a href="projects.html">Amazon Website</a></td>
-                            <td class="team-avtar">
-                              <div class="customers d-inline-block avatar-group">
-                                <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/8.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/10.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                                  <li class="d-inline-block">
-                                    <p>26+</p>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                            <td>$23,490</td>
-                            <td>Completed</td>
-                            <td class="txt-success">Done </td>
-                          </tr>
-                          <tr>
-                            <td>R840</td>
-                            <td> <a href="projects.html">Paytm bank app</a></td>
-                            <td class="team-avtar">
-                              <div class="customers d-inline-block avatar-group">
-                                <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/20.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/12.jpg" alt=""></li>
-                                  <li class="d-inline-block">
-                                    <p>6+</p>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                            <td>$45,459</td>
-                            <td>In Progress</td>
-                            <td class="txt-danger">Pending</td>
-                          </tr>
-                          <tr>
-                            <td class="f-w-600">V908</td>
-                            <td class="f-w-600"> <a href="projects.html">Cytrust Dashboard</a></td>
-                            <td class="team-avtar"> 
-                              <div class="customers d-inline-block avatar-group">
-                                <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/14.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/13.jpg" alt=""></li>
-                                </ul>
-                              </div>
-                            </td>
-                            <td class="f-w-600">$78,748 </td>
-                            <td class="f-w-600">Completed</td>
-                            <td class="txt-success f-w-600">Done</td>
-                          </tr>
-                          <tr>
-                            <td class="f-w-600">K450</td>
-                            <td> <a href="projects.html">Project Mecha</a></td>
-                            <td class="team-avtar">
-                              <div class="customers d-inline-block avatar-group">
-                                <ul> 
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/22.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/15.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/2.jpg" alt=""></li>
-                                </ul>
-                              </div>
-                            </td>
-                            <td class="f-w-600">	$98,878</td>
-                            <td class="f-w-600">In Progress</td>
-                            <td class="txt-danger f-w-600">Pending</td>
-                          </tr>
-                          <tr>
-                            <td class="f-w-600">D480</td>
-                            <td class="f-w-600"><a href="projects.html">Dynamic Program</a></td>
-                            <td class="team-avtar">
-                              <div class="customers d-inline-block avatar-group">
-                                <ul>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/21.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/23.jpg" alt=""></li>
-                                  <li class="d-inline-block"><img class="img-40 rounded-circle" src="<?php echo $domain ?>assets/images/dashboard/avtar/24.jpg" alt=""></li>
-                                  <li class="d-inline-block"> 
-                                    <p>5+                           </p>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                            <td class="f-w-600">$23,490</td>
-                            <td class="f-w-600">In Progress</td>
-                            <td class="txt-danger f-w-600">Pending</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <div class="table-responsive custom-scrollbar">
+
+                  <input type="text" id="userSearch" placeholder="Search by name or email" class="form-control mb-3">
+
+
+
+                    <table class="table card-table table-vcenter text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Amount</th>
+                          <th>Amount</th>
+                          <th>Date</th>
+                          <th>Account Status</th>
+                          <th>Action</th>
+                        </tr>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <?php
+
+                        $select = mysqli_query($connection, "SELECT * FROM `deposits`");
+                        if (mysqli_num_rows($select) > 0) {
+                          $count = 0;
+                          while ($row = mysqli_fetch_array($select)) {
+                            $count++;
+                           
+                        ?>
+
+
+                            <tr>
+                              <td class="f-w-600"><?= $count ?></td>
+                              <td><?= htmlspecialchars($row['deposit_id']) ?></td>
+                              <td><?= htmlspecialchars($row['amount']) ?></td>
+                               <td><?= htmlspecialchars($row['created_at']) ?></td>
+                              
+                              <td class="text-end">
+
+                              <?php
+
+                              if($row['status'] == 'pending'){ ?>
+                              <a class="btn btn-danger btn-sm" ><i class="fa fa-ban"></i> <?php echo $row['status'] ?></a>
+
+                              <?php }else if($row['status'] == 'declined'){ ?>
+                                <a class="btn btn-warning btn-sm" ><i class="fa fa-ban"></i> <?php echo $row['status'] ?></a>
+                              <?php } ?>
+                                  <a class="btn btn-danger btn-sm" ><i class="fa fa-ban"></i> <?php echo $row['status'] ?></a>
+                             <?php ?>
+                                
+                                
+                              </td>
+                            </tr>
+
+                          <?php  }
+                        } else { ?>
+
+                          <p>Table is empty</p>
+
+                        <?php }  ?>
+
+
+
+
+                      </tbody>
+                    </table>
+
+                  </div>
                   </div>
                 </div>
               </div>
@@ -269,7 +235,6 @@ include("../../../server/connection.php")
     <script src="<?php echo $domain ?>assets/js/chart/apex-chart/moment.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/dashboard/default.js"></script>
-    <script src="<?php echo $domain ?>assets/js/notify/index.js"></script>
     <script src="<?php echo $domain ?>assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
     <script src="<?php echo $domain ?>assets/js/datatable/datatables/datatable.custom.js"></script>
     <script src="<?php echo $domain ?>assets/js/datatable/datatables/datatable.custom1.js"></script>

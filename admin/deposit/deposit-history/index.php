@@ -1,6 +1,6 @@
 <?php
 
-include("../../server/connection.php");
+include("../../../server/connection.php");
 
 
 if (isset($_GET['action']) && isset($_GET['id'])) {
@@ -43,38 +43,38 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
   <meta name="description" content="<?php echo $sitename ?> admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
   <meta name="keywords" content="admin template, <?php echo $sitename ?> admin template, dashboard template, flat admin template, responsive admin template, web app">
   <meta name="author" content="pixelstrap">
-  <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo $domain ?>assets/images/favicon.png" type="image/x-icon">
   <title><?php echo $sitename ?> - View All Users Deposits</title>
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/font-awesome.css">
   <!-- ico-font-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/icofont.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/icofont.css">
   <!-- Themify icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/themify.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/themify.css">
   <!-- Flag icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/flag-icon.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/flag-icon.css">
   <!-- Feather icon-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/feather-icon.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/feather-icon.css">
   <!-- Plugins css start-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/scrollbar.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/animate.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/date-picker.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/dropzone.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/animate.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/date-picker.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/dropzone.css">
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/vendors/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/vendors/bootstrap.css">
   <!-- App css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-  <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/style.css">
+  <link id="color" rel="stylesheet" href="<?php echo $domain ?>assets/css/color-1.css" media="screen">
   <!-- Responsive css-->
-  <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>assets/css/responsive.css">
 </head>
 
 <body>
@@ -85,12 +85,12 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
   <!-- page-wrapper Start-->
   <div class="page-wrapper default-wrapper" id="pageWrapper">
     <!-- Page Header Start-->
-    <?php include('../include/navbar.php')  ?>
+    <?php include('../../include/navbar.php')  ?>
     <!-- Page Header Ends                              -->
     <!-- Page Body Start-->
     <div class="page-body-wrapper default-menu default-menu">
       <!-- Page Sidebar Start-->
-      <?php include('../include/sidenav.php') ?>
+      <?php include('../../include/sidenav.php') ?>
       <!-- Page Sidebar Ends-->
       <div class="page-body">
         <div class="container-fluid">
@@ -227,37 +227,37 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
 
 
   <!-- latest jquery-->
-  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/jquery.min.js"></script>
   <!-- Bootstrap js-->
-  <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <!-- feather icon js-->
-  <script src="../../assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="../../assets/js/icons/feather-icon/feather-icon.js"></script>
+  <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/icons/feather-icon/feather-icon.js"></script>
   <!-- scrollbar js-->
-  <script src="../../assets/js/scrollbar/simplebar.js"></script>
-  <script src="../../assets/js/scrollbar/custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/scrollbar/simplebar.js"></script>
+  <script src="<?php echo $domain ?>assets/js/scrollbar/custom.js"></script>
   <!-- Sidebar jquery-->
-  <script src="../../assets/js/config.js"></script>
+  <script src="<?php echo $domain ?>assets/js/config.js"></script>
   <!-- Plugins JS start-->
-  <script src="../../assets/js/sidebar-menu.js"></script>
-  <script src="../../assets/js/sidebar-pin.js"></script>
-  <script src="../../assets/js/slick/slick.min.js"></script>
-  <script src="../../assets/js/slick/slick.js"></script>
-  <script src="../../assets/js/header-slick.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-  <script src="../../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-  <script src="../../assets/js/dropzone/dropzone.js"></script>
-  <script src="../../assets/js/dropzone/dropzone-script.js"></script>
-  <script src="../../assets/js/typeahead/handlebars.js"></script>
-  <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
-  <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
-  <script src="../../assets/js/typeahead-search/handlebars.js"></script>
-  <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/sidebar-menu.js"></script>
+  <script src="<?php echo $domain ?>assets/js/sidebar-pin.js"></script>
+  <script src="<?php echo $domain ?>assets/js/slick/slick.min.js"></script>
+  <script src="<?php echo $domain ?>assets/js/slick/slick.js"></script>
+  <script src="<?php echo $domain ?>assets/js/header-slick.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.en.js"></script>
+  <script src="<?php echo $domain ?>assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/dropzone/dropzone.js"></script>
+  <script src="<?php echo $domain ?>assets/js/dropzone/dropzone-script.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/handlebars.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.bundle.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead/typeahead.custom.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead-search/handlebars.js"></script>
+  <script src="<?php echo $domain ?>assets/js/typeahead-search/typeahead-custom.js"></script>
   <!-- Plugins JS Ends-->
   <!-- Theme js-->
-  <script src="../../assets/js/script.js"></script>
-  <script src="../../assets/js/theme-customizer/customizer.js"></script>
+  <script src="<?php echo $domain ?>assets/js/script.js"></script>
+  <script src="<?php echo $domain ?>assets/js/theme-customizer/customizer.js"></script>
   <!-- Plugin used-->
 </body>
 

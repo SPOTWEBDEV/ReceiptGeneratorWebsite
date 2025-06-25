@@ -133,39 +133,9 @@ include("../../../server/client/auth/index.php");
                                                 <div class="card">
                                                     <div class="product-box">
                                                         <div class="product-img"><img class="img-fluid" src="<?php echo $domain . 'uploads/template/' . $rowTemplate['image'] ?>" alt="">
-                                                            <div class="product-hover">
-                                                                <ul>
-                                                                    <li><a href="cart.html"><i class="icon-shopping-cart"></i></a></li>
-                                                                    <li><a data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="icon-eye"></i></a></li>
-                                                                </ul>
-                                                            </div>
+                                                            
                                                         </div>
-                                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true">
-                                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <div class="product-box row">
-                                                                            <div class="product-img col-lg-6"><img class="img-fluid" src="<?php echo $domain ?>assets/images/ecommerce/01.jpg" alt=""></div>
-                                                                            <div class="product-details col-lg-6 text-start">
-                                                                                <h3><?php echo $rowTemplate['title']  ?></h3>
-                                                                                <div class="product-price">$50.00
-                                                                                    <del>$35.00 </del>
-                                                                                </div>
-                                                                                <div class="product-view">
-                                                                                    <h3>Product Details</h3>
-                                                                                    <p class="mb-0">Rock Paper Scissors Women Tank Top High Neck Cotton Top Stylish Women Top..</p>
-                                                                                </div>
-
-                                                                                <div class="product-qnty">
-                                                                                    <div class="addcart-btn"><a class="btn btn-primary" href="cart.html">Add to Cart</a><a class="btn btn-primary ms-2" href="product-page.html">View Details</a></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        
                                                         <div class="product-details">
 
                                                             <a href="product-page.html">
@@ -186,8 +156,14 @@ include("../../../server/client/auth/index.php");
 
                                                            ?>
                                                             </div>
-                                                            <div class="product-price">$50.00
-                                                                <del>$35.00 </del>
+                                                            <div class="product-price">
+                                                                <?php  if($rowTemplate['sell'] == 1){?>
+                                                                    <p><?php echo $rowTemplate['price']. ' Credit' ?></p>
+                                                               <?php }else{ ?>
+
+                                                                <p>Template not for sell</p>
+
+                                                                <?php } ?>
                                                             </div>
                                                         </div>
                                                     </div>
