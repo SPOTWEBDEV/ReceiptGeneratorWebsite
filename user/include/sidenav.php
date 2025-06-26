@@ -55,12 +55,8 @@
             <i class="bi bi-pin-angle-fill"></i>
             <a class="sidebar-link sidebar-title" href="#">
               <i class="bi bi-cash-stack"></i>
-              <span class="lan-3">Deposite</span>
+              <span class="lan-3">Pricing</span>
             </a>
-            <ul class="sidebar-submenu">
-              <li><a class="lan-4" href="<?php echo $domain ?>user/deposit/">Deposite Request</a></li>
-              <li><a class="lan-5" href="<?php echo $domain ?>user/deposit/history/">Deposite History</a></li>
-            </ul>
           </li>
 
 
