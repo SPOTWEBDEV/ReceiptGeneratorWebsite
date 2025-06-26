@@ -55,7 +55,7 @@ include("./server/connection.php");
           <div class="row">
             <div class="col-12 p-0">
               <nav class="navbar navbar-light p-0" id="navbar-example2"><a class="navbar-brand" href="javascript:void(0)">
-                <img style="width: 100px;" class="img-fluid" src="./assets/images/logo.png" alt=""></a>
+                <img style="height:80px" class="img-fluid" src="./assets/images/logo.png" alt=""></a>
                 <!-- <h1 class="img-fluid" style="font-size: 20px;">Smar InoiceX</h1> -->
                 <ul class="landing-menu nav nav-pills">
                   <li class="nav-item menu-back">back<i class="fa fa-angle-right"></i></li>
@@ -326,13 +326,13 @@ include("./server/connection.php");
           </div>
           <div class="sub-footer row g-md-2 g-3">
             <div class="col-md-6"> 
-              <div class="left-subfooter"> <img class="img-fluid" src="./assets/images/logo/logo_dark.png" alt="logo">
-                <p class="mb-0">Copyright 2024 © <?php  echo $sitename ?> – All rights reserved</p>
+              <div class="left-subfooter"> <img style="height: 100px;" class="img-fluid" src="<?php echo $domain ?>assets/images/logo.png" alt="logo">
+                <p class="mb-0">Copyright 2025 © <?php  echo $sitename ?> – All rights reserved</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="right-subfooter">
-                <h3 class="text-end">Help others discover Smart ReceiptX — share it with someone who needs simple receipt tools.</h3>
+                <h3 class="text-end">Help others discover Smart InvoiceX — share it with someone who needs simple receipt tools.</h3>
                 <ul>
                   <li><a href="https://support.pixelstrap.com/" >Home</a></li>
                   <li><a href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">About us </a></li>
