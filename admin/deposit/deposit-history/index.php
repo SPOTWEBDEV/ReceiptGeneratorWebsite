@@ -97,9 +97,15 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
           <div class="page-title">
             <div class="row">
               <div class="col-xl-4 col-sm-7 box-col-3">
-                <h3> Project Create</h3>
+                <h3> Deposit</h3>
               </div>
-          
+
+              <div class="col-5 d-none d-xl-block">
+                <!-- Page Sub Header Start-->
+
+                <!-- Page Sub Header end -->
+              </div>
+
               <div class="col-xl-3 col-sm-5 box-col-4">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index-2.html">
@@ -107,7 +113,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                         <use href="https://admin.pixelstrap.net/assets/svg/icon-sprite.svg#stroke-home"></use>
                       </svg></a></li>
                   <li class="breadcrumb-item">Apps</li>
-                  <li class="breadcrumb-item active">Project Create </li>
+                  <li class="breadcrumb-item active">Deposit list </li>
                 </ol>
               </div>
             </div>
@@ -134,7 +140,7 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
                 <div class="card-body">
                   <div class="table-responsive custom-scrollbar">
 
-                  <input type="text" id="userSearch" placeholder="Search by name or email" class="form-control mb-3">
+                    <input type="text" id="userSearch" placeholder="Search by name or email" class="form-control mb-3">
 
 
 
@@ -199,31 +205,31 @@ if (isset($_GET['action']) && isset($_GET['id'])) {
         <!-- Container-fluid Ends-->
       </div>
       <!-- footer start-->
-      <?php include('../include/footer.php') ?>
+      <?php include('../../include/footer.php') ?>
     </div>
   </div>
 
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("userSearch");
-    const table = document.querySelector(".table tbody");
+    document.addEventListener("DOMContentLoaded", function() {
+      const searchInput = document.getElementById("userSearch");
+      const table = document.querySelector(".table tbody");
 
-    searchInput.addEventListener("keyup", function () {
-      const filter = this.value.toLowerCase();
-      const rows = table.querySelectorAll("tr");
+      searchInput.addEventListener("keyup", function() {
+        const filter = this.value.toLowerCase();
+        const rows = table.querySelectorAll("tr");
 
-      rows.forEach(row => {
-        const username = row.cells[1]?.textContent.toLowerCase() || '';
-        const email = row.cells[2]?.textContent.toLowerCase() || '';
-        const status = row.cells[3]?.textContent.toLowerCase() || '';
+        rows.forEach(row => {
+          const username = row.cells[1]?.textContent.toLowerCase() || '';
+          const email = row.cells[2]?.textContent.toLowerCase() || '';
+          const status = row.cells[3]?.textContent.toLowerCase() || '';
 
-        const match = username.includes(filter) || email.includes(filter) || status.includes(filter);
+          const match = username.includes(filter) || email.includes(filter) || status.includes(filter);
 
-        row.style.display = match ? "" : "none";
+          row.style.display = match ? "" : "none";
+        });
       });
     });
-  });
-</script>
+  </script>
 
 
   <!-- latest jquery-->

@@ -55,7 +55,7 @@
             <i class="bi bi-pin-angle-fill"></i>
             <a class="sidebar-link sidebar-title" href="#">
               <i class="bi bi-cash-stack"></i>
-              <span class="lan-3">Deposite</span>
+              <span class="lan-3">Deposit</span>
             </a>
             <ul class="sidebar-submenu">
               <li><a class="lan-4" href="<?php echo $domain ?>admin/deposit/deposit-history/">Pending Deposit</a></li>
@@ -67,14 +67,12 @@
           
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="#">
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a></li>
+              ">
               <i class="bi bi-folder2-open"></i>
               <span class="lan-7">Payment</span>
             </a>
-            <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/project/create-project">Payment Method</a></li>
-              
-            </ul>
+          
           </li>
 
           <li class="sidebar-list">
@@ -84,9 +82,21 @@
               <span class="lan-7">Template</span>
             </a>
             <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/project/create-project">Create Template</a></li>
+              <li><a href="<?php echo $domain ?>user/project/create-project">Upload Template</a></li>
               <li><a href="<?php echo $domain ?>user/project/list-project">List Template</a></li>
             </ul>
+          </li>
+
+          
+          
+          <li class="sidebar-list">
+            <i class="bi bi-pin-angle-fill"></i>
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a></li>
+              ">
+              <i class="bi bi-folder2-open"></i>
+              <span class="lan-7">User</span>
+            </a>
+          
           </li>
 
           <li class="sidebar-list">
@@ -96,9 +106,9 @@
               <span class="lan-7">Setting</span>
             </a>
             <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/setting/profile/">Profile Setting</a></li>
-              <li><a href="<?php echo $domain ?>user/setting/template-setting/">Account Setting</a></li>
-              <li><a href="<?php echo $domain ?>user/setting/template-setting/">Template Setting</a></li>
+              <li><a href="<?php echo $domain ?admin/setting/">Profile Setting</a></li>
+              <li><a href="<?php echo $domain ?>admin/setting/">Account Setting</a></li>
+              <li><a href="<?php echo $domain ?>admin/setting/">Template Setting</a></li>
             </ul>
           </li>
 
