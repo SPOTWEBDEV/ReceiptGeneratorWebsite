@@ -70,11 +70,11 @@
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
-                  <li><a href="user-profile.html"><i data-feather="user"></i><span>Account </span></a></li>
-                  <li><a href="letter-box.html"><i data-feather="mail"></i><span>Pricing</span></a></li>
-                  <li><a href="task.html"><i data-feather="file-text"></i><span>Template</span></a></li>
-                  <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Settings</span></a></li>
-                  <li><a href="login.html"> <i data-feather="log-in"></i><span>Log Out</span></a></li>
+                  <li><a href="<?php echo $domain ?>user/setting/profile/"><i data-feather="user"></i><span>Account </span></a></li>
+                  <li><a href="<?php echo $domain ?>user/pricing/"><i data-feather="mail"></i><span>Pricing</span></a></li>
+                  <li><a href="<?php echo $domain ?>user/template/upload-template/"><i data-feather="file-text"></i><span>Template</span></a></li>
+                  <li><a href="<?php echo $domain ?>user/setting/template-setting"><i data-feather="settings"></i><span>Settings</span></a></li>
+                  <li><a href="<?php echo $domain ?>login/"> <i data-feather="log-in"></i><span>Log Out</span></a></li>
                 </ul>
               </li>
             </ul>
