@@ -1302,6 +1302,8 @@ include("../../server/connection.php");
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
                     $user = 0; // You can replace with the session user ID
 
+                    $template_id = 'TEM_' . strtoupper(uniqid());
+
                     // Handle image upload
                     $image_name = '';
                     if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
@@ -1312,8 +1314,8 @@ include("../../server/connection.php");
                     }
 
                     // Insert into database
-                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title)
-              VALUES ('$user', '$sell', '$html_contents', '$tags', '$image_name', '$project_title')";
+                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title , template_id)
+              VALUES ('$user', '$sell', '$html_contents', '$tags', '$image_name', '$project_title', '$template_id')";
 
                     if (mysqli_query($connection, $query)) {
                       echo "<script>alert('✅ Template saved successfully!')</script>";

@@ -122,6 +122,8 @@ include("../../../server/client/auth/index.php");
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
 
                     $amount = mysqli_real_escape_string($connection, $_POST['amount']);
+
+                    $template_id = 'TEM_' . strtoupper(uniqid());
                     
 
                     // Handle image upload
@@ -134,8 +136,8 @@ include("../../../server/client/auth/index.php");
                     }
 
                     // Insert into database
-                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title,price)
-              VALUES ('$id', '$sell', '$html_contents', '$tags', '$image_name', '$project_title','$amount')";
+                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title,price, template_id)
+              VALUES ('$id', '$sell', '$html_contents', '$tags', '$image_name', '$project_title','$amount','$template_id')";
 
                     if (mysqli_query($connection, $query)) {
                       echo Model('✅ Template saved successfully!');
