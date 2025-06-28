@@ -121,6 +121,10 @@ include("../../../server/client/auth/index.php");
                     $sell = mysqli_real_escape_string($connection, $_POST['sell'] ?? '0');
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
 
+                    $catergory = mysqli_real_escape_string($connection, $_POST['catergory'] ?? '');
+
+
+                    
                     $amount = mysqli_real_escape_string($connection, $_POST['amount']);
 
                     $template_id = 'TEM_' . strtoupper(uniqid());
@@ -136,8 +140,8 @@ include("../../../server/client/auth/index.php");
                     }
 
                     // Insert into database
-                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title,price, template_id)
-              VALUES ('$id', '$sell', '$html_contents', '$tags', '$image_name', '$project_title','$amount','$template_id')";
+                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title,price, template_id,catergory)
+              VALUES ('$id', '$sell', '$html_contents', '$tags', '$image_name', '$project_title','$amount','$template_id','$catergory')";
 
                     if (mysqli_query($connection, $query)) {
                       echo Model('✅ Template saved successfully!');
@@ -173,8 +177,19 @@ include("../../../server/client/auth/index.php");
                     <div class="row">
                       <div class="col">
                         <div class="mb-3">
-                          <label>Amount</label>
+                          <label>Amount In Credit</label>
                           <input class="form-control" id="amount" name="amount" type="text" value="0" required>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label>Catergory</label>
+                          <input class="form-control" name="catergory" type="text" placeholder="e.g. medical" required>
+                         
                         </div>
                       </div>
                     </div>

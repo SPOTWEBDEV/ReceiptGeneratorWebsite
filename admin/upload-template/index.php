@@ -1300,7 +1300,9 @@ include("../../server/connection.php");
                     $html_contents = mysqli_real_escape_string($connection, $_POST['html_contents'] ?? '');
                     $sell = mysqli_real_escape_string($connection, $_POST['sell'] ?? '0');
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
+                    $catergory = mysqli_real_escape_string($connection, $_POST['catergory'] ?? '');
                     $user = 0; // You can replace with the session user ID
+                    
 
                     $template_id = 'TEM_' . strtoupper(uniqid());
 
@@ -1314,8 +1316,8 @@ include("../../server/connection.php");
                     }
 
                     // Insert into database
-                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title , template_id)
-              VALUES ('$user', '$sell', '$html_contents', '$tags', '$image_name', '$project_title', '$template_id')";
+                    $query = "INSERT INTO template (user, sell, html_contents, tags, image, title , template_id,catergory)
+              VALUES ('$user', '$sell', '$html_contents', '$tags', '$image_name', '$project_title', '$template_id','$catergory')";
 
                     if (mysqli_query($connection, $query)) {
                       echo "<script>alert('✅ Template saved successfully!')</script>";
@@ -1340,10 +1342,30 @@ include("../../server/connection.php");
                       <div class="col">
                         <div class="mb-3">
                           <label>Sell this Template?</label>
-                          <select class="form-select" name="sell" required>
+                          <select class="form-select" id="sell" name="sell" required>
                             <option value="1">Yes, sell it</option>
                             <option value="0">No, keep it private</option>
                           </select>
+                        </div>
+                      </div>
+                    </div>
+
+                     <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label>Amount In Credit</label>
+                          <input class="form-control" id="amount" name="amount" type="text" value="0" required>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label>Catergory</label>
+                          <input class="form-control" name="catergory" type="text" placeholder="e.g. medical" required>
+                         
                         </div>
                       </div>
                     </div>
@@ -1385,6 +1407,19 @@ include("../../server/connection.php");
                       </div>
                     </div>
                   </form>
+
+                  <script>
+
+                      document.querySelector('#sell').onchange = (event)=>{
+                          if(event.target.value == 1){
+                             document.querySelector("#amount").style.display = 'block'
+                          }else{
+                            document.querySelector("#amount").style.display = 'none'
+                            document.querySelector("#amount").value = 0
+                          }
+                      }
+
+                    </script>
 
 
                 </div>
