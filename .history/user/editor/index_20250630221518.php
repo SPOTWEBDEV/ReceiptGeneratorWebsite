@@ -182,14 +182,6 @@ include('../../server/client/auth/index.php');
             color: #6c63ff;
             font-weight: 500;
         }
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            margin-bottom: 1rem;
-            cursor: pointer;
-        }
 
         @media screen and (max-width: 768px) {
             .sidebar {
@@ -220,7 +212,7 @@ include('../../server/client/auth/index.php');
 
 <body>
     <div class="main-container">
-        <button class="menu-toggle">☰</button>
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
 
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -351,18 +343,9 @@ include('../../server/client/auth/index.php');
         });
 
 
-        document.addEventListener('click',(event)=>{
-             if(event.target.classList.contains('menu-toggle')){
-                document.querySelector('.sidebar').classList.add('show-sidebar');
-             }else{
-                document.querySelector('.sidebar').classList.toggle('show-sidebar');
-             }
-        })
-
-
-        // function toggleSidebar() {
-        //     document.querySelector('.sidebar').classList.toggle('show-sidebar');
-        // }
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('show-sidebar');
+        }
     </script>
 </body>
 

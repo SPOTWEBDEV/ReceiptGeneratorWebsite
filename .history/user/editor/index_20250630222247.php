@@ -220,7 +220,7 @@ include('../../server/client/auth/index.php');
 
 <body>
     <div class="main-container">
-        <button class="menu-toggle">☰</button>
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
 
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -351,10 +351,10 @@ include('../../server/client/auth/index.php');
         });
 
 
-        document.addEventListener('click',(event)=>{
-             if(event.target.classList.contains('menu-toggle')){
-                document.querySelector('.sidebar').classList.add('show-sidebar');
-             }else{
+        document.addEventListener('click',()=>{
+             if(!document.querySelector('.sidebar').classList.contains('menu-toggle')){
+                document.querySelector('.sidebar').classList.remove('show-sidebar');
+             }erlse{
                 document.querySelector('.sidebar').classList.toggle('show-sidebar');
              }
         })

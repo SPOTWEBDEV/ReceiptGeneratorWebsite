@@ -352,7 +352,7 @@ include('../../server/client/auth/index.php');
 
 
         document.addEventListener('click',(event)=>{
-             if(event.target.classList.contains('menu-toggle')){
+             if(document.querySelector('.sidebar').classList.contains('menu-toggle')){
                 document.querySelector('.sidebar').classList.add('show-sidebar');
              }else{
                 document.querySelector('.sidebar').classList.toggle('show-sidebar');

@@ -1302,8 +1302,6 @@ include("../../server/connection.php");
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
                     $catergory = mysqli_real_escape_string($connection, $_POST['catergory'] ?? '');
                     $user = 0; // You can replace with the session user ID
-
-                    $price = mysqli_real_escape_string($connection, $_POST['price'] ?? '');
                     
 
                     $template_id = 'TEM_' . strtoupper(uniqid());
@@ -1319,7 +1317,7 @@ include("../../server/connection.php");
 
                     // Insert into database
                     $query = "INSERT INTO template (user, sell, html_contents, tags, image, title , template_id,catergory,price)
-              VALUES ('$user', '$sell', '$html_contents', '$tags', '$image_name', '$project_title', '$template_id','$catergory','$price')";
+              VALUES ('$user', '$sell', '$html_contents', '$tags', '$image_name', '$project_title', '$template_id','$catergory','')";
 
                     if (mysqli_query($connection, $query)) {
                       echo "<script>alert('✅ Template saved successfully!')</script>";
@@ -1356,7 +1354,7 @@ include("../../server/connection.php");
                       <div class="col">
                         <div class="mb-3">
                           <label>Amount In Credit</label>
-                          <input class="form-control" id="amount" name="price" type="text" value="0" required>
+                          <input class="form-control" id="amount" name="amount" type="text" value="0" required>
                         </div>
                       </div>
                     </div>

@@ -2,7 +2,7 @@
 
 use Dom\Mysql;
 
-include('../../server/connection.php');
+include('../server/connection.php');
 
 $template_id = isset($_GET['template_id']) ? $_GET['template_id'] : 0;
 
@@ -19,7 +19,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="../../assets/css/template.css" />
+  <link rel="stylesheet" href="../assets/css/template.css" />
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />

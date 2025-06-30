@@ -1302,8 +1302,6 @@ include("../../server/connection.php");
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
                     $catergory = mysqli_real_escape_string($connection, $_POST['catergory'] ?? '');
                     $user = 0; // You can replace with the session user ID
-
-                    $price = mysqli_real_escape_string($connection, $_POST['price'] ?? '');
                     
 
                     $template_id = 'TEM_' . strtoupper(uniqid());
@@ -1356,7 +1354,7 @@ include("../../server/connection.php");
                       <div class="col">
                         <div class="mb-3">
                           <label>Amount In Credit</label>
-                          <input class="form-control" id="amount" name="price" type="text" value="0" required>
+                          <input class="form-control" id="amount" name="amount" type="text" value="0" required>
                         </div>
                       </div>
                     </div>

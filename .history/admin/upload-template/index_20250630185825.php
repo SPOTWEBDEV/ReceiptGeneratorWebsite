@@ -1302,8 +1302,6 @@ include("../../server/connection.php");
                     $tags = mysqli_real_escape_string($connection, $_POST['tags'] ?? '');
                     $catergory = mysqli_real_escape_string($connection, $_POST['catergory'] ?? '');
                     $user = 0; // You can replace with the session user ID
-
-                    $price = mysqli_real_escape_string($connection, $_POST['price'] ?? '');
                     
 
                     $template_id = 'TEM_' . strtoupper(uniqid());

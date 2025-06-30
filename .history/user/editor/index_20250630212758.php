@@ -1,6 +1,7 @@
 <?php
 include('../../server/connection.php');
 include('../../server/client/auth/index.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,8 @@ include('../../server/client/auth/index.php');
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canva Design Clone</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
     <style>
         * {
             margin: 0;
@@ -24,12 +26,14 @@ include('../../server/client/auth/index.php');
             color: #333;
         }
 
+        /* === LAYOUT WRAPPER === */
         .main-container {
             display: flex;
             gap: 2rem;
             flex-wrap: wrap;
         }
 
+        /* === SIDEBAR === */
         .sidebar {
             width: 280px;
             background: #ffffff;
@@ -86,11 +90,6 @@ include('../../server/client/auth/index.php');
             cursor: pointer;
         }
 
-        .filter.active {
-            background-color: #6c63ff;
-            color: white;
-        }
-
         .sidebar-section {
             margin-bottom: 1.5rem;
         }
@@ -105,8 +104,8 @@ include('../../server/client/auth/index.php');
         .thumb-row {
             display: flex;
             gap: 0.5rem;
-            margin-top: 10px;
-            border: 2px solid;
+            border:2px solid black;
+            margin-top:10px;
         }
 
         .thumb-row img {
@@ -116,6 +115,13 @@ include('../../server/client/auth/index.php');
             object-fit: fill;
         }
 
+        .crown {
+            font-size: 14px;
+            color: #f5b301;
+            vertical-align: middle;
+        }
+
+        /* === MAIN CONTENT AREA === */
         .content-area {
             flex: 1;
             min-width: 300px;
@@ -141,8 +147,7 @@ include('../../server/client/auth/index.php');
             display: flex;
             flex-direction: column;
             transition: transform 0.2s ease;
-            cursor: pointer;
-            width: 400px;
+            width:400px;
         }
 
         .card:hover {
@@ -151,8 +156,9 @@ include('../../server/client/auth/index.php');
 
         .card img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
+            height: 400px;
+            object-fit: contain;
+            
         }
 
         .card-content {
@@ -173,7 +179,7 @@ include('../../server/client/auth/index.php');
         }
 
         .card-meta span {
-            text-transform: capitalize;
+             text-transform: capitalize;
             display: inline-block;
             margin-right: 10px;
         }
@@ -182,97 +188,139 @@ include('../../server/client/auth/index.php');
             color: #6c63ff;
             font-weight: 500;
         }
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            margin-bottom: 1rem;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 768px) {
-            .sidebar {
-                display: none;
-            }
-
-            .show-sidebar {
-                display: block !important;
-                position: absolute;
-                left: 0;
-                top: 0;
-                background: white;
-                height: 100vh;
-                width: 250px;
-                z-index: 999;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                padding: 1rem;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-        }
-
-        
     </style>
 </head>
 
 <body>
+
     <div class="main-container">
-        <button class="menu-toggle">☰</button>
 
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="search-box">
-                <input type="text" id="search-input" placeholder="Search templates...">
+                <input type="text" placeholder="Use 4+ words to describe...">
             </div>
             <div class="tabs">
                 <button class="tab active">Templates</button>
             </div>
             <div class="filters" id="category-filters"></div>
+
             <div class="sidebar-section">
-                <p class="section-title">Your Edited Templates</p>
-                <div class="edittemplate"></div>
+                <p class="section-title"></p>
+                <div class="edittemplate">
+
+                </div>
             </div>
+
+             
         </aside>
-        <!-- Main Content -->
+
+        <!-- Main Content Area -->
         <div class="content-area">
             <h1>Admin Designs</h1>
             <div class="grid adminTemplate"></div>
             <h1 style="margin-top:20px">Client Designs</h1>
             <div class="grid clientTemplate"></div>
         </div>
+
+       
+
     </div>
+
 
     <script src="../../assets/js/jquery.min.js"></script>
     <script>
-        let selectedCategory = 'All';
-        let currentKeyword = '';
-        let allTemplates = {
-            admin_templates: [],
-            user_templates: [],
-            edited_templates: []
-        };
-
-        function fetchTemplates(category = '', keyword = '') {
-            selectedCategory = category || 'All';
-            currentKeyword = keyword || '';
-
+        function fetchTemplates(category = '') {
             $.ajax({
-                url: '<?php echo $domain ?>server/client/api/get_templates.php',
+                url: '<?php echo $domain  ?>server/client/api/get_templates.php',
                 type: 'GET',
                 data: {
-                    category: selectedCategory === 'All' ? '' : selectedCategory,
-                    keyword: currentKeyword
+                    category
                 },
                 success: function(res) {
+                    console.log(res);
+
                     if (res.success) {
-                        allTemplates = res;
+                        renderAdminTemplates(res.admin_templates);
                         renderFilters(res.categories);
-                        renderTemplates(res, currentKeyword);
+                        renderclientTemplate(res.user_templates);
+                        rendereditTemplate(res.edited_templates);
+                    } else {
+                        $('#template-grid').html('<p>Error loading templates.</p>');
                     }
+                },
+                error(error) {
+                    console.log(error.statusText)
                 }
+            });
+        }
+
+
+         function rendereditTemplate(templates) {
+            const container = $('.edittemplate');
+            container.empty();
+            if (templates.length === 0) {
+                container.html('<p>No templates found.</p>');
+                return;
+            }
+
+            templates.forEach(tpl => {
+                const card = `<div class="thumb-row">
+                    <img src="<?php echo $domain ?>uploads/template/${tpl.image}"
+                        alt="Human Tech" />
+                </div>`;
+                container.append(card);
+            });
+        }
+
+
+         function renderclientTemplate(templates) {
+            const container = $('.clientTemplate');
+            container.empty();
+            if (templates.length === 0) {
+                container.html('<p>No templates found.</p>');
+                return;
+            }
+
+            templates.forEach(tpl => {
+                const card = `
+        <div class="card">
+          <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="Design" />
+          <div class="card-content">
+            <div class="card-title">${tpl.title}</div>
+            <div class="card-meta">
+              <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit 
+            </div>
+          </div>
+        </div>
+      `;
+                container.append(card);
+            });
+        }
+
+
+
+        function renderAdminTemplates(templates) {
+            const container = $('.adminTemplate');
+            container.empty();
+            if (templates.length === 0) {
+                container.html('<p>No templates found.</p>');
+                return;
+            }
+
+            templates.forEach(tpl => {
+                const card = `
+        <div class="card">
+          <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="Design" />
+          <div class="card-content">
+            <div class="card-title">${tpl.title}</div>
+            <div class="card-meta">
+              <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit 
+            </div>
+          </div>
+        </div>
+      `;
+                container.append(card);
             });
         }
 
@@ -280,90 +328,19 @@ include('../../server/client/auth/index.php');
             const container = $('#category-filters');
             container.empty();
 
-            const allBtn = $(`<span class="filter">All</span>`);
-            if (selectedCategory === 'All') allBtn.addClass('active');
-            container.append(allBtn);
-
             categories.forEach(cat => {
                 const btn = $(`<span class="filter">${cat}</span>`);
-                if (cat === selectedCategory) btn.addClass('active');
                 container.append(btn);
             });
         }
 
-        function renderTemplates(data, keyword = '') {
-            renderSection('.adminTemplate', data.admin_templates, keyword);
-            renderSection('.clientTemplate', data.user_templates, keyword);
-            renderEdited(data.edited_templates);
-        }
-
-        function renderSection(selector, templates, keyword) {
-            const container = $(selector);
-            container.empty();
-            const filtered = templates.filter(tpl => tpl.title.toLowerCase().includes(keyword.toLowerCase()));
-            if (filtered.length === 0) {
-                container.html('<p>No templates found.</p>');
-                return;
-            }
-            filtered.forEach(tpl => {
-                const card = $(`
-          <div class="card" onclick="location.href='editor.php?template_id=${tpl.template_id}'">
-            <img src='<?php echo $domain ?>uploads/template/${tpl.image}' alt="${tpl.title}" />
-            <div class="card-content">
-              <div class="card-title">${tpl.title}</div>
-              <div class="card-meta">
-                <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit
-              </div>
-            </div>
-          </div>`);
-                container.append(card);
-            });
-        }
-
-        function renderEdited(templates) {
-            const container = $('.edittemplate');
-            container.empty();
-            if (templates.length === 0) {
-                container.html('<p>No templates found.</p>');
-                return;
-            }
-            templates.forEach(tpl => {
-                const card = `<div class="thumb-row">
-            <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="${tpl.title}" />
-          </div>`;
-                container.append(card);
-            });
-        }
-
+        // Initial load
         $(document).ready(() => {
             fetchTemplates();
-
-            $('#category-filters').on('click', '.filter', function() {
-                const cat = $(this).text();
-                selectedCategory = cat;
-                fetchTemplates(cat === 'All' ? '' : cat, $('#search-input').val());
-            });
-
-            $('#search-input').on('input', function() {
-                const keyword = $(this).val();
-                renderTemplates(allTemplates, keyword);
-            });
         });
-
-
-        document.addEventListener('click',(event)=>{
-             if(event.target.classList.contains('menu-toggle')){
-                document.querySelector('.sidebar').classList.add('show-sidebar');
-             }else{
-                document.querySelector('.sidebar').classList.toggle('show-sidebar');
-             }
-        })
-
-
-        // function toggleSidebar() {
-        //     document.querySelector('.sidebar').classList.toggle('show-sidebar');
-        // }
     </script>
+
+
 </body>
 
 </html>
