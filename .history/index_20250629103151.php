@@ -123,7 +123,7 @@ include("./server/connection.php");
             </div>
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
-                <h3>About Us</h3>
+                <h3 class="sub-title">About Us</h3>
                 <span>We provide an easy-to-use platform that allows individuals and businesses to build and create professional receipts effortlessly. Our goal is to simplify your transaction records with tools that are fast, flexible, and user-friendly.</span><a class="btn link-text btn-primary" href="./login/index.php" >Get Started</a>
               </div>
             </div>
@@ -336,7 +336,7 @@ include("./server/connection.php");
                 <ul>
                   <li><a href="#" >Home</a></li>
                   <li><a href="#/<?php  echo $sitename ?>/document/" >About us </a></li>
-                  <li><a href="#" >Contact us</a></li>
+                  <li><a href="#$" >Contact us</a></li>
                 </ul>
               </div>
             </div>

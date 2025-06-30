@@ -123,7 +123,7 @@ include("./server/connection.php");
             </div>
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
-                <h3>About Us</h3>
+                <h3 class="sub-title">About Us</h3>
                 <span>We provide an easy-to-use platform that allows individuals and businesses to build and create professional receipts effortlessly. Our goal is to simplify your transaction records with tools that are fast, flexible, and user-friendly.</span><a class="btn link-text btn-primary" href="./login/index.php" >Get Started</a>
               </div>
             </div>
@@ -177,11 +177,11 @@ include("./server/connection.php");
         <div class="container">
           <div class="row g-md-4 g-3">
             <div class="col-md-6 wow bounceInLeft mt-0">
-              <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
+              <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/cccccc" alt="premium"></div>
             </div>
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
-                <h3 >Our Mission</h3>
+                <h3 class="sub-title">Our Mission</h3>
               <span>Our mission is to make receipt creation simple and accessible for everyone. Whether you're a freelancer, a shop owner, or a business manager, we aim to eliminate manual paperwork and help you generate clean, organized receipts in just a few clicks.</span><a class="btn link-text btn-primary" href="./login/index.php" >Get Started</a>
               </div>
             </div>
@@ -290,7 +290,7 @@ include("./server/connection.php");
             </div>
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
-                <h3 >Who we are</h3>
+                <h3 class="sub-title">Who we are</h3>
                <span>We are a team of passionate developers, designers, and thinkers focused on solving real-world problems with technology. With a strong belief in simplicity and efficiency, we are committed to helping users take control of their finances through modern digital tools.</span><a class="btn link-text btn-primary" href="./login/index.php" >Get Started</a>
               </div>
             </div>
@@ -334,9 +334,9 @@ include("./server/connection.php");
               <div class="right-subfooter">
                 <h3 class="text-end">Help others discover Smart InvoiceX — share it with someone who needs simple receipt tools.</h3>
                 <ul>
-                  <li><a href="#" >Home</a></li>
-                  <li><a href="#/<?php  echo $sitename ?>/document/" >About us </a></li>
-                  <li><a href="#" >Contact us</a></li>
+                  <li><a href="https://support.pixelstrap.com/" >Home</a></li>
+                  <li><a href="https://docs.pixelstrap.net/admin/<?php  echo $sitename ?>/document/" target="_blank">About us </a></li>
+                  <li><a href="https://www.pixelstrap.com/hire-us" >Contact us</a></li>
                 </ul>
               </div>
             </div>

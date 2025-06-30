@@ -177,7 +177,7 @@ include("./server/connection.php");
         <div class="container">
           <div class="row g-md-4 g-3">
             <div class="col-md-6 wow bounceInLeft mt-0">
-              <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
+              <div class="premium-img"><img class="img-fluid" src="" alt="premium"></div>
             </div>
             <div class="col-md-6 wow bounceInRight mt-0">
               <div class="premium-wrapper">
