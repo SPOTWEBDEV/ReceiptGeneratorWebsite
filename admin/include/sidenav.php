@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <div class="sidebar-wrapper" data-layout="stroke-svg">
   <div>
@@ -67,13 +79,11 @@
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a>
-            <i class="bi bi-folder2-open"></i>
-            <span class="lan-7">Payment</span>
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment">
+              <i class="bi bi-folder2-open"></i>
+              <span class="lan-7">Payment</span>
+            </a>
           </li>
-
-
-
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
@@ -81,36 +91,18 @@
               <i class="bi bi-folder2-open"></i>
               <span class="lan-7">Template</span>
             </a>
-            <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>user/project/create-project">Upload Template</a></li>
-              <li><a href="<?php echo $domain ?>user/project/list-project">List Template</a></li>
+             <ul class="sidebar-submenu">
+              <li><a href="<?php echo $domain ?>admin/upload-template/">Upload Template</a></li>
+              <li><a href="<?php echo $domain ?>admin/sample/">List Template</a></li>
             </ul>
           </li>
 
-
-
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a>
-            <i class="bi bi-folder2-open"></i>
-            <span class="lan-7">User</span>
-            </a>
-          </li>
-
-
-
-
-          <li class="sidebar-list">
-            <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="#">
+            <a class="sidebar-link sidebar-title" href="admin/setting/">
               <i class="bi bi-gear"></i>
               <span class="lan-7">Setting</span>
             </a>
-            <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>admin/setting">Profile Setting</a></li>
-              <li><a href="<?php echo $domain ?>admin/setting/">Account Setting</a></li>
-              <li><a href="<?php echo $domain ?>admin/setting/">Template Setting</a></li>
-            </ul>
           </li>
 
         </ul>

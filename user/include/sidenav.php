@@ -62,7 +62,7 @@
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/project/">
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/editor/">
               <i class="bi bi-folder2-open"></i>
               <span class="lan-7">Generate Invoice</span>
             </a>
