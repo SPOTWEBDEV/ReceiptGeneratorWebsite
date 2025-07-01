@@ -45,7 +45,7 @@
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain?>admin/user/">
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/user/">
               <i class="bi bi-speedometer2"></i>
               <span class="lan-7">Dashboard</span>
             </a>
@@ -64,16 +64,16 @@
             </ul>
           </li>
 
-          
+
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a></li>
-              ">
-              <i class="bi bi-folder2-open"></i>
-              <span class="lan-7">Payment</span>
-            </a>
-          
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a>
+            <i class="bi bi-folder2-open"></i>
+            <span class="lan-7">Payment</span>
           </li>
+
+
+
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
@@ -87,17 +87,18 @@
             </ul>
           </li>
 
-          
-          
+
+
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a></li>
-              ">
-              <i class="bi bi-folder2-open"></i>
-              <span class="lan-7">User</span>
+            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>admin/payment"></a>
+            <i class="bi bi-folder2-open"></i>
+            <span class="lan-7">User</span>
             </a>
-          
           </li>
+
+
+
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle-fill"></i>
@@ -106,9 +107,9 @@
               <span class="lan-7">Setting</span>
             </a>
             <ul class="sidebar-submenu">
-              <li><a href="<?php echo $domain ?>admin/setting" >Profile Setting</a></li>
+              <li><a href="<?php echo $domain ?>admin/setting">Profile Setting</a></li>
               <li><a href="<?php echo $domain ?>admin/setting/">Account Setting</a></li>
-              <li><a href="<?php echo $domain ?>admin/setting/ ?">">Template Setting</a></li>
+              <li><a href="<?php echo $domain ?>admin/setting/">Template Setting</a></li>
             </ul>
           </li>
 
