@@ -302,23 +302,20 @@ include('../../server/client/auth/index.php');
             container.empty();
             const filtered = templates.filter(tpl => tpl.title.toLowerCase().includes(keyword.toLowerCase()));
             if (filtered.length === 0) {
-                container.html('<p>No Templates Found.</p>');
+                container.html('<p>No emplates found.</p>');
                 return;
             }
             filtered.forEach(tpl => {
-                const card = `
-                    <a href="./setup.php?template_id=${tpl.template_id}" style="text-decoration: none;">
-                        <div class="card">
-                        <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="Design" />
-                        <div class="card-content">
-                            <div class="card-title">${tpl.title}</div>
-                            <div class="card-meta">
-                            <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit 
-                            </div>
-                        </div>
-                        </div>
-                    </a>`;
-
+                const card = $(`
+          <div class="card" onclick="location.href='editor.php?template_id=${tpl.template_id}'">
+            <img src='<?php echo $domain ?>uploads/template/${tpl.image}' alt="${tpl.title}" />
+            <div class="card-content">
+              <div class="card-title">${tpl.title}</div>
+              <div class="card-meta">
+                <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit
+              </div>
+            </div>
+          </div>`);
                 container.append(card);
             });
         }
@@ -327,7 +324,7 @@ include('../../server/client/auth/index.php');
             const container = $('.edittemplate');
             container.empty();
             if (templates.length === 0) {
-                container.html('<p>No Templates Found.</p>');
+                container.html('<p>No templates found.</p>');
                 return;
             }
             templates.forEach(tpl => {
@@ -363,7 +360,9 @@ include('../../server/client/auth/index.php');
         })
 
 
-    
+        // function toggleSidebar() {
+        //     document.querySelector('.sidebar').classList.toggle('show-sidebar');
+        // }
     </script>
 </body>
 

@@ -306,19 +306,16 @@ include('../../server/client/auth/index.php');
                 return;
             }
             filtered.forEach(tpl => {
-                const card = `
-                    <a href="./setup.php?template_id=${tpl.template_id}" style="text-decoration: none;">
-                        <div class="card">
-                        <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="Design" />
-                        <div class="card-content">
-                            <div class="card-title">${tpl.title}</div>
-                            <div class="card-meta">
-                            <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit 
-                            </div>
-                        </div>
-                        </div>
-                    </a>`;
-
+                const card = $(`
+          <div class="card" onclick="location.href='editor.php?template_id=${tpl.template_id}'">
+            <img src='<?php echo $domain ?>uploads/template/${tpl.image}' alt="${tpl.title}" />
+            <div class="card-content">
+              <div class="card-title">${tpl.title}</div>
+              <div class="card-meta">
+                <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit
+              </div>
+            </div>
+          </div>`);
                 container.append(card);
             });
         }

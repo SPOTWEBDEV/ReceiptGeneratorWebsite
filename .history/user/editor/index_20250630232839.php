@@ -307,7 +307,7 @@ include('../../server/client/auth/index.php');
             }
             filtered.forEach(tpl => {
                 const card = `
-                    <a href="./setup.php?template_id=${tpl.template_id}" style="text-decoration: none;">
+                    <a href="setup.php?template_id=${tpl.template_id}" style="text-decoration: none;">
                         <div class="card">
                         <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="Design" />
                         <div class="card-content">

@@ -28,7 +28,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 <body class="p-2 w-full flex flex-col md:flex-row gap-2">
 
   <!-- SIDENAV -->
-  <div class="bg-light p-2 shadow-sm rounded-sm w-full md:w-20 flex md:flex-col items-center justify-center md:justify-start gap-3 fixed bottom-0 md:static z-50 overflow-x-auto hide-scrollbar">
+  <div class="bg-light p-2 shadow-sm rounded-sm w-full md:w-20 flex md:flex-col items-center justify-ce gap-2 fixed bottom-0 md:static z-50 overflow-x-auto hide-scrollbar">
 
     <div
       onclick="openModal('designModal')"

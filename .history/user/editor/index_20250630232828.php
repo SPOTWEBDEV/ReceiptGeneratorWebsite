@@ -307,17 +307,17 @@ include('../../server/client/auth/index.php');
             }
             filtered.forEach(tpl => {
                 const card = `
-                    <a href="./setup.php?template_id=${tpl.template_id}" style="text-decoration: none;">
-                        <div class="card">
-                        <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="Design" />
-                        <div class="card-content">
-                            <div class="card-title">${tpl.title}</div>
-                            <div class="card-meta">
-                            <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit 
-                            </div>
-                        </div>
-                        </div>
-                    </a>`;
+  <a href="setup.php?template_id=${tpl.template_id}" style="text-decoration: none;">
+    <div class="card">
+      <img src="<?php echo $domain ?>uploads/template/${tpl.image}" alt="Design" />
+      <div class="card-content">
+        <div class="card-title">${tpl.title}</div>
+        <div class="card-meta">
+          <span class="tag">${tpl.catergory}</span> • ₦${tpl.price} Credit 
+        </div>
+      </div>
+    </div>
+  </a>`;
 
                 container.append(card);
             });

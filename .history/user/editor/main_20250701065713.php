@@ -25,11 +25,10 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
 
-<body class="p-2 w-full flex flex-col md:flex-row gap-2">
-
+<body class="p-2 w-full flex-col gap-2">
   <!-- SIDENAV -->
-  <div class="bg-light p-2 shadow-sm rounded-sm w-full md:w-20 flex md:flex-col items-center justify-center md:justify-start gap-3 fixed bottom-0 md:static z-50 overflow-x-auto hide-scrollbar">
-
+  <div
+    class="bg-light p-2  shadow-sm rounded-sm w-full-mobile flex flex-col items-center gap-4 overflow-y-auto overflow-x-auto custom-scroll hide-scrollbar">
     <div
       onclick="openModal('designModal')"
       class="flex flex-col items-center gap-1 cursor-pointer">
@@ -73,11 +72,19 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
     </div>
   </div>
 
-  
+  <style>
+     main.template {
+       width: calc(100% - 5.5rem);
+     }
+     @media screen and (max-width: 768px) {
+       main.template {
+         width: 100%;
+       }
+     }
+  </style>
 
 
-  <main class="w-full md:w-[calc(100%-5.5rem)] bg-light p-2 flex justify-center items-center">
-
+  <main style="width: calc(100% - 5.5rem);" class="bg-light p-2 flex justify-center items-center">
     <div class="editor-holder border w-full h-[600px]  rounded overflow-auto p-4">
       <?php
       if (mysqli_num_rows($query)) {
