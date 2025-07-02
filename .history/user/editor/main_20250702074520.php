@@ -103,61 +103,25 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
         <button onclick="closeModal('positionModal')" class="text-xl text-gray">&times;</button>
       </div>
 
-    
+      <div class="grid grid-cols-3 gap-2 mb-4">
+        <button class="p-2 border rounded text-sm">Top</button>
+        <button class="p-2 border rounded text-sm">Left</button>
+        <button class="p-2 border rounded text-sm">Middle</button>
+        <button class="p-2 border rounded text-sm">Center</button>
+        <button class="p-2 border rounded text-sm">Bottom</button>
+        <button class="p-2 border rounded text-sm text-gray bg-gray-200 cursor-not-allowed">Right</button>
+      </div>
 
-      <h3 class="text-sm font-bold mb-2">Height And Width</h3>
+      <h3 class="text-sm font-bold mb-2">Advanced</h3>
 
       <div class="grid grid-cols-3 gap-2 mb-2">
-        <div>
-          <p class="text-xs">Height (px)</p>
-          <input type="text" value="359.5" class="p-2 border rounded text-sm" />
-        </div>
-        <div>
-          <p class="text-xs">Width (px)</p>
-          <input type="text" value="276.1" class="p-2 border rounded text-sm" />
-        </div>
+        <input type="text" value="359.5 px" class="p-2 border rounded text-sm" />
+        <input type="text" value="276.1 px" class="p-2 border rounded text-sm" />
       </div>
-      <h3 class="text-sm font-bold mb-2">Padding </h3>
 
-      <div class="grid grid-cols-2 gap-2">
-         <div>
-          <p class="text-xs">Padding Top (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Padding Bottom (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Padding Left (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Padding Right (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-        
-      </div>
-      <h3 class="text-sm font-bold mb-2">Margin </h3>
-
-      <div class="grid grid-cols-2 gap-2">
-         <div>
-          <p class="text-xs">Margin Top (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Margin Bottom (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Margin Left (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Margin Right (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-        
+      <div class="grid grid-cols-3 gap-2">
+        <input type="text" value="580.5 px" class="p-2 border rounded text-sm" />
+        <input type="text" value="78.8 px" class="p-2 border rounded text-sm" />
       </div>
     </div>
   </div>
@@ -223,7 +187,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       </div>
 
       <div class="grid grid-cols-3 gap-2 mb-4">
-        <button class="p-2 border rounded text-sm" onclick="applyStyle('fontWeight', 'bold')">Bold</button>
+        <button class="p-2 border rounded text-sm">Bold</button>
         <button class="p-2 border rounded text-sm">Underline</button>
         <button class="p-2 border rounded text-sm">Italic</button>
       </div>
@@ -341,7 +305,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
     }
   </script>
 
-  <script>
+  <scrip>
     function saveHtml() {
       const html = document.querySelector('.editor-holder').innerHTML;
       const templateId = new URLSearchParams(window.location.search).get('template_id');
@@ -372,31 +336,40 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 
 
 
-    let selectedElement = null;
 
-    // Handle selecting an element inside .editor-holder
-    document.querySelector('.editor-holder').addEventListener('click', function(e) {
-      // Avoid selecting the container itself
-      if (e.target !== this) {
-        selectedElement = e.target;
+    <script>
+  let selectedElement = null;
 
-        alert(selectedElement)
-
-        // Optional: highlight selected element
-        document.querySelectorAll('.editor-holder *').forEach(el => el.classList.remove('selected-border'));
-        selectedElement.classList.add('selected-border');
-      }
-    });
-
-    // Function to apply styles to selected element
-    function applyStyle(property, value) {
-      if (selectedElement) {
-        selectedElement.style[property] = value;
-      } else {
-        alert('Please select an element in the editor first.');
-      }
+  // Handle selecting an element inside .editor-holder
+  document.querySelector('.editor-holder').addEventListener('click', function (e) {
+    // Avoid selecting the container itself
+    if (e.target !== this) {
+      selectedElement = e.target;
+      
+      // Optional: highlight selected element
+      document.querySelectorAll('.editor-holder *').forEach(el => el.classList.remove('selected-border'));
+      selectedElement.classList.add('selected-border');
     }
-  </script>
+  });
+
+  // Function to apply styles to selected element
+  function applyStyle(property, value) {
+    if (selectedElement) {
+      selectedElement.style[property] = value;
+    } else {
+      alert('Please select an element in the editor first.');
+    }
+  }
+
+
+  
+  
+  
+  
+  
+  
+  
+  </scrip>
 
 
 </body>

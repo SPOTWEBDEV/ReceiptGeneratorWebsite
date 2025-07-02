@@ -142,19 +142,19 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 
       <div class="grid grid-cols-2 gap-2">
          <div>
-          <p class="text-xs">Margin Top (px)</p>
+          <p class="text-xs">Padding Top (px)</p>
           <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
          </div>
          <div>
-          <p class="text-xs">Margin Bottom (px)</p>
+          <p class="text-xs">Padding Bottom (px)</p>
           <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
          </div>
          <div>
-          <p class="text-xs">Margin Left (px)</p>
+          <p class="text-xs">Padding Left (px)</p>
           <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
          </div>
          <div>
-          <p class="text-xs">Margin Right (px)</p>
+          <p class="text-xs">Padding Right (px)</p>
           <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
          </div>
         

@@ -73,7 +73,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
     </div>
   </div>
 
-
+  
 
 
   <main class="w-full md:w-[calc(100%-5.5rem)] bg-light p-2 flex justify-center items-center">
@@ -103,61 +103,25 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
         <button onclick="closeModal('positionModal')" class="text-xl text-gray">&times;</button>
       </div>
 
-    
+      <div class="grid grid-cols-3 gap-2 mb-4">
+        <button class="p-2 border rounded text-sm">Top</button>
+        <button class="p-2 border rounded text-sm">Left</button>
+        <button class="p-2 border rounded text-sm">Middle</button>
+        <button class="p-2 border rounded text-sm">Center</button>
+        <button class="p-2 border rounded text-sm">Bottom</button>
+        <button class="p-2 border rounded text-sm text-gray bg-gray-200 cursor-not-allowed">Right</button>
+      </div>
 
-      <h3 class="text-sm font-bold mb-2">Height And Width</h3>
+      <h3 class="text-sm font-bold mb-2">Advanced</h3>
 
       <div class="grid grid-cols-3 gap-2 mb-2">
-        <div>
-          <p class="text-xs">Height (px)</p>
-          <input type="text" value="359.5" class="p-2 border rounded text-sm" />
-        </div>
-        <div>
-          <p class="text-xs">Width (px)</p>
-          <input type="text" value="276.1" class="p-2 border rounded text-sm" />
-        </div>
+        <input type="text" value="359.5 px" class="p-2 border rounded text-sm" />
+        <input type="text" value="276.1 px" class="p-2 border rounded text-sm" />
       </div>
-      <h3 class="text-sm font-bold mb-2">Padding </h3>
 
-      <div class="grid grid-cols-2 gap-2">
-         <div>
-          <p class="text-xs">Padding Top (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Padding Bottom (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Padding Left (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Padding Right (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-        
-      </div>
-      <h3 class="text-sm font-bold mb-2">Margin </h3>
-
-      <div class="grid grid-cols-2 gap-2">
-         <div>
-          <p class="text-xs">Margin Top (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Margin Bottom (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Margin Left (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
-          <p class="text-xs">Margin Right (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-        
+      <div class="grid grid-cols-3 gap-2">
+        <input type="text" value="580.5 px" class="p-2 border rounded text-sm" />
+        <input type="text" value="78.8 px" class="p-2 border rounded text-sm" />
       </div>
     </div>
   </div>
@@ -223,7 +187,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       </div>
 
       <div class="grid grid-cols-3 gap-2 mb-4">
-        <button class="p-2 border rounded text-sm" onclick="applyStyle('fontWeight', 'bold')">Bold</button>
+        <button class="p-2 border rounded text-sm">Bold</button>
         <button class="p-2 border rounded text-sm">Underline</button>
         <button class="p-2 border rounded text-sm">Italic</button>
       </div>
@@ -305,26 +269,26 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
   </div>
 
   <!-- SHARE MODAL -->
-  <div id="shareModal" class="modal hidden">
-    <div class="modal-box">
-      <div class="flex justify-between items-center mb-4">
-        <h2 class="text-lg font-semibold text-gray">Share</h2>
-        <button onclick="closeModal('shareModal')" class="text-xl text-gray">&times;</button>
-      </div>
+<div id="shareModal" class="modal hidden">
+  <div class="modal-box">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-semibold text-gray">Share</h2>
+      <button onclick="closeModal('shareModal')" class="text-xl text-gray">&times;</button>
+    </div>
 
-      <p class="mb-4 text-sm text-gray">Click below to download or save your project:</p>
+    <p class="mb-4 text-sm text-gray">Click below to download or save your project:</p>
 
-      <div class="flex gap-2">
-        <button class="p-2 px-4 border-none bg-hospital text-white rounded shadow text-sm">
-          <i class="bi bi-download mr-1"></i> Download as PNG
-        </button>
+    <div class="flex gap-2">
+      <button class="p-2 px-4 border-none bg-hospital text-white rounded shadow text-sm">
+        <i class="bi bi-download mr-1"></i> Download as PNG
+      </button>
 
-        <button onclick="saveHtml()" class="p-2 border-none px-4 bg-blue text-white rounded shadow text-sm">
-          <i class="bi bi-save mr-1"></i> Save
-        </button>
-      </div>
+      <button onclick="saveHtml()" class="p-2 border-none px-4 bg-blue text-white rounded shadow text-sm">
+        <i class="bi bi-save mr-1"></i> Save
+      </button>
     </div>
   </div>
+</div>
 
 
 
@@ -342,61 +306,33 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
   </script>
 
   <script>
-    function saveHtml() {
-      const html = document.querySelector('.editor-holder').innerHTML;
-      const templateId = new URLSearchParams(window.location.search).get('template_id');
+  function saveHtml() {
+    const html = document.querySelector('.editor-holder').innerHTML;
+    const templateId = new URLSearchParams(window.location.search).get('template_id');
 
-      fetch('save_template.php', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            html_contents: html,
-            template_id: templateId
-          }),
-        })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success) {
-            alert('Template saved successfully!');
-          } else {
-            alert('Failed to save template.');
-          }
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert('Error saving template.');
-        });
-    }
-
-
-
-    let selectedElement = null;
-
-    // Handle selecting an element inside .editor-holder
-    document.querySelector('.editor-holder').addEventListener('click', function(e) {
-      // Avoid selecting the container itself
-      if (e.target !== this) {
-        selectedElement = e.target;
-
-        alert(selectedElement)
-
-        // Optional: highlight selected element
-        document.querySelectorAll('.editor-holder *').forEach(el => el.classList.remove('selected-border'));
-        selectedElement.classList.add('selected-border');
-      }
-    });
-
-    // Function to apply styles to selected element
-    function applyStyle(property, value) {
-      if (selectedElement) {
-        selectedElement.style[property] = value;
+    fetch('save_template.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ html_contents: html, template_id: templateId }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert('Template saved successfully!');
       } else {
-        alert('Please select an element in the editor first.');
+        alert('Failed to save template.');
       }
-    }
-  </script>
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Error saving template.');
+    });
+  }
+
+
+</script>
 
 
 </body>
