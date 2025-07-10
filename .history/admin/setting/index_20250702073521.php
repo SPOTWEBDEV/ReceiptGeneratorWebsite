@@ -115,8 +115,7 @@ include("../../../server/connection.php");
                   </div>
                   <div class="card-body">
                     <?php
- 
- 
+
 
                     if(isset($_POST['saveprofile'])){
                          $username = $_POST['username'];
