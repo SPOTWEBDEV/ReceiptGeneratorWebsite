@@ -182,6 +182,7 @@ include('../../server/client/auth/index.php');
             color: #6c63ff;
             font-weight: 500;
         }
+
         .menu-toggle {
             display: none;
             background: none;
@@ -213,8 +214,6 @@ include('../../server/client/auth/index.php');
                 display: block;
             }
         }
-
-        
     </style>
 </head>
 
@@ -256,6 +255,7 @@ include('../../server/client/auth/index.php');
         };
 
         function fetchTemplates(category = '', keyword = '') {
+            
             selectedCategory = category || 'All';
             currentKeyword = keyword || '';
 
@@ -267,6 +267,8 @@ include('../../server/client/auth/index.php');
                     keyword: currentKeyword
                 },
                 success: function(res) {
+                    console.log(res);
+
                     if (res.success) {
                         allTemplates = res;
                         renderFilters(res.categories);
@@ -354,16 +356,13 @@ include('../../server/client/auth/index.php');
         });
 
 
-        document.addEventListener('click',(event)=>{
-             if(event.target.classList.contains('menu-toggle')){
+        document.addEventListener('click', (event) => {
+            if (event.target.classList.contains('menu-toggle')) {
                 document.querySelector('.sidebar').classList.add('show-sidebar');
-             }else{
+            } else {
                 document.querySelector('.sidebar').classList.toggle('show-sidebar');
-             }
+            }
         })
-
-
-    
     </script>
 </body>
 
