@@ -103,7 +103,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
         <button onclick="closeModal('positionModal')" class="text-xl text-gray">&times;</button>
       </div>
 
-    
+
 
       <h3 class="text-sm font-bold mb-2">Height And Width</h3>
 
@@ -120,44 +120,44 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       <h3 class="text-sm font-bold mb-2">Padding </h3>
 
       <div class="grid grid-cols-2 gap-2">
-         <div>
+        <div>
           <p class="text-xs">Padding Top (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+        <div>
           <p class="text-xs">Padding Bottom (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+        <div>
           <p class="text-xs">Padding Left (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+        <div>
           <p class="text-xs">Padding Right (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-        
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+
       </div>
       <h3 class="text-sm font-bold mb-2">Margin </h3>
 
       <div class="grid grid-cols-2 gap-2">
-         <div>
+        <div>
           <p class="text-xs">Margin Top (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+        <div>
           <p class="text-xs">Margin Bottom (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+        <div>
           <p class="text-xs">Margin Left (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-         <div>
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+        <div>
           <p class="text-xs">Margin Right (px)</p>
-          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" /> 
-         </div>
-        
+          <input type="text" value="580.5" class="p-2 border w-full rounded text-sm" />
+        </div>
+
       </div>
     </div>
   </div>
@@ -223,7 +223,14 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       </div>
 
       <div class="grid grid-cols-3 gap-2 mb-4">
-        <button class="p-2 border rounded text-sm" onclick="applyStyle('fontWeight', 'bold')">Bold</button>
+        <button
+          class="p-2 border rounded text-sm"
+          onclick="applyStyle(`fontWeight`,`bold`, this)"
+          data-style="font-weight"
+          data-value="bold">
+          Bold
+        </button>
+
         <button class="p-2 border rounded text-sm">Underline</button>
         <button class="p-2 border rounded text-sm">Italic</button>
       </div>
@@ -332,7 +339,6 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 
   <script>
     function openModal(id) {
-      console.log('ghhg');
       document.getElementById(id).classList.add('active');
     }
 
@@ -372,29 +378,61 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 
 
 
+
     let selectedElement = null;
 
-    // Handle selecting an element inside .editor-holder
     document.querySelector('.editor-holder').addEventListener('click', function(e) {
-      // Avoid selecting the container itself
       if (e.target !== this) {
         selectedElement = e.target;
 
-        alert(selectedElement)
-
-        // Optional: highlight selected element
-        document.querySelectorAll('.editor-holder *').forEach(el => el.classList.remove('selected-border'));
-        selectedElement.classList.add('selected-border');
+        document.querySelectorAll('.editor-holder *').forEach(el => el.classList.remove('selected-element'));
+        selectedElement.classList.add('selected-element');
+        updateActiveStyleButtons();
       }
     });
 
-    // Function to apply styles to selected element
-    function applyStyle(property, value) {
-      if (selectedElement) {
-        selectedElement.style[property] = value;
+    function applyStyle(property, value, button = null) {
+      if (!selectedElement) return alert("Please select an element first.");
+
+      const current = selectedElement.style[property];
+      if (current === value) {
+        selectedElement.style[property] = '';
+        if (button) button.classList.remove('active-style-btn');
       } else {
-        alert('Please select an element in the editor first.');
+        selectedElement.style[property] = value;
+        if (button) {
+
+          document.querySelectorAll(`[data-style="${property}"]`).forEach(b => b.classList.remove('active-style-btn'));
+          button.classList.add('active-style-btn');
+        }
       }
+    }
+
+    function updateActiveStyleButtons() {
+      if (!selectedElement) return;
+
+      const styles = window.getComputedStyle(selectedElement);
+
+      const styleMap = {
+        'font-weight': styles.fontWeight === '700' || styles.fontWeight === 'bold',
+        'font-style': styles.fontStyle === 'italic',
+        'text-decoration': styles.textDecorationLine.includes('underline'),
+        'text-transform': styles.textTransform,
+        'text-align': styles.textAlign
+      };
+
+      Object.keys(styleMap).forEach(key => {
+
+        document.querySelectorAll(`[data-style="${key}"]`).forEach(btn => {
+
+          const btnValue = btn.getAttribute('data-value');
+          if (styleMap[key] === btnValue || (typeof styleMap[key] === 'boolean' && styleMap[key])) {
+            btn.classList.add('active-style-btn');
+          } else {
+            btn.classList.remove('active-style-btn');
+          }
+        });
+      });
     }
   </script>
 

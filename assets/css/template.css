@@ -301,9 +301,15 @@ body {
 }
 
 
-.selected-border {
+.selected-element {
   outline: 2px dashed #007ea7 !important;
   /* border: 2px dashed #007ea7 !important; */
 }
 
 
+
+.active-style-btn {
+  background-color: #007ea7;
+  color: white;
+  border-color: #007ea7;
+}
