@@ -54,7 +54,7 @@ include("../server/model.php");
   <div class="container-fluid p-0">
     <div class="row m-0">
       
-      <div class="col-xl-7 p-0">
+      <div class="col-12 p-0">
         <div class="login-card login-dark login-bg">
           <div>
             

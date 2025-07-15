@@ -33,6 +33,7 @@ include('../../server/client/auth/index.php');
         .main-container {
             display: flex;
             gap: 2rem;
+            position: relative;
         }
 
         .sidebar {
@@ -43,6 +44,7 @@ include('../../server/client/auth/index.php');
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
             height: fit-content;
             flex-shrink: 0;
+            position: fixed;
         }
 
         .search-box input {
@@ -125,6 +127,9 @@ include('../../server/client/auth/index.php');
             display: flex;
             flex-direction: column;
             width: calc(100% - 280px);
+            position: absolute;
+            right: 0;
+            padding: 20px;
         }
 
         h1 {
@@ -168,7 +173,6 @@ include('../../server/client/auth/index.php');
 
         .card-title {
             font-size: 16px;
-            font-weight: 600;
             margin-bottom: 0.5rem;
             color: #222;
             text-transform: capitalize;
@@ -206,7 +210,7 @@ include('../../server/client/auth/index.php');
 
             .show-sidebar {
                 display: block !important;
-                position: absolute;
+                position: fixed;
                 left: 0;
                 top: 0;
                 background: white;
@@ -223,6 +227,25 @@ include('../../server/client/auth/index.php');
 
             .content-area {
                 width: 100%;
+                padding: 0px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            body {
+                padding: 10px;
+
+            }
+
+            h1 {
+                font-size: 15px;
+            }
+
+            .card-title {
+                font-size: 13px;
+                font-weight: 400;
             }
         }
     </style>

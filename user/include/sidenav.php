@@ -1,21 +1,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <div class="sidebar-wrapper" data-layout="stroke-svg">
   <div>
-    <div class="logo-wrapper">
-      <a href="index-2.html">
-        <img
-          class="img-fluid for-light"
-          src="<?php echo $domain ?>assets/images/logo/logo.png"
-          alt="" /><img
-          class="img-fluid for-dark"
-          src="<?php echo $domain ?>assets/images/logo/logo_dark.png"
-          alt="" /></a>
-      <div class="toggle-sidebar">
-        <svg class="sidebar-toggle">
-          <use href="<?php echo $domain ?>assets/svg/icon-sprite.svg#toggle-icon"></use>
-        </svg>
-      </div>
-    </div>
     <div class="logo-icon-wrapper">
       <a href="index-2.html"><img
           class="img-fluid"
@@ -45,15 +30,15 @@
 
           <li class="sidebar-list">
             <i class="bi bi-pin-angle"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/dashboard/">
+            <a class="sidebar-link " href="<?php echo $domain ?>user/dashboard/">
               <i class="bi bi-speedometer2"></i>
               <span class="lan-7">Dashboard</span>
             </a>
           </li>
 
           <li class="sidebar-list">
-            <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/pricing/">
+          
+            <a class="sidebar-link " href="<?php echo $domain ?>user/pricing/">
               <i class="bi bi-cash-stack"></i>
               <span class="lan-3">Pricing</span>
             </a>
@@ -61,15 +46,14 @@
 
 
           <li class="sidebar-list">
-            <i class="bi bi-pin-angle-fill"></i>
-            <a class="sidebar-link sidebar-title" href="<?php echo $domain ?>user/editor/">
+            <a class="sidebar-link " href="<?php echo $domain ?>user/editor/">
               <i class="bi bi-folder2-open"></i>
               <span class="lan-7">Generate Invoice</span>
             </a>
           </li>
 
           <li class="sidebar-list">
-            <i class="bi bi-pin-angle-fill"></i>
+          
             <a class="sidebar-link sidebar-title" href="#">
               <i class="bi bi-folder2-open"></i>
               <span class="lan-7">My Template</span>
@@ -81,7 +65,7 @@
           </li>
 
           <li class="sidebar-list">
-            <i class="bi bi-pin-angle-fill"></i>
+            
             <a class="sidebar-link sidebar-title" href="#">
               <i class="bi bi-gear"></i>
               <span class="lan-7">Setting</span>
