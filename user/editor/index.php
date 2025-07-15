@@ -11,23 +11,28 @@ include('../../server/client/auth/index.php');
     <title>Canva Design Clone</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <style>
+        :root {
+            --main: #2b5f60;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            color: var(--main);
         }
+
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fc;
+            background-color: #E9EFEF;
             padding: 2rem;
-            color: #333;
+
         }
 
         .main-container {
             display: flex;
             gap: 2rem;
-            flex-wrap: wrap;
         }
 
         .sidebar {
@@ -66,8 +71,8 @@ include('../../server/client/auth/index.php');
         }
 
         .tab.active {
-            border-color: #6c63ff;
-            color: #6c63ff;
+            border-color: var(--main);
+            color: var(--main);
         }
 
         .filters {
@@ -87,7 +92,7 @@ include('../../server/client/auth/index.php');
         }
 
         .filter.active {
-            background-color: #6c63ff;
+            background-color: var(--main);
             color: white;
         }
 
@@ -117,8 +122,9 @@ include('../../server/client/auth/index.php');
         }
 
         .content-area {
-            flex: 1;
-            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 280px);
         }
 
         h1 {
@@ -128,8 +134,9 @@ include('../../server/client/auth/index.php');
         }
 
         .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
             gap: 20px;
         }
 
@@ -213,13 +220,18 @@ include('../../server/client/auth/index.php');
             .menu-toggle {
                 display: block;
             }
+
+            .content-area {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
+    <button class="menu-toggle">☰</button>
     <div class="main-container">
-        <button class="menu-toggle">☰</button>
+
 
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -237,10 +249,14 @@ include('../../server/client/auth/index.php');
         </aside>
         <!-- Main Content -->
         <div class="content-area">
-            <h1>Admin Designs</h1>
-            <div class="grid adminTemplate"></div>
-            <h1 style="margin-top:20px">Client Designs</h1>
-            <div class="grid clientTemplate"></div>
+            <div class="admin">
+                <h1>Admin Designs</h1>
+                <div class="grid adminTemplate"></div>
+            </div>
+            <div class="client">
+                <h1 style="margin-top:20px">Client Designs</h1>
+                <div class="grid clientTemplate"></div>
+            </div>
         </div>
     </div>
 
@@ -255,7 +271,7 @@ include('../../server/client/auth/index.php');
         };
 
         function fetchTemplates(category = '', keyword = '') {
-            
+
             selectedCategory = category || 'All';
             currentKeyword = keyword || '';
 

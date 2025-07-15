@@ -48,11 +48,11 @@ include("../server/model.php");
   <!-- login page start-->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-7"><img class="bg-img-cover bg-center" src="../assets/images/login/2.jpg" alt="looginpage"></div>
+      
       <div class="col-xl-5 p-0">
         <div class="login-card login-dark login-bg">
           <div>
-            <div><a class="logo text-start" href="index-2.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt="looginpage"><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt="looginpage"></a></div>
+            
             <div class="login-main">
 
 
@@ -114,9 +114,7 @@ include("../server/model.php");
                   </div>
                 </div>
                 <div class="form-group mb-0">
-                  <div class="checkbox p-0">
-                    <a href="<?php echo $domain ?>forget-password/?step=1" class="text-muted" for="checkbox1">Forgot password</a>
-                  </div>
+                  
                   <button name="login" class="btn btn-primary btn-block w-100" type="submit">Sign in</button>
                 </div>
 

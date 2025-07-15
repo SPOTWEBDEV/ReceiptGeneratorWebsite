@@ -53,14 +53,11 @@ include("../server/model.php");
   <!-- login page start-->
   <div class="container-fluid p-0">
     <div class="row m-0">
-      <div class="col-xl-5"><img class="bg-img-cover bg-center" src="../assets/images/login/3.jpg" alt="looginpage">
-      </div>
+      
       <div class="col-xl-7 p-0">
         <div class="login-card login-dark login-bg">
           <div>
-            <div><a class="logo text-start" href="index-2.html"><img class="img-fluid for-light"
-                  src="../assets/images/logo/logo.png" alt="looginpage"><img class="img-fluid for-dark"
-                  src="../assets/images/logo/logo_dark.png" alt="looginpage"></a></div>
+            
             <div class="login-main">
 
               <?php

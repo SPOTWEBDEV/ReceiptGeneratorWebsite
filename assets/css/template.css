@@ -7,10 +7,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 
+
 body {
-  background-color: #f0f0f0;
+  background-color: white;
+  color:#1f2f3e;
 }
 
 /* === Core Utilities === */
@@ -52,9 +55,21 @@ body {
 }
 
 
+.mt-1 {
+  margin-top: 0.2rem;
+}
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+.mt-3 {
+  margin-top: 0.8rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mt-5 {
+  margin-top: 1.2rem;
 }
 
 .mt-6 {
@@ -826,4 +841,10 @@ body {
   background-color: #007ea7;
   color: white;
   border-color: #007ea7;
+}
+.hidden{
+  display: none;
+}
+.inline-block{
+  display: inline-block;
 }

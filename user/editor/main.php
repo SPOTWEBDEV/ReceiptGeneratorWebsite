@@ -175,44 +175,52 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       <!-- Text Color Section -->
       <div class="mb-4">
         <label class="text-sm font-semibold block mb-2">Text Color</label>
-        <input type="color" class="mb-2 w-full h-10 border rounded" />
 
-        <div class="grid w-fit grid-cols-6 gap-2">
-          <div class="w-10 h-10 rounded-full" style="background-color: #000;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #333;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #555;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #aaa;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ddd;"></div>
-          <div class="w-10 h-10 rounded-full border" style="background-color: #fff;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ff4d4d;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ff7f50;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ffd700;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #90ee90;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #00ced1;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #1e90ff;"></div>
+        <!-- Text Color Section -->
+        <input type="text" data-style="color" class="color-input px-1 mb-2 w-full h-10 border rounded" placeholder="#000000 or red" />
+
+
+        <!-- Suggested colors -->
+        <div class="grid w-fit grid-cols-6 gap-2" data-style="color">
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #000;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #333;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #555;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #aaa;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ddd;"></div>
+          <div class="w-10 h-10 rounded-full border color-picker" style="background-color: #fff;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ff4d4d;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ff7f50;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ffd700;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #90ee90;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #00ced1;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #1e90ff;"></div>
         </div>
       </div>
 
       <!-- Background Color Section -->
       <div>
         <label class="text-sm font-semibold block mb-2">Background Color</label>
-        <input type="color" class="mb-2 " value="#ff4d4d" />
+        <!-- Background Color Section -->
+        <input type="text" data-style="background-color" class="color-input mb-2 px-1 w-full h-10 border rounded" placeholder="#ffffff or lightblue" />
 
-        <div class="grid w-fit grid-cols-6 gap-2">
-          <div class="w-10 h-10 rounded-full" style="background-color: #000;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #333;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #555;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #aaa;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ddd;"></div>
-          <div class="w-10 h-10 rounded-full border" style="background-color: #fff;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ff4d4d;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ff7f50;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #ffd700;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #90ee90;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #00ced1;"></div>
-          <div class="w-10 h-10 rounded-full" style="background-color: #1e90ff;"></div>
+
+        <!-- Suggested colors -->
+        <div class="grid w-fit grid-cols-6 gap-2" data-style="background-color">
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #000;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #333;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #555;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #aaa;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ddd;"></div>
+          <div class="w-10 h-10 rounded-full border color-picker" style="background-color: #fff;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ff4d4d;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ff7f50;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #ffd700;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #90ee90;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #00ced1;"></div>
+          <div class="w-10 h-10 rounded-full color-picker" style="background-color: #1e90ff;"></div>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -292,15 +300,49 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
         <button onclick="closeModal('elementModal')" class="text-xl text-gray">&times;</button>
       </div>
 
-      <div class="grid grid-cols-3 gap-2 text-sm">
-        <button class="p-2 border rounded">H1</button>
-        <button class="p-2 border rounded">H2</button>
-        <button class="p-2 border rounded">H3</button>
-        <button class="p-2 border rounded">Paragraph</button>
-        <button class="p-2 border rounded">Image</button>
-        <button class="p-2 border rounded">Button</button>
+      <div class="mt-4">
+        <label class="text-sm font-semibold block mb-1">Element Type</label>
+        <select id="elementType" class="w-full border rounded p-2 text-sm">
+          <option value="p">Paragraph</option>
+          <option value="h1">Heading 1</option>
+          <option value="h3">Heading 3</option>
+          <option value="img">Image</option>
+          <option value="button">Button</option>
+          <option value="link-button">Button (with link)</option>
+        </select>
       </div>
+
+      <div id="srcInput" class="mt-2 hidden">
+        <label class="text-sm font-semibold block mb-1">Image Source (src)</label>
+        <input type="text" id="elementSrc" class="w-full border rounded p-2 text-sm" placeholder="https://example.com/image.png" />
+      </div>
+
+      <div id="linkInput" class="mt-2 hidden">
+        <label class="text-sm font-semibold block mb-1">Link URL (for button)</label>
+        <input type="text" id="elementLink" class="w-full border rounded p-2 text-sm" placeholder="https://example.com" />
+      </div>
+
+      <div id="innerHtmlInput" class="mt-2">
+        <label class="text-sm font-semibold block mb-1">Text / Inner HTML</label>
+        <input value="Button" type="text" id="elementContent" class="w-full border rounded p-2 text-sm" placeholder="Enter text here" />
+      </div>
+
+      <div class="mt-4">
+        <label class="text-sm font-semibold block mb-1">Insert Position</label>
+        <select id="insertPosition" class="w-full border rounded p-2 text-sm">
+          <option value="inside">Inside</option>
+          <option value="before">Before</option>
+          <option value="after">After</option>
+        </select>
+      </div>
+
+      <div class="mt-4 text-right">
+        <button id="createElementBtn" class="border p-2 rounded text-sm bg-hospital text-white">Create</button>
+      </div>
+
+
     </div>
+
   </div>
 
   <!-- DESIGN MODAL -->
@@ -393,20 +435,18 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
     document.querySelector('.editor-holder').addEventListener('click', function(e) {
       if (e.target !== this) {
         selectedElement = e.target;
-
-        // Highlight selected element
         document.querySelectorAll('.editor-holder *').forEach(el => el.classList.remove('selected-element'));
         selectedElement.classList.add('selected-element');
 
         updateActiveStyleButtons();
+        updateColorInputs();
       }
     });
 
-    // Apply styles (from button or select)
     function applyStyle(property, value, button = null) {
       if (!selectedElement) return alert("Please select an element first.");
-
       const current = selectedElement.style[property];
+
       if (current === value) {
         selectedElement.style[property] = '';
         if (button && button.tagName !== 'SELECT') button.classList.remove('active-style-btn');
@@ -421,7 +461,6 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       }
     }
 
-    // Highlight active buttons based on computed styles
     function updateActiveStyleButtons() {
       if (!selectedElement) return;
 
@@ -441,7 +480,6 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       Object.keys(styleMap).forEach(key => {
         const value = styleMap[key];
 
-        // Buttons (Bold, Italic, Underline, Align, etc)
         document.querySelectorAll(`[data-style="${key}"]`).forEach(control => {
           if (control.tagName === 'BUTTON') {
             const btnValue = control.getAttribute('data-value');
@@ -449,7 +487,6 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
             control.classList.toggle('active-style-btn', isActive);
           }
 
-          // Inputs (font-size, spacing) — show value but no active class
           if (control.tagName === 'INPUT' && control.type === 'text') {
             control.value = value;
           }
@@ -457,8 +494,6 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       });
     }
 
-
-    // Auto attach event listeners to all [data-style] buttons and selects
     document.querySelectorAll('[data-style]').forEach(control => {
       if (control.tagName === 'BUTTON') {
         control.addEventListener('click', function() {
@@ -479,12 +514,164 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
       if (control.tagName === 'INPUT' && control.type === 'text') {
         control.addEventListener('input', function() {
           const prop = this.getAttribute('data-style');
-          const value = this.value; // expect px, em, %, etc
+          const value = this.value;
           applyStyle(prop, value);
         });
       }
     });
+
+    function updateColorInputs() {
+      if (!selectedElement) return;
+
+      const styles = window.getComputedStyle(selectedElement);
+
+      document.querySelectorAll('.color-input').forEach(input => {
+        const styleName = input.getAttribute('data-style');
+        let color = styles.getPropertyValue(styleName);
+
+        if (color.startsWith('rgb')) {
+          const rgb = color.match(/\d+/g);
+          color = '#' + rgb.map(x => parseInt(x).toString(16).padStart(2, '0')).join('');
+        }
+
+        input.value = color;
+      });
+    }
+
+    document.querySelectorAll('.color-input').forEach(input => {
+      input.addEventListener('input', function() {
+        if (!selectedElement) return;
+        const prop = input.getAttribute('data-style');
+        const value = input.value.trim();
+        if (value && (value.startsWith('#') || /^[a-zA-Z]+$/.test(value))) {
+          selectedElement.style[prop] = value;
+        }
+      });
+    });
+
+    document.querySelectorAll('.color-picker').forEach(picker => {
+      picker.addEventListener('click', function() {
+        if (!selectedElement) return;
+
+        const value = this.style.backgroundColor;
+
+        // Traverse up to find the container with data-style
+        let parent = this.parentElement;
+        const prop = parent?.getAttribute('data-style');
+
+        if (prop) {
+          selectedElement.style[prop] = value;
+
+          // Optional: update matching input
+          const input = parent.previousElementSibling;
+          if (input && input.classList.contains('color-input')) {
+            input.value = rgbToHex(value);
+          }
+        }
+      });
+    });
+
+
+    function rgbToHex(rgb) {
+      const result = rgb.match(/\d+/g);
+      return '#' + result.map(x => parseInt(x).toString(16).padStart(2, '0')).join('');
+    }
+
+    // ========== 🧱 ELEMENT CREATION (NEW CODE) ==========
+    const elementButtons = document.querySelectorAll('#elementModal [data-element]');
+    const positionSelect = document.getElementById('insertPosition');
+
+    elementButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        if (!selectedElement) return alert("Please select an element first.");
+
+        const tag = button.getAttribute('data-element');
+        const position = positionSelect.value;
+
+        const newEl = document.createElement(tag);
+
+        // Default content or attributes
+        if (tag === 'img') {
+          newEl.src = 'https://via.placeholder.com/150';
+          newEl.alt = 'Image';
+          newEl.style.maxWidth = '100%';
+        } else if (tag === 'button') {
+          newEl.textContent = 'Click Me';
+        } else if (tag === 'p') {
+          newEl.textContent = 'New paragraph';
+        } else {
+          newEl.textContent = tag.toUpperCase();
+        }
+
+        // Insert based on selected position
+        if (position === 'inside') {
+          selectedElement.appendChild(newEl);
+        } else if (position === 'before') {
+          selectedElement.parentNode.insertBefore(newEl, selectedElement);
+        } else if (position === 'after') {
+          selectedElement.parentNode.insertBefore(newEl, selectedElement.nextSibling);
+        }
+
+        // Auto select new element
+        document.querySelectorAll('.editor-holder *').forEach(el => el.classList.remove('selected-element'));
+        newEl.classList.add('selected-element');
+        selectedElement = newEl;
+
+        updateActiveStyleButtons();
+        updateColorInputs();
+      });
+    });
+
+    // Show/hide inputs depending on element type
+    document.getElementById('elementType').addEventListener('change', function() {
+      const type = this.value;
+
+      document.getElementById('srcInput').classList.toggle('hidden', type !== 'img');
+      document.getElementById('linkInput').classList.toggle('hidden', type !== 'link-button');
+    });
+
+    // Create Element
+    document.getElementById('createElementBtn').addEventListener('click', function() {
+      if (!selectedElement) return alert('Please select an element first.');
+
+      const type = document.getElementById('elementType').value;
+      const position = document.getElementById('insertPosition').value;
+      const content = document.getElementById('elementContent').value;
+      const src = document.getElementById('elementSrc').value;
+      const link = document.getElementById('elementLink').value;
+
+      let newElement;
+
+      if (type === 'img') {
+        newElement = document.createElement('img');
+        newElement.src = src || '';
+        newElement.alt = content || '';
+      } else if (type === 'link-button') {
+        newElement = document.createElement('a');
+        newElement.href = link || '#';
+        newElement.innerHTML = content || 'Click Me';
+        newElement.className = 'p-2 border rounded inline-block';
+      } else {
+        newElement = document.createElement(type === 'button' ? 'button' : type);
+        newElement.innerHTML = content || '';
+      }
+
+      // Insert element
+      if (position === 'inside') {
+        selectedElement.appendChild(newElement);
+      } else if (position === 'before') {
+        selectedElement.parentNode.insertBefore(newElement, selectedElement);
+      } else if (position === 'after') {
+        selectedElement.parentNode.insertBefore(newElement, selectedElement.nextSibling);
+      }
+
+      // Reset form
+      document.getElementById('elementContent').value = '';
+      document.getElementById('elementSrc').value = '';
+      document.getElementById('elementLink').value = '';
+    });
   </script>
+
 
 
 
