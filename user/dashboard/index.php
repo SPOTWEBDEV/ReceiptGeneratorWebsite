@@ -116,6 +116,7 @@ include("../../server/client/auth/index.php");
 
                     <h1 class="card-title">30</h1>
                     <span>balance</span>
+                    
 
                   </div>
                 </div>
