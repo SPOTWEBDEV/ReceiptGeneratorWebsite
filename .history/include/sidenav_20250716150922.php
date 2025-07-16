@@ -12,8 +12,8 @@
   <div class="sidebar-wrapper" data-layout="stroke-svg">
     <div>
       <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
-        <div style=" background-color:transparent; background:none; display:flex; align-items:center; justify-content: center;" class="toggle-sidebar">
-        <i style="display: flex; font-size: 30px; width:100%;  display:flex; align-items:center; justify-content: center;" class="bi bi-list"></i>
+        <div class="toggle-sidebar">
+        <i style="display: flex; font-size: 500px; width:100%;" class="bi bi-list"></i>
         </div>
       </div>
       <div class="logo-icon-wrapper"><a href="index-2.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a></div>
