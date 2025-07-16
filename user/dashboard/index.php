@@ -51,6 +51,7 @@ include("../../server/client/auth/index.php");
   <!-- Responsive css-->
   <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -93,10 +94,7 @@ include("../../server/client/auth/index.php");
               </div>
               <div class="col-xl-3 col-sm-5 box-col-4">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index-2.html">
-                      <svg class="stroke-icon">
-                        <use href="../../assets/svg/icon-sprite.svg#stroke-home"></use>
-                      </svg></a></li>
+                  <li class="breadcrumb-item bi bi-house-add-fill" >  </li>
                   <li class="breadcrumb-item">Home</li>
                   <li class="breadcrumb-item active">Dashboard</li>
                 </ol>

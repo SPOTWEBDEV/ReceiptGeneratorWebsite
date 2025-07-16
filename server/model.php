@@ -25,8 +25,8 @@
         <div class=\"toast show toast fade\" id=\"liveToast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">
             <div class=\"toast-header toast-img\">
                 <img class=\"rounded me-2\" src=\"$url\" alt=\"profile\">
-                <strong class=\"me-auto\">Zono Theme</strong>
-                <small>5 min ago</small>
+                <strong class=\"me-auto\">Smartinvoice</strong>
+                <small>now</small>
                 <button class=\"btn-close\" type=\"button\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>
             </div>
             <div class=\"toast-body toast-dark\">$message</div>

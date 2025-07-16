@@ -2,8 +2,8 @@
         <div class="header-wrapper row m-0">
           <div class="header-logo-wrapper col-auto p-0">
             <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a></div>
-            <div style=" background-color:transparent; background:none; display:flex; align-items:center; justify-content: center;" class="toggle-sidebar">
-             <i style="font-size: 30px; width:fit-content; display:flex; align-items:center; justify-content: center;"  class="bi bi-list"></i>
+            <div class="toggle-sidebar">
+             <i style="display: flex; font: size 50; width:100%;" class="bi bi-list"></i>
             </div>
           </div>
           <form class="col-sm-4 form-inline search-full d-none d-xl-block" action="#" method="get">

@@ -12,7 +12,7 @@
   <div class="sidebar-wrapper" data-layout="stroke-svg">
     <div>
       <div class="logo-wrapper"><a href="index-2.html"> <img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
-        <div style=" background-color:transparent; background:none; display:flex; align-items:center; justify-content: center;" class="toggle-sidebar">
+        <div style="  display:flex; align-items:center; justify-content: center;" class="toggle-sidebar">
         <i style="display: flex; font-size: 30px; width:100%;  display:flex; align-items:center; justify-content: center;" class="bi bi-list"></i>
         </div>
       </div>
