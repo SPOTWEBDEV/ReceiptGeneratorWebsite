@@ -63,7 +63,7 @@ include("./server/connection.php");
                 <li class="nav-item menu-back">back<i class="fa fa-angle-right"></i></li>
                 <li class="nav-item"><a class="nav-link" href="">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#mission">Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Mi</a></li>
             
                 <!-- <li class="nav-item"><a class="nav-link" href="https://docs.pixelstrap.net/admin/<?php echo $sitename ?>/document/" target="_blank"></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://www.pixelstrap.com/hire-us" target="_blank"></a></li> -->
@@ -186,7 +186,7 @@ include("./server/connection.php");
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
-              <h3 id="mission">Our Mission</h3>
+              <h3>Our Mission</h3>
               <span>Our mission is to make receipt creation simple and accessible for everyone. Whether you're a freelancer, a shop owner, or a business manager, we aim to eliminate manual paperwork and help you generate clean, organized receipts in just a few clicks.
                 We’re driven by the goal of making receipt generation effortless for people in all industries. From independent workers to growing businesses, our tools are designed to reduce time spent on paperwork and boost productivity with just a few simple steps.
                 At the heart of what we do is the desire to remove the stress of creating receipts. We believe that anyone, regardless of their technical skills, should be able to produce neat, professional-looking records without hassle or delay.

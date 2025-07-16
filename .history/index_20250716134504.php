@@ -62,8 +62,8 @@ include("./server/connection.php");
               <ul class="landing-menu nav nav-pills">
                 <li class="nav-item menu-back">back<i class="fa fa-angle-right"></i></li>
                 <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#mission">Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Example</a></li>
             
                 <!-- <li class="nav-item"><a class="nav-link" href="https://docs.pixelstrap.net/admin/<?php echo $sitename ?>/document/" target="_blank"></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://www.pixelstrap.com/hire-us" target="_blank"></a></li> -->
@@ -96,7 +96,7 @@ include("./server/connection.php");
               </div>
               <h2><?php echo $sitename ?> Developer Friendly Receipt Generator For Your Business<img class="line-text img-fluid" src="./assets/images/landing/landing-home/vector/line.png" alt="line"></h2>
               <p class="description-name"><?php echo $sitename ?> is the ideal solution for any business that needs quick and professional receipts. It comes with all the features you need to generate, print, and manage receipts effortlessly — whether you're a freelancer, small shop owner, or service provider..</p>
-              <div class="docutment-button"> <a class="btn bg-secondary" href="./sign-up/">Get Started</a><a class="btn bg-light txt-dark" href="./login/">Login</a></div>
+              <div class="docutment-button"> <a class="btn bg-secondary" href="./login/index.php">Get Started</a><a class="btn bg-light txt-dark" href="<?php echo $domain ?/login/index.php<?php echo $sitename ?>/document/">Login</a></div>
             </div>
           </div>
           <div class="col-lg-6 col-md-5">
@@ -125,7 +125,7 @@ include("./server/connection.php");
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
-              <h3 id="about">About Us</h3>
+              <h3>About Us</h3>
               <span>We provide an easy-to-use platform that allows individuals and businesses to build and create professional receipts effortlessly. Our goal is to simplify your transaction records with tools that are fast, flexible, and user-friendly.
                 Our platform empowers both individuals and businesses to design polished and accurate receipts with ease. We’re committed to making your record-keeping seamless through simple, efficient, and adaptable tools designed for everyday use.
                 Whether you're running a business or managing personal expenses, our intuitive system makes receipt creation stress-free. With customizable options and a smooth workflow, staying organized has never been easier.
@@ -186,7 +186,7 @@ include("./server/connection.php");
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
-              <h3 id="mission">Our Mission</h3>
+              <h3>Our Mission</h3>
               <span>Our mission is to make receipt creation simple and accessible for everyone. Whether you're a freelancer, a shop owner, or a business manager, we aim to eliminate manual paperwork and help you generate clean, organized receipts in just a few clicks.
                 We’re driven by the goal of making receipt generation effortless for people in all industries. From independent workers to growing businesses, our tools are designed to reduce time spent on paperwork and boost productivity with just a few simple steps.
                 At the heart of what we do is the desire to remove the stress of creating receipts. We believe that anyone, regardless of their technical skills, should be able to produce neat, professional-looking records without hassle or delay.

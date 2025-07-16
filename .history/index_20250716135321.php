@@ -63,7 +63,7 @@ include("./server/connection.php");
                 <li class="nav-item menu-back">back<i class="fa fa-angle-right"></i></li>
                 <li class="nav-item"><a class="nav-link" href="">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#mission">Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Mission</a></li>
             
                 <!-- <li class="nav-item"><a class="nav-link" href="https://docs.pixelstrap.net/admin/<?php echo $sitename ?>/document/" target="_blank"></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://www.pixelstrap.com/hire-us" target="_blank"></a></li> -->
