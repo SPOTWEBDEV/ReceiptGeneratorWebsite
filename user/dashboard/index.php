@@ -107,20 +107,38 @@ include("../../server/client/auth/index.php");
         <!-- Container-fluid starts-->
         <div class="container-fluid default-dashboard">
           <div class="row">
-            <div class="col-xl-12 box-col-7 proorder-md-1">
-              <div class="card">
-                <div class="card-body premium-card">
-                  <div class="row premium-courses-card">
-                    <div class="col-md-5 premium-course">
-                      <h1 class="f-w-700">Get Thousands Premium Courses.</h1><span class="f-light f-w-400 f-14">Upgrade to watch, play, learn, make and discover. </span><a class="btn btn-square btn-primary f-w-700" href="pricing.html">Go Premium</a>
-                    </div>
-                    <div class="col-md-7 premium-course-img">
-                      <div class="premium-message"><img class="img-fluid" src="../../assets/images/dashboard/massage.gif" alt="massage"></div>
-                      <div class="premium-books"><img class="img-fluid" src="../../assets/images/dashboard/books.gif" alt="books"></div>
-                    </div>
+            <div class="row">
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body ">
+
+
+                    <h1 class="card-title">30</h1>
+                    <span>balance</span>
+
                   </div>
                 </div>
               </div>
+
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-body ">
+
+
+                    <h1 class="card-title">30</h1>
+                    <span>balance</span>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
             </div>
 
 
