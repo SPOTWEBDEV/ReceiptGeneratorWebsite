@@ -160,7 +160,4 @@ include("../server/model.php");
     <!-- Plugin used-->
   </div>
 </body>
-
-<!-- Mirrored from admin.pixelstrap.net/<?php echo $sitename ?>/template/sign-up-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jun 2025 12:31:15 GMT -->
-
 </html>
