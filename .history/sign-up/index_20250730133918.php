@@ -126,6 +126,11 @@ include("../server/model.php");
                   </div>
                 </div>
                 <div class="form-group mb-0">
+                  <div class="checkbox p-0">
+                    <input id="checkbox1" type="checkbox">
+                    <label class="text-muted" for="checkbox1">Agree with<a class="ms-2" href="#">Privacy
+                        Policy</a></label>
+                  </div>
                   <button name="register" class="btn btn-primary btn-block w-100" type="submit">Create Account</button>
                 </div>
 

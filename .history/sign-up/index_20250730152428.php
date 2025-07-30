@@ -126,6 +126,7 @@ include("../server/model.php");
                   </div>
                 </div>
                 <div class="form-group mb-0">
+
                   <button name="register" class="btn btn-primary btn-block w-100" type="submit">Create Account</button>
                 </div>
 

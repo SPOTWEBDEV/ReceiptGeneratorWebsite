@@ -30,10 +30,10 @@ if ($isLocalhost) {
 
     define("USER", "root");
     define("PASSWORD", "");
-    define("DATABASE", "ReceiptGeneratorWebsite");
+    define("DATABASE", "");
 
     // Database connection
-    $connection = mysqli_connect(HOST, USER, PASSWORD,DATABASE );
+    $connection = mysqli_connect(HOST, USER, PASSWORD, );
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }

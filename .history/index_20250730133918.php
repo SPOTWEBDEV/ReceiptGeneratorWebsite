@@ -59,7 +59,18 @@ include("./server/connection.php");
             <nav class="navbar navbar-light p-0" id="navbar-example2"><a class="navbar-brand" href="javascript:void(0)">
                 <img style="height:80px" class="img-fluid" src="./assets/images/logo.png" alt=""></a>
               <!-- <h1 class="img-fluid" style="font-size: 20px;">Smar InoiceX</h1> -->
-             
+              <ul class="landing-menu nav nav-pills">
+                <li class="nav-item menu-back">back<i class="fa fa-angle-right"></i></li>
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo $domain ?>#mission">Mission</a></li>
+            
+                <!-- <li class="nav-item"><a class="nav-link" href="https://docs.pixelstrap.net/admin/<?php echo $sitename ?>/document/" target="_blank"></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.pixelstrap.com/hire-us" target="_blank"></a></li> -->
+              </ul>
+              <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="./login/index.php">Login</a>
+                <div class="toggle-menu"><i class="fa fa-bars"></i></div>
+              </div>
             </nav>
           </div>
         </div>
@@ -110,7 +121,7 @@ include("./server/connection.php");
       <div class="container">
         <div class="row g-md-4 g-3">
           <div class="col-md-6 wow bounceInLeft mt-0">
-            <!-- <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div> -->
+            <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
@@ -171,7 +182,7 @@ include("./server/connection.php");
       <div class="container">
         <div class="row g-md-4 g-3">
           <div class="col-md-6 wow bounceInLeft mt-0">
-            <!-- <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div> -->
+            <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
@@ -283,7 +294,7 @@ include("./server/connection.php");
       <div class="container">
         <div class="row g-md-4 g-3">
           <div class="col-md-6 wow bounceInLeft mt-0">
-            <!-- <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div> -->
+            <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
