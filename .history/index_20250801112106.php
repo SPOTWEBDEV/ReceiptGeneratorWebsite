@@ -60,7 +60,7 @@ include("./server/connection.php");
                 <img style="height:80px" class="img-fluid" src="./assets/images/logo.png" alt=""></a>
               <!-- <h1 class="img-fluid" style="font-size: 20px;">Smar InoiceX</h1> -->
              
-                <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="<?php echo $domain ?>sign-up/">Register</a>
+                <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="./sign_/">Register</a>
                 <div class="toggle-menu"><i class="fa fa-bars"></i></div>
               </div>
             </nav>
