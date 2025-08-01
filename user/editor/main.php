@@ -1,6 +1,5 @@
 <?php
 
-use Dom\Mysql;
 
 include('../../server/connection.php');
 
@@ -25,10 +24,10 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
 
-<body class="p-2 w-full flex flex-col md:flex-row gap-2">
+<body  class=" w-full flex flex-col md:flex-row gap-2">
 
   <!-- SIDENAV -->
-  <div class="bg-light p-2 shadow-sm rounded-sm w-full md:w-20 flex md:flex-col items-center justify-center md:justify-start gap-3 fixed bottom-0 md:static z-50 overflow-x-auto hide-scrollbar">
+  <div class="bg-light h-fit md:h-screen  shadow-sm rounded-sm w-full md:w-20 flex md:flex-col items-center justify-arround md:justify-start gap-3 fixed bottom-0 md:static z-50 overflow-x-auto hide-scrollbar px-3">
 
     <div
       onclick="openModal('designModal')"
@@ -76,18 +75,18 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 
 
 
-  <main class="w-full md:w-[calc(100%-5.5rem)] bg-light p-2 flex justify-center items-center">
+  <main class="w-full h-screen md:w-[calc(100%-5.5rem)] bg-light p-2 flex justify-center items-center">
 
-    <div class="editor-holder border w-full h-[600px]  rounded overflow-auto p-4">
+    <!-- <div style="height: 400px;" class="editor-holder border w-full   rounded overflow-auto p-4"> -->
       <?php
-      if (mysqli_num_rows($query)) {
-        $row = mysqli_fetch_assoc($query);
-        echo $row['html_contents'];
-      } else {
-        echo "<p class='text-gray'>Template not found.</p>";
-      }
+      // if (mysqli_num_rows($query)) {
+      //   $row = mysqli_fetch_assoc($query);
+      //   echo $row['html_contents'];
+      // } else {
+      //   echo "<p class='text-gray'>Template not found.</p>";
+      // }
       ?>
-    </div>
+    <!-- </div> -->
   </main>
 
 

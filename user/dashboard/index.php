@@ -94,7 +94,7 @@ include("../../server/client/auth/index.php");
               </div>
               <div class="col-xl-3 col-sm-5 box-col-4">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item bi bi-house-add-fill" >  </li>
+                  <li class="breadcrumb-item bi bi-house-add-fill"> </li>
                   <li class="breadcrumb-item">Home</li>
                   <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
@@ -114,7 +114,7 @@ include("../../server/client/auth/index.php");
 
                     <h1 class="card-title">30</h1>
                     <span>balance</span>
-                    
+
 
                   </div>
                 </div>
@@ -154,66 +154,68 @@ include("../../server/client/auth/index.php");
 
 
 
-                  <table class="table card-table table-vcenter text-nowrap">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Deposit ID</th>
-                        <th>Amount</th>
-                        <th>Account Status</th>
+                  <div class="div" style="overflow-x: auto;">
+                    <table class="table card-table table-vcenter text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Deposit ID</th>
+                          <th>Amount</th>
+                          <th>Account Status</th>
 
-                      </tr>
-                      </tr>
-                    </thead>
-                    <tbody>
+                        </tr>
+                        </tr>
+                      </thead>
+                      <tbody>
 
-                      <?php
+                        <?php
 
-                      $select = mysqli_query($connection, "SELECT deposits.* FROM deposits,payment_methods WHERE deposits.user='$id' AND deposits.payment_method_id=payment_methods.id");
-                      if (mysqli_num_rows($select) > 0) {
-                        $count = 0;
-                        while ($row = mysqli_fetch_array($select)) {
-                          $count++;
+                        $select = mysqli_query($connection, "SELECT deposits.* FROM deposits,payment_methods WHERE deposits.user='$id' AND deposits.payment_method_id=payment_methods.id");
+                        if (mysqli_num_rows($select) > 0) {
+                          $count = 0;
+                          while ($row = mysqli_fetch_array($select)) {
+                            $count++;
 
-                      ?>
-
-
-                          <tr>
-                            <td class="f-w-600"><?= $count ?></td>
-                            <td><?= htmlspecialchars($row['deposit_id']) ?></td>
-                            <td><?= $row['usdt_amount'] . ' USDT => ' . $row['naira_amount'] . ' NARIA' ?></td>
-                            <td class="text-end">
-
-                              <?php
-
-                              if ($row['status'] == 'declined') { ?>
-                                <a style="text-transform:capitalize" class="btn btn-warning btn-sm"></a><?php echo $row['status'] ?></a>
-                              <?php } else if ($row['status'] == 'pending') { ?>
-                                <a style="text-transform:capitalize" class="btn btn-danger btn-sm"> <?php echo $row['status'] ?></a>
-                              <?php } else if ($row['status'] == 'approved') { ?>
-                                <a style="text-transform:capitalize" class="btn btn-success btn-sm"> <?php echo $row['status'] ?></a>
-                              <?php  } else { ?>
-                                <a style="text-transform:capitalize" class="btn btn-secondary btn-sm"> <?php echo $row['status'] ?></a>
-                              <?php }
-
-                              ?>
+                        ?>
 
 
-                            </td>
-                          </tr>
+                            <tr>
+                              <td class="f-w-600"><?= $count ?></td>
+                              <td><?= htmlspecialchars($row['deposit_id']) ?></td>
+                              <td><?= $row['usdt_amount'] . ' USDT => ' . $row['naira_amount'] . ' NARIA' ?></td>
+                              <td class="text-end">
 
-                        <?php  }
-                      } else { ?>
+                                <?php
 
-                        <p>Table is empty</p>
+                                if ($row['status'] == 'declined') { ?>
+                                  <a style="text-transform:capitalize" class="btn btn-warning btn-sm"></a><?php echo $row['status'] ?></a>
+                                <?php } else if ($row['status'] == 'pending') { ?>
+                                  <a style="text-transform:capitalize" class="btn btn-danger btn-sm"> <?php echo $row['status'] ?></a>
+                                <?php } else if ($row['status'] == 'approved') { ?>
+                                  <a style="text-transform:capitalize" class="btn btn-success btn-sm"> <?php echo $row['status'] ?></a>
+                                <?php  } else { ?>
+                                  <a style="text-transform:capitalize" class="btn btn-secondary btn-sm"> <?php echo $row['status'] ?></a>
+                                <?php }
 
-                      <?php }  ?>
+                                ?>
+
+
+                              </td>
+                            </tr>
+
+                          <?php  }
+                        } else { ?>
+
+                          <p>Table is empty</p>
+
+                        <?php }  ?>
 
 
 
 
-                    </tbody>
-                  </table>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>

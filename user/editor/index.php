@@ -1,6 +1,6 @@
 <?php
 include('../../server/connection.php');
-include('../../server/client/auth/index.php');
+// include('../../server/client/auth/index.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
