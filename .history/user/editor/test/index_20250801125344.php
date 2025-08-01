@@ -131,7 +131,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            gap: 0.375rem;
                   } */
 
-                  /* .codepen-logo {
+                  .codepen-logo {
                            margin-inline: auto;
                            display: block;
                            min-inline-size: 2.25rem;
@@ -140,7 +140,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            block-size: 100%;
                            object-fit: cover;
                            transition: width 100ms linear;
-                  } */
+                  }
 
                   figcaption {
                            text-align: center;
