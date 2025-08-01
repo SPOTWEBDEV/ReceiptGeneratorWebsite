@@ -85,7 +85,7 @@ if(isset($_POST['login'])){
                         <label class="col-form-label">Enter your Password</label>
                         <div class="form-input position-relative">
                           <input class="form-control" type="password" name="password" required="" placeholder="*********">
-                          <div class="show-hide"><span class="show"></span></div>
+                          <div class="show-hide"><span class="show">                      </span></div>
                         </div>
                       </div>
                       <div class="form-group mb-0">
