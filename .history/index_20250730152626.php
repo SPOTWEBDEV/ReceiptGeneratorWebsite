@@ -60,7 +60,7 @@ include("./server/connection.php");
                 <img style="height:80px" class="img-fluid" src="./assets/images/logo.png" alt=""></a>
               <!-- <h1 class="img-fluid" style="font-size: 20px;">Smar InoiceX</h1> -->
              
-                <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="<?php echo $domain ?>sign-up/">Register</a>
+              <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="./login/index.php">Login</a>
                 <div class="toggle-menu"><i class="fa fa-bars"></i></div>
               </div>
             </nav>
@@ -83,7 +83,6 @@ include("./server/connection.php");
             <div class="home-text">
               <div class="main-title">
                 <div class="d-flex align-items-center gap-2">
-
 
                 </div>
               </div>
@@ -114,7 +113,7 @@ include("./server/connection.php");
       <div class="container">
         <div class="row g-md-4 g-3">
           <div class="col-md-6 wow bounceInLeft mt-0">
-            <!-- <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div> -->
+            <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
@@ -175,7 +174,7 @@ include("./server/connection.php");
       <div class="container">
         <div class="row g-md-4 g-3">
           <div class="col-md-6 wow bounceInLeft mt-0">
-            <!-- <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div> -->
+            <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">
@@ -287,7 +286,7 @@ include("./server/connection.php");
       <div class="container">
         <div class="row g-md-4 g-3">
           <div class="col-md-6 wow bounceInLeft mt-0">
-            <!-- <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div> -->
+            <div class="premium-img"><img class="img-fluid" src="./assets/images/landing/premium.png" alt="premium"></div>
           </div>
           <div class="col-md-6 wow bounceInRight mt-0">
             <div class="premium-wrapper">

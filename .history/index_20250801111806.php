@@ -57,12 +57,9 @@ include("./server/connection.php");
         <div class="row">
           <div class="col-12 p-0">
             <nav class="navbar navbar-light p-0" id="navbar-example2"><a class="navbar-brand" href="javascript:void(0)">
-                <img style="height:80px" class="img-fluid" src="./assets/images/logo.png" alt=""></a>
+                <!-- <img style="height:80px" class="img-fluid" src="./assets/images/logo.png" alt=""></a> -->
               <!-- <h1 class="img-fluid" style="font-size: 20px;">Smar InoiceX</h1> -->
              
-                <div class="buy-block"><a class="btn-landing bg-secondary text-white" href="<?php echo $domain ?>sign-up/">Register</a>
-                <div class="toggle-menu"><i class="fa fa-bars"></i></div>
-              </div>
             </nav>
           </div>
         </div>
