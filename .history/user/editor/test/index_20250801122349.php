@@ -123,15 +123,15 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            fill: var(--dark--primary);
                   }
 
-                  /* figure {
+                  figure {
                            display: flex;
                            flex-direction: column;
                            justify-content: center;
                            container-type: inline-size;
                            gap: 0.375rem;
-                  } */
+                  }
 
-                  /* .codepen-logo {
+                  .codepen-logo {
                            margin-inline: auto;
                            display: block;
                            min-inline-size: 2.25rem;
@@ -140,7 +140,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            block-size: 100%;
                            object-fit: cover;
                            transition: width 100ms linear;
-                  } */
+                  }
 
                   figcaption {
                            text-align: center;
@@ -380,7 +380,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            background-color: #f0f0f0;
                   }
 
-             /*      .slider a.ui-slider-handle {
+                  .slider a.ui-slider-handle {
                            position: absolute;
                            top: -5px;
                            margin-left: -9px;
@@ -400,7 +400,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                                     0 9px 4px rgba(0, 0, 0, 0.1),
                                     inset 0 2px 1px rgba(255, 255, 255, 1.0);
                            outline: none;
-                  } */
+                  }
 
                   .slider a.ui-slider-handle:after {
                            content: "";
@@ -521,7 +521,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 
 
 
-                  <!-- <nav class="mx-2 my-2 sidenavBar hidden md:flex ">
+                  <nav class="mx-2 my-2 sidenavBar hidden md:flex ">
                            <header>
                                     <div class="sidebar__toggle-container "> <label tabindex="0"
                                                       for="checkbox-input" id="label-for-checkbox-input"
@@ -535,7 +535,14 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                                                                                  d="M18.707 6.707a1 1 0 0 0-1.414-1.414L12 10.586 6.707 5.293a1 1 0 0 0-1.414 1.414L10.586 12l-5.293 5.293a1 1 0 1 0 1.414 1.414L12 13.414l5.293 5.293a1 1 0 0 0 1.414-1.414L13.414 12z">
                                                                         </path>
                                                                </svg> </span> </label> </div>
-                                  
+                                    <figure> <img class="codepen-logo"
+                                                      src="https://blog.codepen.io/wp-content/uploads/2023/09/logo-black.png"
+                                                      alt="" />
+                                             <figcaption>
+                                                      <p class="user-id">Codepen</p>
+                                                      <p class="user-role">Coder</p>
+                                             </figcaption>
+                                    </figure>
                            </header>
                            <section class="sidebar__wrapper">
                                     <ul class="sidebar__list list--primary">
@@ -661,7 +668,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                                              </li>
                                     </ul>
                            </section>
-                  </nav> -->
+                  </nav>
 
 
                   <main class="main-content h-[100vh]  flex flex-col gap-2 justify-center items-center px-2 ">

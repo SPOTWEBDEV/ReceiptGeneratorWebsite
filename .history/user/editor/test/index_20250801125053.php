@@ -123,15 +123,15 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            fill: var(--dark--primary);
                   }
 
-                  /* figure {
+                  figure {
                            display: flex;
                            flex-direction: column;
                            justify-content: center;
                            container-type: inline-size;
                            gap: 0.375rem;
-                  } */
+                  }
 
-                  /* .codepen-logo {
+                  .codepen-logo {
                            margin-inline: auto;
                            display: block;
                            min-inline-size: 2.25rem;
@@ -140,7 +140,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            block-size: 100%;
                            object-fit: cover;
                            transition: width 100ms linear;
-                  } */
+                  }
 
                   figcaption {
                            text-align: center;
@@ -380,7 +380,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                            background-color: #f0f0f0;
                   }
 
-             /*      .slider a.ui-slider-handle {
+                  .slider a.ui-slider-handle {
                            position: absolute;
                            top: -5px;
                            margin-left: -9px;
@@ -400,7 +400,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                                     0 9px 4px rgba(0, 0, 0, 0.1),
                                     inset 0 2px 1px rgba(255, 255, 255, 1.0);
                            outline: none;
-                  } */
+                  }
 
                   .slider a.ui-slider-handle:after {
                            content: "";
@@ -521,7 +521,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
 
 
 
-                  <!-- <nav class="mx-2 my-2 sidenavBar hidden md:flex ">
+                  <nav class="mx-2 my-2 sidenavBar hidden md:flex ">
                            <header>
                                     <div class="sidebar__toggle-container "> <label tabindex="0"
                                                       for="checkbox-input" id="label-for-checkbox-input"
@@ -661,7 +661,7 @@ $query = mysqli_query($connection, "SELECT `html_contents` FROM `template` WHERE
                                              </li>
                                     </ul>
                            </section>
-                  </nav> -->
+                  </nav>
 
 
                   <main class="main-content h-[100vh]  flex flex-col gap-2 justify-center items-center px-2 ">
